@@ -20,7 +20,7 @@
 
         createLanguageSelector: function() {
             // Find the navigation container (desktop)
-            const desktopNav = document.querySelector('header nav ul.hidden.md\\:flex');
+            const desktopNav = document.querySelector('header nav ul.flex');
             
             if (!desktopNav) return;
 
