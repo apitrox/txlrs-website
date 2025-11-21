@@ -337,3 +337,34 @@ input:focus {
 .animate-slide-in-bottom {
     animation: slideInFromBottom 0.5s ease-out;
 }
+
+/* Case Type Slider */
+.case-type-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+.slider-item {
+    flex-shrink: 0;
+    padding: 0 2rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
