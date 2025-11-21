@@ -63,25 +63,24 @@
                 
                 <!-- Location & Language Dropdowns -->
                 <div class="hidden md:flex items-center gap-4">
+                    <!-- Phone Number Display -->
+                    <div class="flex flex-col items-end">
+                        <span class="text-xs text-gray-600 mb-1">Text or Call</span>
+                        <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl font-bold text-primary hover:text-secondary transition">512-872-4400</a>
+                    </div>
+                    
                     <!-- Location Dropdown -->
                     <div class="relative">
                         <select id="locationSelector" class="form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                            <option value="">Select Location</option>
-                            <option value="512-872-4400">Austin</option>
+                            <option value="512-872-4400" selected>Austin</option>
                             <option value="214-731-4400">Dallas</option>
                             <option value="915-233-4400">El Paso</option>
                             <option value="817-642-8800">Fort Worth</option>
-                            <option value="713-510-7100" selected>Houston</option>
+                            <option value="713-510-7100">Houston</option>
                             <option value="806-208-4400">Lubbock</option>
                             <option value="956-363-4400">Laredo</option>
                             <option value="210-585-4400">San Antonio</option>
                         </select>
-                    </div>
-                    
-                    <!-- Phone Number Display -->
-                    <div class="flex items-center">
-                        <i class="fas fa-phone-alt text-primary mr-2"></i>
-                        <a href="tel:713-510-7100" id="phoneDisplay" class="text-lg font-bold text-primary hover:text-secondary transition">713-510-7100</a>
                     </div>
                     
                     <!-- Language Dropdown -->
@@ -132,18 +131,20 @@
             <div class="container mx-auto px-4 py-4">
                 <!-- Mobile Location & Phone -->
                 <div class="mb-4">
-                    <select id="mobileLocationSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg mb-2">
-                        <option value="">Select Location</option>
-                        <option value="512-872-4400">Austin</option>
+                    <div class="text-center mb-3">
+                        <span class="text-xs text-gray-600 block mb-1">Text or Call</span>
+                        <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-5xl font-bold text-primary">512-872-4400</a>
+                    </div>
+                    <select id="mobileLocationSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                        <option value="512-872-4400" selected>Austin</option>
                         <option value="214-731-4400">Dallas</option>
                         <option value="915-233-4400">El Paso</option>
                         <option value="817-642-8800">Fort Worth</option>
-                        <option value="713-510-7100" selected>Houston</option>
+                        <option value="713-510-7100">Houston</option>
                         <option value="806-208-4400">Lubbock</option>
                         <option value="956-363-4400">Laredo</option>
                         <option value="210-585-4400">San Antonio</option>
                     </select>
-                    <a href="tel:713-510-7100" id="mobilePhoneDisplay" class="block text-center text-lg font-bold text-primary py-2">713-510-7100</a>
                 </div>
                 
                 <!-- Mobile Language -->
