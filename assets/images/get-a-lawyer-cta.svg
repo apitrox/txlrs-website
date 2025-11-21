@@ -1,0 +1,13 @@
+<svg width="567" height="159" viewBox="0 0 567 159" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background -->
+  <rect width="567" height="159" fill="#1e73be"/>
+  
+  <!-- GET A text -->
+  <text x="30" y="85" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">GET A</text>
+  
+  <!-- LAWYER text -->
+  <text x="30" y="140" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white">LAWYER</text>
+  
+  <!-- Arrow -->
+  <path d="M380 40 L500 80 L380 120 M500 80 L420 80" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -28,20 +28,30 @@ document.addEventListener('DOMContentLoaded', function() {
             if (phoneNumber) {
                 phoneDisplay.textContent = formatPhoneNumber(phoneNumber);
                 phoneDisplay.href = 'tel:' + phoneNumber;
+                
+                // Also update mobile displays
+                const mobilePhoneDisplays = document.querySelectorAll('#mobilePhoneDisplay');
+                mobilePhoneDisplays.forEach(display => {
+                    display.textContent = formatPhoneNumber(phoneNumber);
+                    display.href = 'tel:' + phoneNumber;
+                });
             }
         });
     }
     
     // Location Selector (Mobile)
     const mobileLocationSelector = document.getElementById('mobileLocationSelector');
-    const mobilePhoneDisplay = document.getElementById('mobilePhoneDisplay');
     
-    if (mobileLocationSelector && mobilePhoneDisplay) {
+    if (mobileLocationSelector) {
         mobileLocationSelector.addEventListener('change', function() {
             const phoneNumber = this.value;
             if (phoneNumber) {
-                mobilePhoneDisplay.textContent = formatPhoneNumber(phoneNumber);
-                mobilePhoneDisplay.href = 'tel:' + phoneNumber;
+                // Update all mobile phone displays
+                const mobilePhoneDisplays = document.querySelectorAll('#mobilePhoneDisplay');
+                mobilePhoneDisplays.forEach(display => {
+                    display.textContent = formatPhoneNumber(phoneNumber);
+                    display.href = 'tel:' + phoneNumber;
+                });
                 
                 // Also update desktop
                 if (phoneDisplay) {
