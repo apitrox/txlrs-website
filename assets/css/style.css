@@ -338,33 +338,49 @@ input:focus {
     animation: slideInFromBottom 0.5s ease-out;
 }
 
-/* Case Type Slider */
-.case-type-slider {
+/* Case Type Carousel */
+.case-carousel {
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 
-.slider-track {
-    display: flex;
-    animation: scroll 30s linear infinite;
+.carousel-container {
+    position: relative;
+    min-height: 180px;
 }
 
-.slider-track:hover {
-    animation-play-state: paused;
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.slider-item {
-    flex-shrink: 0;
-    padding: 0 2rem;
+.carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.carousel-dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 

@@ -86,79 +86,94 @@
                 </div>
                 
                 <!-- Mobile Header -->
-                <div class="md:hidden flex items-center justify-between">
-                    <!-- GET A LAWYER Call to Action (Mobile) -->
-                    <div class="flex-shrink-0">
-                        <img src="assets/images/get-a-lawyer-cta.svg" alt="Get a Lawyer" class="h-12">
+                <div class="md:hidden">
+                    <div class="flex items-center justify-between mb-2">
+                        <!-- GET A LAWYER Call to Action (Mobile) -->
+                        <div class="flex-shrink-0">
+                            <img src="assets/images/get-a-lawyer-cta.svg" alt="Get a Lawyer" class="h-10">
+                        </div>
+                        
+                        <!-- Mobile Menu Button -->
+                        <button id="mobileMenuBtn" class="px-2 py-2 text-gray-700 hover:text-primary transition">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
                     </div>
                     
-                    <!-- Phone Number (Mobile) -->
-                    <div class="flex flex-col items-center">
+                    <!-- Phone Number (Mobile) - Full Width -->
+                    <div class="flex flex-col items-center w-full">
                         <span class="text-xs text-gray-600" data-i18n="header_text_or_call">Text or Call</span>
-                        <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-2xl font-bold text-primary">512-872-4400</a>
+                        <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-3xl font-bold text-primary">512-872-4400</a>
                     </div>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" class="px-2 py-2 text-gray-700 hover:text-primary transition">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
                 </div>
             </div>
             
-            <!-- Case Type Slider -->
-            <div class="bg-gradient-to-r from-primary to-secondary py-3 border-b border-gray-200 overflow-hidden">
-                <div class="case-type-slider">
-                    <div class="slider-track flex items-center gap-8">
-                        <!-- Slide items (duplicated for seamless loop) -->
-                        <a href="https://txlrs.app/?id=212001" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-dollar-sign text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_get_money">Get Money</span>
+            <!-- Case Type Carousel -->
+            <div class="bg-gradient-to-r from-primary to-secondary py-4 md:py-6 border-b border-gray-200">
+                <div class="case-carousel relative px-4">
+                    <div class="carousel-container">
+                        <!-- Slide 1: Get Money -->
+                        <a href="https://txlrs.app/?id=212001" class="carousel-slide active text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-dollar-sign text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_get_money">Get Money</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_get_money_desc">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
+                            </div>
                         </a>
-                        <a href="https://txlrs.app/?id=212002" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-gavel text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_stay_out_jail">Stay Out of Jail</span>
+                        
+                        <!-- Slide 2: Stay Out of Jail -->
+                        <a href="https://txlrs.app/?id=212002" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-gavel text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_stay_out_jail">Stay Out of Jail</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_stay_out_jail_desc">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
+                            </div>
                         </a>
-                        <a href="https://txlrs.app/?id=212003" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-users text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_divorce_family">Divorce & Family Law</span>
+                        
+                        <!-- Slide 3: Divorce & Family Law -->
+                        <a href="https://txlrs.app/?id=212003" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-users text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_divorce_family">Divorce & Family Law</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_divorce_family_desc">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
+                            </div>
                         </a>
-                        <a href="https://txlrs.app/?id=212004" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-car-crash text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_injury_accident">Injury, Accident, Death</span>
+                        
+                        <!-- Slide 4: Injury, Accident, Death -->
+                        <a href="https://txlrs.app/?id=212004" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-car-crash text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_injury_accident">Injury, Accident, Death</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_injury_accident_desc">Auto Accident, Work Injury, and more…</p>
+                            </div>
                         </a>
-                        <a href="https://txlrs.app/?id=212005" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-passport text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_immigration">Immigration</span>
+                        
+                        <!-- Slide 5: Immigration -->
+                        <a href="https://txlrs.app/?id=212005" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-passport text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_immigration">Immigration</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_immigration_desc">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
+                            </div>
                         </a>
-                        <a href="https://txlrs.app/?id=212006" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-balance-scale text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_other">Other Legal Matter</span>
+                        
+                        <!-- Slide 6: Other Legal Matter -->
+                        <a href="https://txlrs.app/?id=212006" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-balance-scale text-4xl md:text-5xl mb-3"></i>
+                                <h3 class="text-xl md:text-2xl font-bold mb-2" data-i18n="case_other">Other Legal Matter</h3>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_other_desc">any other legal matter not listed above</p>
+                            </div>
                         </a>
-                        <!-- Duplicate for seamless loop -->
-                        <a href="https://txlrs.app/?id=212001" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-dollar-sign text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_get_money">Get Money</span>
-                        </a>
-                        <a href="https://txlrs.app/?id=212002" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-gavel text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_stay_out_jail">Stay Out of Jail</span>
-                        </a>
-                        <a href="https://txlrs.app/?id=212003" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-users text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_divorce_family">Divorce & Family Law</span>
-                        </a>
-                        <a href="https://txlrs.app/?id=212004" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-car-crash text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_injury_accident">Injury, Accident, Death</span>
-                        </a>
-                        <a href="https://txlrs.app/?id=212005" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-passport text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_immigration">Immigration</span>
-                        </a>
-                        <a href="https://txlrs.app/?id=212006" class="slider-item flex items-center gap-3 text-white hover:text-gray-200 transition whitespace-nowrap">
-                            <i class="fas fa-balance-scale text-2xl"></i>
-                            <span class="font-semibold" data-i18n="case_other">Other Legal Matter</span>
-                        </a>
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="flex justify-center gap-2 mt-4">
+                        <button class="carousel-dot active" data-slide="0"></button>
+                        <button class="carousel-dot" data-slide="1"></button>
+                        <button class="carousel-dot" data-slide="2"></button>
+                        <button class="carousel-dot" data-slide="3"></button>
+                        <button class="carousel-dot" data-slide="4"></button>
+                        <button class="carousel-dot" data-slide="5"></button>
                     </div>
                 </div>
             </div>

@@ -169,6 +169,64 @@ window.addEventListener('load', function() {
     }
 });
 
+// Case Type Carousel
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let currentSlide = 0;
+    let carouselInterval;
+
+    function showSlide(index) {
+        // Remove active class from all slides and dots
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Add active class to current slide and dot
+        if (slides[index]) {
+            slides[index].classList.add('active');
+        }
+        if (dots[index]) {
+            dots[index].classList.add('active');
+        }
+        
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        let next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function startCarousel() {
+        carouselInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+    }
+
+    function stopCarousel() {
+        clearInterval(carouselInterval);
+    }
+
+    // Dot click handlers
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+            stopCarousel();
+            showSlide(index);
+            startCarousel();
+        });
+    });
+
+    // Pause on hover
+    const carousel = document.querySelector('.case-carousel');
+    if (carousel) {
+        carousel.addEventListener('mouseenter', stopCarousel);
+        carousel.addEventListener('mouseleave', startCarousel);
+    }
+
+    // Start the carousel
+    if (slides.length > 0) {
+        startCarousel();
+    }
+});
+
 // Back to top button (if added)
 window.addEventListener('scroll', function() {
     const backToTop = document.getElementById('backToTop');
