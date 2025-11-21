@@ -46,6 +46,9 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="assets/js/translations.js"></script>
 </head>
 <body class="font-sans">
     
@@ -65,7 +68,7 @@
                 <div class="hidden md:flex items-center gap-4">
                     <!-- Phone Number Display -->
                     <div class="flex flex-col items-end">
-                        <span class="text-xs text-gray-600 mb-1">Text or Call</span>
+                        <span class="text-xs text-gray-600 mb-1" data-i18n="header_text_or_call">Text or Call</span>
                         <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl font-bold text-primary hover:text-secondary transition">512-872-4400</a>
                     </div>
                     
@@ -82,17 +85,6 @@
                             <option value="210-585-4400">San Antonio</option>
                         </select>
                     </div>
-                    
-                    <!-- Language Dropdown -->
-                    <div class="relative">
-                        <select id="languageSelector" class="form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                            <option value="en" selected>English</option>
-                            <option value="es">Español</option>
-                            <option value="zh-CN">简体中文</option>
-                            <option value="fr">Français</option>
-                            <option value="vi">Tiếng Việt</option>
-                        </select>
-                    </div>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -104,24 +96,24 @@
             <!-- Navigation -->
             <nav class="hidden md:block py-4">
                 <ul class="flex justify-center items-center gap-8 text-base font-medium">
-                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
-                    <li><a href="about.html" class="text-gray-700 hover:text-primary transition">About</a></li>
-                    <li><a href="blog.html" class="text-gray-700 hover:text-primary transition">Blog</a></li>
-                    <li><a href="faqs.html" class="text-gray-700 hover:text-primary transition">FAQs</a></li>
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_about">About</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="faqs.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_faqs">FAQs</a></li>
                     <li class="relative group">
-                        <a href="topics.html" class="text-gray-700 hover:text-primary transition">Topics</a>
+                        <a href="topics.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_topics">Topics</a>
                         <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50">
-                            <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100">Bankruptcy Lawyers</a></li>
-                            <li><a href="topics.html#business" class="block px-4 py-2 text-sm hover:bg-gray-100">Business Lawyers</a></li>
-                            <li><a href="topics.html#criminal" class="block px-4 py-2 text-sm hover:bg-gray-100">Criminal Defense</a></li>
-                            <li><a href="topics.html#divorce" class="block px-4 py-2 text-sm hover:bg-gray-100">Divorce Lawyers</a></li>
-                            <li><a href="topics.html#family" class="block px-4 py-2 text-sm hover:bg-gray-100">Family Law</a></li>
-                            <li><a href="topics.html#immigration" class="block px-4 py-2 text-sm hover:bg-gray-100">Immigration Lawyers</a></li>
-                            <li><a href="topics.html#injury" class="block px-4 py-2 text-sm hover:bg-gray-100">Personal Injury</a></li>
-                            <li><a href="topics.html" class="block px-4 py-2 text-sm font-bold hover:bg-gray-100">View All Topics →</a></li>
+                            <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_bankruptcy">Bankruptcy Lawyers</a></li>
+                            <li><a href="topics.html#business" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_business">Business Lawyers</a></li>
+                            <li><a href="topics.html#criminal" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_criminal">Criminal Defense</a></li>
+                            <li><a href="topics.html#divorce" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_divorce">Divorce Lawyers</a></li>
+                            <li><a href="topics.html#family" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_family">Family Law</a></li>
+                            <li><a href="topics.html#immigration" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_immigration">Immigration Lawyers</a></li>
+                            <li><a href="topics.html#injury" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_injury">Personal Injury</a></li>
+                            <li><a href="topics.html" class="block px-4 py-2 text-sm font-bold hover:bg-gray-100" data-i18n="topic_view_all">View All Topics →</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">For Lawyers</a></li>
+                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
                 </ul>
             </nav>
         </div>
@@ -132,7 +124,7 @@
                 <!-- Mobile Location & Phone -->
                 <div class="mb-4">
                     <div class="text-center mb-3">
-                        <span class="text-xs text-gray-600 block mb-1">Text or Call</span>
+                        <span class="text-xs text-gray-600 block mb-1" data-i18n="header_text_or_call">Text or Call</span>
                         <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-5xl font-bold text-primary">512-872-4400</a>
                     </div>
                     <select id="mobileLocationSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
@@ -147,25 +139,14 @@
                     </select>
                 </div>
                 
-                <!-- Mobile Language -->
-                <div class="mb-4">
-                    <select id="mobileLanguageSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
-                        <option value="en" selected>English</option>
-                        <option value="es">Español</option>
-                        <option value="zh-CN">简体中文</option>
-                        <option value="fr">Français</option>
-                        <option value="vi">Tiếng Việt</option>
-                    </select>
-                </div>
-                
                 <!-- Mobile Menu Links -->
                 <ul class="space-y-2">
-                    <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a></li>
-                    <li><a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About</a></li>
-                    <li><a href="blog.html" class="block py-2 text-gray-700 hover:text-primary">Blog</a></li>
-                    <li><a href="faqs.html" class="block py-2 text-gray-700 hover:text-primary">FAQs</a></li>
-                    <li><a href="topics.html" class="block py-2 text-gray-700 hover:text-primary">Topics</a></li>
-                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 text-primary font-bold">For Lawyers</a></li>
+                    <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_about">About</a></li>
+                    <li><a href="blog.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="faqs.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_faqs">FAQs</a></li>
+                    <li><a href="topics.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_topics">Topics</a></li>
+                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 text-primary font-bold" data-i18n="nav_for_lawyers">For Lawyers</a></li>
                 </ul>
             </div>
         </div>
@@ -175,9 +156,9 @@
     <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Texas Lawyer Referral Service</h1>
-                <p class="text-xl md:text-2xl mb-8">Get a Lawyer</p>
-                <p class="text-lg md:text-xl mb-12">Do you need an experienced lawyer in Texas who can win your case? We have hundreds of qualified lawyers. Contact us now!</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-i18n="hero_title">Texas Lawyer Referral Service</h1>
+                <p class="text-xl md:text-2xl mb-8" data-i18n="hero_subtitle">Get a Lawyer</p>
+                <p class="text-lg md:text-xl mb-12" data-i18n="hero_description">Do you need an experienced lawyer in Texas who can win your case? We have hundreds of qualified lawyers. Contact us now!</p>
                 
                 <!-- Case Type Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -186,8 +167,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-dollar-sign"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Get Money</h3>
-                        <p class="text-sm">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_get_money">Get Money</h3>
+                        <p class="text-sm" data-i18n="case_get_money_desc">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
                     </a>
                     
                     <!-- Stay Out of Jail -->
@@ -195,8 +176,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-gavel"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Stay Out of Jail</h3>
-                        <p class="text-sm">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_stay_out_jail">Stay Out of Jail</h3>
+                        <p class="text-sm" data-i18n="case_stay_out_jail_desc">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
                     </a>
                     
                     <!-- Divorce & Family Law -->
@@ -204,8 +185,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Divorce & Family Law</h3>
-                        <p class="text-sm">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_divorce_family">Divorce & Family Law</h3>
+                        <p class="text-sm" data-i18n="case_divorce_family_desc">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
                     </a>
                     
                     <!-- Injury, Accident, Death -->
@@ -213,8 +194,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-car-crash"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Injury, Accident, Death</h3>
-                        <p class="text-sm">Auto Accident, Work Injury, and more…</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_injury_accident">Injury, Accident, Death</h3>
+                        <p class="text-sm" data-i18n="case_injury_accident_desc">Auto Accident, Work Injury, and more…</p>
                     </a>
                     
                     <!-- Immigration -->
@@ -222,8 +203,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-passport"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Immigration</h3>
-                        <p class="text-sm">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_immigration">Immigration</h3>
+                        <p class="text-sm" data-i18n="case_immigration_desc">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
                     </a>
                     
                     <!-- Other Legal Matter -->
@@ -231,8 +212,8 @@
                         <div class="text-primary text-4xl mb-4 group-hover:scale-110 transition">
                             <i class="fas fa-balance-scale"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-primary">Other Legal Matter</h3>
-                        <p class="text-sm">any other legal matter not listed above</p>
+                        <h3 class="text-xl font-bold mb-2 text-primary" data-i18n="case_other">Other Legal Matter</h3>
+                        <p class="text-sm" data-i18n="case_other_desc">any other legal matter not listed above</p>
                     </a>
                 </div>
             </div>
@@ -248,34 +229,34 @@
                         <div class="flex items-start mb-8">
                             <img src="assets/images/seal.png" alt="TxLRS Seal" class="w-48 h-48 mr-8 float-left">
                             <div>
-                                <h2 class="text-3xl font-bold text-gray-900 mb-4">Texas Lawyer Referral Service</h2>
-                                <h3 class="text-xl text-gray-700 mb-4">Do you need an experienced lawyer in Texas who can win your case? We have hundreds of qualified lawyers. Contact us now!</h3>
+                                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="content_main_title">Texas Lawyer Referral Service</h2>
+                                <h3 class="text-xl text-gray-700 mb-4" data-i18n="content_main_subtitle">Do you need an experienced lawyer in Texas who can win your case? We have hundreds of qualified lawyers. Contact us now!</h3>
                             </div>
                         </div>
                         
-                        <p class="mb-4 text-lg"><strong>This service is FREE for people who need an attorney.</strong></p>
+                        <p class="mb-4 text-lg"><strong data-i18n="content_free_service">This service is FREE for people who need an attorney.</strong></p>
                         
-                        <p class="mb-4">TxLRS is one of the only certified lawyer referral services in Texas that operates for the benefit of individuals who need a lawyer or need legal representation.</p>
+                        <p class="mb-4" data-i18n="content_certified">TxLRS is one of the only certified lawyer referral services in Texas that operates for the benefit of individuals who need a lawyer or need legal representation.</p>
                         
-                        <p class="mb-4">There are many situations where hiring a lawyer is in your best interests. Chances are if you think you might need a particular lawyer, it's a good idea to at least contact one to see if he or she can help. If you feel that you can't afford a lawyer, TxLRS has programs that may help you.</p>
+                        <p class="mb-4" data-i18n="content_when_need">There are many situations where hiring a lawyer is in your best interests. Chances are if you think you might need a particular lawyer, it's a good idea to at least contact one to see if he or she can help. If you feel that you can't afford a lawyer, TxLRS has programs that may help you.</p>
                         
-                        <p class="mb-4">We can refer you to experienced lawyers in Texas. Whether you need a personal injury lawyer for your auto accident injury or slip and fall, we have you covered. Furthermore, if you are going through a divorce and need assistance with a Texas child custody lawyer, we can provide you with qualified referrals. Also, do you need a business law attorney? Moreover, we can refer you to Texas lawyers for all of your legal needs. We have access to refer you to local attorneys in your area and the practice area that you are seeking assistance with.</p>
+                        <p class="mb-4" data-i18n="content_can_refer">We can refer you to experienced lawyers in Texas. Whether you need a personal injury lawyer for your auto accident injury or slip and fall, we have you covered. Furthermore, if you are going through a divorce and need assistance with a Texas child custody lawyer, we can provide you with qualified referrals. Also, do you need a business law attorney? Moreover, we can refer you to Texas lawyers for all of your legal needs. We have access to refer you to local attorneys in your area and the practice area that you are seeking assistance with.</p>
                         
-                        <p class="mb-8">The Texas Lawyer Referral Service can help you if you need a lawyer in Dallas, Fort Worth, Houston, Austin, San Antonio, Beaumont or other places in Texas.</p>
+                        <p class="mb-8" data-i18n="content_cities">The Texas Lawyer Referral Service can help you if you need a lawyer in Dallas, Fort Worth, Houston, Austin, San Antonio, Beaumont or other places in Texas.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">TxLRS Can Refer You to Texas Lawyers in All Practice Areas</h2>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8" data-i18n="content_practice_areas_title">TxLRS Can Refer You to Texas Lawyers in All Practice Areas</h2>
                         
                         <img src="assets/images/service.jpg" alt="Texas Lawyer Referral Service" class="float-right ml-8 mb-4 w-64 rounded-lg shadow-md">
                         
-                        <p class="mb-4">TxLRS covers all areas of law, including Divorce, Child Custody, Immigration, and Personal Injury. In addition, other practice areas include Criminal Defense, Car Accidents, DUI & DWI, and much more.</p>
+                        <p class="mb-4" data-i18n="content_practice_areas_desc">TxLRS covers all areas of law, including Divorce, Child Custody, Immigration, and Personal Injury. In addition, other practice areas include Criminal Defense, Car Accidents, DUI & DWI, and much more.</p>
                         
-                        <p class="mb-8">The Texas Lawyer Referral Service is a community service program operated by a 501(c)(3) non-profit organization. The service has qualified lawyers and operates throughout many areas of Texas.</p>
+                        <p class="mb-8" data-i18n="content_nonprofit">The Texas Lawyer Referral Service is a community service program operated by a 501(c)(3) non-profit organization. The service has qualified lawyers and operates throughout many areas of Texas.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Need an Attorney in Texas? Contact Us Today!</h2>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8" data-i18n="content_contact_title">Need an Attorney in Texas? Contact Us Today!</h2>
                         
-                        <p class="mb-4">This service is certified as a lawyer referral service as required by the State of Texas under <a href="http://www.statutes.legis.state.tx.us/Docs/OC/htm/OC.952.htm" target="_blank" class="text-primary hover:underline">Chapter 952, Occupations Code</a>.</p>
+                        <p class="mb-4"><span data-i18n="content_certification">This service is certified as a lawyer referral service as required by the State of Texas under</span> <a href="http://www.statutes.legis.state.tx.us/Docs/OC/htm/OC.952.htm" target="_blank" class="text-primary hover:underline">Chapter 952, Occupations Code</a>.</p>
                         
-                        <p class="mb-8">Text or call us today to get a lawyer to win your case.</p>
+                        <p class="mb-8" data-i18n="content_call_today">Text or call us today to get a lawyer to win your case.</p>
                         
                         <!-- Contact Information Card -->
                         <div class="bg-gray-50 border-t-4 border-primary rounded-lg p-6 mt-8">
@@ -301,19 +282,19 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <!-- English Links -->
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
-                        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
-                        <li><a href="blog.html" class="hover:text-primary transition">Blog</a></li>
-                        <li><a href="faqs.html" class="hover:text-primary transition">FAQs</a></li>
-                        <li><a href="topics.html" class="hover:text-primary transition">Topics</a></li>
+                        <li><a href="index.html" class="hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition" data-i18n="nav_about">About</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                        <li><a href="faqs.html" class="hover:text-primary transition" data-i18n="nav_faqs">FAQs</a></li>
+                        <li><a href="topics.html" class="hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
                     </ul>
                 </div>
                 
                 <!-- Spanish Links -->
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_spanish_links">Enlaces Rápidos</h4>
                     <ul class="space-y-2">
                         <li><a href="inicio.html" class="hover:text-primary transition">Inicio</a></li>
                         <li><a href="acerca-de.html" class="hover:text-primary transition">Acerca de</a></li>
@@ -325,7 +306,7 @@
                 
                 <!-- Texas Locations -->
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Text or Call</h4>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_texas_locations">Text or Call</h4>
                     <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
                         <div>
                             <p>Austin, Texas</p>
@@ -356,16 +337,16 @@
             </div>
             
             <div class="border-t border-gray-700 pt-8 text-center text-sm">
-                <p class="mb-4">This service is certified as a lawyer referral service as required by the State of Texas under Chapter 952, Occupations Code.</p>
+                <p class="mb-4" data-i18n="footer_certification">This service is certified as a lawyer referral service as required by the State of Texas under Chapter 952, Occupations Code.</p>
                 
-                <p class="mb-4">Copyright © 2014 - <span id="currentYear"></span> Texas Lawyer Referral Service. All rights reserved.</p>
+                <p class="mb-4"><span data-i18n="footer_copyright">Copyright ©</span> 2014 - <span id="currentYear"></span> <span data-i18n="footer_all_rights">Texas Lawyer Referral Service. All rights reserved.</span></p>
                 
                 <p class="mb-4">
-                    <a href="privacy-policy.html" class="hover:text-primary transition">Privacy Policy</a> | 
-                    <a href="terms-of-service.html" class="hover:text-primary transition">Terms of Service</a>
+                    <a href="privacy-policy.html" class="hover:text-primary transition" data-i18n="footer_privacy">Privacy Policy</a> | 
+                    <a href="terms-of-service.html" class="hover:text-primary transition" data-i18n="footer_terms">Terms of Service</a>
                 </p>
                 
-                <p class="text-gray-400">This site is for general informational purposes only. The information on this site is not legal advice and should not be used in place of legal advice. Consult a lawyer for legal advice.</p>
+                <p class="text-gray-400" data-i18n="footer_disclaimer">This site is for general informational purposes only. The information on this site is not legal advice and should not be used in place of legal advice. Consult a lawyer for legal advice.</p>
             </div>
         </div>
     </footer>
@@ -375,5 +356,8 @@
     
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- Language Handler -->
+    <script src="assets/js/language-handler.js"></script>
 </body>
 </html>
