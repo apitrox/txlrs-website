@@ -88,6 +88,5 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- On the mobile display, remove some of the white space above and below the phone number (tighten up the use of our limited space).
-- On the mobile display, remove the white boarder around the "GET A LAWYER" image and the slider - make them extend all the way from the left side and right side of the display with no white space, same for the top of the display.
+- On the mobile display, remove the white space above and on the sides of the "GET A LAWYER" image so that the blue background of the image is all the way to the edge of the screen with no white space between the image and the edge of the screen.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
