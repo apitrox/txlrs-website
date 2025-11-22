@@ -73,7 +73,7 @@
                             </div>
                             
                             <!-- Location Selector with Responsive Fallback -->
-                            <div class="relative flex items-center">
+                            <div class="relative flex items-center gap-2">
                                 <!-- Full dropdown for larger screens -->
                                 <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
                                     <option value="512-872-4400" selected>Austin</option>
@@ -88,7 +88,7 @@
                                 
                                 <!-- Icon button for medium screens -->
                                 <div class="xl:hidden relative">
-                                    <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                    <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-16 lg:w-20 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
                                         <i class="fas fa-map-marker-alt text-3xl"></i>
                                         <i class="fas fa-chevron-down text-sm"></i>
                                     </button>
@@ -108,7 +108,7 @@
                                 
                                 <!-- Language button for medium screens -->
                                 <div class="xl:hidden relative">
-                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 w-16 lg:w-20 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
                                         <i class="fas fa-language text-3xl"></i>
                                         <i class="fas fa-chevron-down text-sm"></i>
                                     </button>
@@ -137,7 +137,7 @@
                         <img src="assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="w-full h-auto">
                     </div>
                     
-                    <!-- 2. Phone Number and Location Menu -->
+                    <!-- 2. Phone Number and Location/Language Menus -->
                     <div class="flex items-center justify-between gap-3">
                         <!-- Phone Number (Left) -->
                         <div class="flex flex-col flex-1">
@@ -145,42 +145,45 @@
                             <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-4xl font-black text-primary leading-none break-all">512-872-4400</a>
                         </div>
                         
-                        <!-- Location Hamburger Menu (Right) -->
-                        <div class="relative flex-shrink-0">
-                            <button id="mobileLocationMenuBtn" class="h-20 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
-                                <i class="fas fa-map-marker-alt text-3xl"></i>
-                                <i class="fas fa-chevron-down text-sm"></i>
-                            </button>
-                            <div id="mobileLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
-                                <div class="py-2">
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
-                                    <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                        <!-- Button Container (Right) -->
+                        <div class="flex gap-2 flex-shrink-0">
+                            <!-- Location Hamburger Menu -->
+                            <div class="relative">
+                                <button id="mobileLocationMenuBtn" class="h-20 w-16 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                    <i class="fas fa-map-marker-alt text-3xl"></i>
+                                    <i class="fas fa-chevron-down text-sm"></i>
+                                </button>
+                                <div id="mobileLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                                    <div class="py-2">
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Language Hamburger Menu (Right) -->
-                        <div class="relative flex-shrink-0">
-                            <button id="mobileLanguageMenuBtn" class="h-20 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
-                                <i class="fas fa-language text-3xl"></i>
-                                <i class="fas fa-chevron-down text-sm"></i>
-                            </button>
-                            <div id="mobileLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
-                                <div class="py-2">
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="de">Deutsch (German)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="hi">हिन्दी (Hindi)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ru">Русский (Russian)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
-                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                            
+                            <!-- Language Hamburger Menu -->
+                            <div class="relative">
+                                <button id="mobileLanguageMenuBtn" class="h-20 w-16 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                    <i class="fas fa-language text-3xl"></i>
+                                    <i class="fas fa-chevron-down text-sm"></i>
+                                </button>
+                                <div id="mobileLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                                    <div class="py-2">
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="de">Deutsch (German)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="hi">हिन्दी (Hindi)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ru">Русский (Russian)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

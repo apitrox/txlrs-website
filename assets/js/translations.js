@@ -107,17 +107,17 @@ const translations = {
         
         // Case Type Cards
         case_get_money: "Get Money",
-        case_get_money_desc: "and Lots of It - for you or someone else (any matter involving a lawsuit for money)",
+        case_get_money_desc: "and Lots of It - any lawsuit for you to be paid money…",
         case_stay_out_jail: "Stay Out of Jail",
-        case_stay_out_jail_desc: "any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)",
+        case_stay_out_jail_desc: "any Criminal matter - murder, drugs, guns, DUI/DWI, theft, assault, sex offenses, and more…",
         case_divorce_family: "Divorce & Family Law",
-        case_divorce_family_desc: "any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)",
+        case_divorce_family_desc: "any Family Law matter - divorce, child support, child custody, access & visitation, adoption, and more…",
         case_injury_accident: "Injury, Accident, Death",
-        case_injury_accident_desc: "Auto Accident, Work Injury, and more…",
+        case_injury_accident_desc: "any Incident that causes Injury or Death - Auto, Truck & Motorcycle Accidents, Workplace Injuries, Wrongful Death, Slip & Fall, and more…",
         case_immigration: "Immigration",
-        case_immigration_desc: "any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)",
+        case_immigration_desc: "any Immigration matter - naturalization, asylum, deportation, work permit, sponsorship, more…",
         case_other: "Other Legal Matter",
-        case_other_desc: "any other legal matter not listed above",
+        case_other_desc: "any other legal matter…",
         
         // Main Content
         content_main_title: "Texas Lawyer Referral Service",

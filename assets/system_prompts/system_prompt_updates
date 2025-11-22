@@ -48,3 +48,10 @@ For the `txlrs-website` project make the following changes:
 - Add another dropdown image in the header, to the right of the location dropdown image, this one a language dropdown image. It will have the same appearance as the location dropdown image except instead of a PIN symbol it will use a language symbol, like the image I proviced.
 - When the language dropdown image is clicked, it is to display the same languages as are listed in the language dropdown on the `afca-website` project website.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- Update the language symbol in the language dropdown image to be white text, on the blue background of language dropdown image.
+- The language dropdown image should be the same width as the location dropdown image.
+- The language dropdown image and the location dropdown image should be almost side by side with just a little white space between them.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
