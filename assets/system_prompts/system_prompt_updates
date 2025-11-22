@@ -105,3 +105,8 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - For the area on the page just below the header area, that contains the name "Texas Lawyer Referral Service" update the text and font style to match the image provided that reads "TEXAS LAWYER REFERRAL SERVICE". Make the name "TEXAS LAWYER REFERRAL SERVICE" dynamically resize to fit the width of the page. Below the name "TEXAS LAWYER REFERRAL SERVICE" put the text "Do you need an excellent Texas attorney who can win your case? Contact us now!"  This will be displayed like its own section on the page that is always the full width of the page and will have a blue background. Below this section, on the Home page, will be the cards (as they are) describing the various areas of law/types of cases (no changes to these).
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- For the name "TEXAS LAWYER REFERRAL SERVICE" located under the header, change the font to Friz Quadrata. Do not allow the name to break on multiple lines, have it resize dynamically with the display size to stay on one line.
+- Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
