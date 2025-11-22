@@ -25,7 +25,9 @@ For the `txlrs-website` project make the following changes:
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
 
 For the `txlrs-website` project make the following changes:
-- make the phone number smaller on the mobile phone layout - or allow it to resize rather than wrap. 
-- make the background color of the images `GET_A_LAWYER_banner_down.png` and `GET_A_LAWYER_banner_right.png` to be #3d79cf
-- make the background color of the slider images to be #3d79cf
+- Use hex color #294d7a as the base color for this project website. 
+- Make the phone number hex color #294d7a. 
+- The header area does not resize smoothly on a desktop display, it jumps rather than smooth resize. Update so that it resizes smoothly. It should jump only when it resizes to a mobile device display.
+- On the desktop display, to not allow the location dropdown to resize so that the current location is no longer readable. Rather, if it needs to resize smaller so that the name of the location does not display it is to resize to the pin icon that is used on the mobile device display.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+

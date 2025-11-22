@@ -111,6 +111,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Desktop Location Hamburger Menu (for medium screens)
+    const desktopLocationMenuBtn = document.getElementById('desktopLocationMenuBtn');
+    const desktopLocationMenu = document.getElementById('desktopLocationMenu');
+    
+    if (desktopLocationMenuBtn && desktopLocationMenu) {
+        desktopLocationMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            desktopLocationMenu.classList.toggle('hidden');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!desktopLocationMenu.contains(e.target) && !desktopLocationMenuBtn.contains(e.target)) {
+                desktopLocationMenu.classList.add('hidden');
+            }
+        });
+        
+        // Desktop location option clicks
+        const desktopLocationOptions = document.querySelectorAll('.desktop-location-option');
+        desktopLocationOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const phoneNumber = this.getAttribute('data-phone');
+                if (phoneNumber) {
+                    // Update desktop phone display
+                    if (phoneDisplay) {
+                        phoneDisplay.textContent = formatPhoneNumber(phoneNumber);
+                        phoneDisplay.href = 'tel:' + phoneNumber;
+                    }
+                    
+                    // Update desktop selector if visible
+                    if (locationSelector) {
+                        locationSelector.value = phoneNumber;
+                    }
+                    
+                    // Also update mobile
+                    const mobilePhoneDisplays = document.querySelectorAll('#mobilePhoneDisplay');
+                    mobilePhoneDisplays.forEach(display => {
+                        display.textContent = formatPhoneNumber(phoneNumber);
+                        display.href = 'tel:' + phoneNumber;
+                    });
+                    
+                    // Close menu
+                    desktopLocationMenu.classList.add('hidden');
+                }
+            });
+        });
+    }
+    
     // Language Selector (Desktop)
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {

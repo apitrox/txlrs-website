@@ -32,7 +32,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#215283',
+                        primary: '#294d7a',
                         secondary: '#135280',
                         accent: '#113a58',
                     },
@@ -60,21 +60,22 @@
                 <!-- Desktop Header -->
                 <div class="hidden md:block">
                     <!-- GET A LAWYER Banner with Phone to Right -->
-                    <div class="flex items-center justify-between gap-6">
+                    <div class="flex items-center justify-between gap-2 lg:gap-6">
                         <div class="flex-shrink-0" style="background-color: #3d79cf;">
-                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-24">
+                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-20 lg:h-24">
                         </div>
                         
-                        <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-2 lg:gap-6">
                             <!-- Phone Number Display -->
                             <div class="flex flex-col">
-                                <span class="text-lg font-semibold text-gray-700 mb-1" data-i18n="header_text_or_call_24_7">Text or Call 24/7</span>
-                                <a href="tel:512-872-4400" id="phoneDisplay" class="text-6xl font-bold text-primary hover:text-secondary transition whitespace-nowrap">512-872-4400</a>
+                                <span class="text-sm lg:text-lg font-semibold text-gray-700 mb-1" data-i18n="header_text_or_call_24_7">Text or Call 24/7</span>
+                                <a href="tel:512-872-4400" id="phoneDisplay" class="text-4xl lg:text-6xl font-bold text-primary hover:text-secondary transition whitespace-nowrap">512-872-4400</a>
                             </div>
                             
-                            <!-- Location Dropdown -->
-                            <div class="relative">
-                                <select id="locationSelector" class="form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <!-- Location Selector with Responsive Fallback -->
+                            <div class="relative flex items-center">
+                                <!-- Full dropdown for larger screens -->
+                                <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
                                     <option value="512-872-4400" selected>Austin</option>
                                     <option value="214-731-4400">Dallas</option>
                                     <option value="915-233-4400">El Paso</option>
@@ -84,6 +85,25 @@
                                     <option value="956-363-4400">Laredo</option>
                                     <option value="210-585-4400">San Antonio</option>
                                 </select>
+                                
+                                <!-- Icon button for medium screens -->
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLocationMenuBtn" class="p-3 bg-primary text-white rounded-lg hover:bg-secondary transition">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </button>
+                                    <div id="desktopLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                                        <div class="py-2">
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
