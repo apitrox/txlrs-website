@@ -102,8 +102,8 @@ const translations = {
         
         // Hero Section
         hero_title: "Texas Lawyer Referral Service",
-        hero_subtitle: "Get a Lawyer",
-        hero_description: "Do you need an experienced lawyer in Texas who can win your case? We have hundreds of qualified lawyers. Contact us now!",
+        hero_subtitle: "Do you need an excellent Texas attorney who can win your case? Contact us now!",
+        hero_description: "",
         
         // Case Type Cards
         case_get_money: "Get Money",

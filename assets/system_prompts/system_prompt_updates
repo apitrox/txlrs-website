@@ -98,7 +98,8 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- For the mobile display allow the header to scroll, no sticky header. Keep the sticky header for the desktop display.
+- For the mobile display allow the header to scroll, no sticky header.
+- For the desktop display, make the heade sticky, no scroll.
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
 
 
@@ -108,7 +109,11 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- For the name "TEXAS LAWYER REFERRAL SERVICE" located under the header, change the font to (1) Friz Quadrata, 2. Trajan Pro (or a variant), 3. Times New Roman. Do not allow the name to break on multiple lines, have it resize dynamically with the display size to stay on one line. Do not allow the name to extend off the right or left side of the page.
-- The text below the name is to read, "Do you need an excellent Texas attorney who can win your case? Contact us now!"
+- For the name "TEXAS LAWYER REFERRAL SERVICE" located under the header, change the font to (1) Cinzel (first choice), (2) Marcellus SC (option 2), 3. Times New Roman (final backup). Do not allow the name to break on multiple lines. Do not allow the name to extend off the right side of the page, instead dynamically resize.
+- Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- For the name "TEXAS LAWYER REFERRAL SERVICE" located under the header, change the font to (1) Cinzel (first choice), (2) Marcellus SC (option 2), 3. Times New Roman (final backup). Do not allow the name to break on multiple lines. Do not allow the name to extend off the right side of the page, instead dynamically resize.
 - Put a very small white space between this section and the section below that contains the area of law/case type cards.
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
