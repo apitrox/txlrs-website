@@ -60,3 +60,8 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - Remove German, Hindi and Russian from the list of languages or language translations.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- Create additional cards on the home page, one each for Bankruptcy, Real Estate, Estate Planning, Consumer Debt, and Corporate Litigation. Sort the new cards after the existing cards, except put the "other" last in the list.  Do not update the slider.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
