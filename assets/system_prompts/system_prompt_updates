@@ -90,3 +90,8 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - On both the mobile display and the desktop display there is a border/padding of white space on the left and right of the header area. Make the header area stretch all the way to the edge of the page with no border or padding on the right or left.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+For the `txlrs-website` project make the following changes:
+- On both the mobile display and the desktop display there is a border/padding of white space on the right of the right side of the entire page. Remove that border/padding so that the page contents extend to the edge of the page.
+- Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
