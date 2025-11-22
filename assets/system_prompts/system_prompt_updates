@@ -58,5 +58,5 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- Update the language translation dropdown image and the location dropdown image to both be narrower and both be the same width for all displays.
+- Remove German, Hindi and Russian from the list of languages or language translations.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.

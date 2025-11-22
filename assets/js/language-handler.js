@@ -93,9 +93,6 @@
                 { code: 'zh', name: '中文 (Chinese)' },
                 { code: 'en', name: 'English (English)' },
                 { code: 'fr', name: 'Français (French)' },
-                { code: 'de', name: 'Deutsch (German)' },
-                { code: 'hi', name: 'हिन्दी (Hindi)' },
-                { code: 'ru', name: 'Русский (Russian)' },
                 { code: 'es', name: 'Español (Spanish)' },
                 { code: 'vi', name: 'Tiếng Việt (Vietnamese)' }
             ];
@@ -112,9 +109,6 @@
                 { code: 'zh', name: '中文 (Chinese)' },
                 { code: 'en', name: 'English (English)' },
                 { code: 'fr', name: 'Français (French)' },
-                { code: 'de', name: 'Deutsch (German)' },
-                { code: 'hi', name: 'हिन्दी (Hindi)' },
-                { code: 'ru', name: 'Русский (Russian)' },
                 { code: 'es', name: 'Español (Spanish)' },
                 { code: 'vi', name: 'Tiếng Việt (Vietnamese)' }
             ];

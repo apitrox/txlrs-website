@@ -107,16 +107,16 @@ const translations = {
         
         // Case Type Cards
         case_get_money: "Get Money",
-        case_get_money_desc: "and Lots of It - any lawsuit for you to be paid money…",
+        case_get_money_desc: "Lots of Money - any lawsuit for you to be paid money…",
         case_stay_out_jail: "Stay Out of Jail",
-        case_stay_out_jail_desc: "any Criminal matter - murder, drugs, guns, DUI/DWI, theft, assault, sex offenses, and more…",
+        case_stay_out_jail_desc: "any Criminal matter - murder, drugs, guns, DUI/DWI, theft, assault, sex offenses, white-collar crimes, and more…",
         case_divorce_family: "Divorce & Family Law",
-        case_divorce_family_desc: "any Family Law matter - divorce, child support, child custody, access & visitation, adoption, and more…",
+        case_divorce_family_desc: "any Family Law matter - divorce, child support, child custody, guardianship, parental rights, grandparent rights, access & visitation, adoption, and more…",
         case_injury_accident: "Injury, Accident, Death",
-        case_injury_accident_desc: "any Incident that causes Injury or Death - Auto, Truck & Motorcycle Accidents, Workplace Injuries, Wrongful Death, Slip & Fall, and more…",
+        case_injury_accident_desc: "any Incident that causes Injury or Death - auto, truck & motorcycle accidents, workplace injuries, wrongful death, slip & fall, and more…",
         case_immigration: "Immigration",
         case_immigration_desc: "any Immigration matter - naturalization, asylum, deportation, work permit, sponsorship, more…",
-        case_other: "Other Legal Matter",
+        case_other: "Other Legal Matters",
         case_other_desc: "any other legal matter…",
         
         // Main Content
