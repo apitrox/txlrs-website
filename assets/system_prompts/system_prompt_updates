@@ -70,3 +70,9 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - Decrease the height of the slider on the desktop display version to a height the just fits the slider image with the most content.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- On the mobile display, make the phone number and dropdowns 2 rows. The first row is the phone number only. The second row is the phrase "Text or Call 24/7", a hamburger menu of the page navigation, the location dropdown and the language translation dropdown.
+- Adjust the location dropdown and language dropdown when displayed on the mobile display so that the down arrow is to the right of the symbol, making these dropdown images wider and not as high so they fit better the space available.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
