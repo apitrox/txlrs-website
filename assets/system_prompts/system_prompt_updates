@@ -58,6 +58,5 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- Update the symbol in the language translation dropdown image to be white text, on the blue background.
-- The letter "A" and the Chinese/Japanese character 文 are to be characters in white text on the blue background of the dropdown image.
+- Update the language translation dropdown image and the location dropdown image to both be narrower and both be the same width for all displays.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
