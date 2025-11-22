@@ -18,6 +18,3 @@ For the `txlrs-website` project make the following changes to language translati
 - Implement machine translation for any languages that do not have a default translation
 - When the website is first accessed by a user for the first visit this session, default to English.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
-
-
-![alt text](image.png)

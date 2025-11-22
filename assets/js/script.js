@@ -65,6 +65,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Mobile Location Hamburger Menu
+    const mobileLocationMenuBtn = document.getElementById('mobileLocationMenuBtn');
+    const mobileLocationMenu = document.getElementById('mobileLocationMenu');
+    
+    if (mobileLocationMenuBtn && mobileLocationMenu) {
+        mobileLocationMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            mobileLocationMenu.classList.toggle('hidden');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileLocationMenu.contains(e.target) && !mobileLocationMenuBtn.contains(e.target)) {
+                mobileLocationMenu.classList.add('hidden');
+            }
+        });
+        
+        // Location option clicks
+        const locationOptions = document.querySelectorAll('.location-option');
+        locationOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const phoneNumber = this.getAttribute('data-phone');
+                if (phoneNumber) {
+                    // Update mobile phone display
+                    const mobilePhoneDisplays = document.querySelectorAll('#mobilePhoneDisplay');
+                    mobilePhoneDisplays.forEach(display => {
+                        display.textContent = formatPhoneNumber(phoneNumber);
+                        display.href = 'tel:' + phoneNumber;
+                    });
+                    
+                    // Also update desktop
+                    if (phoneDisplay) {
+                        phoneDisplay.textContent = formatPhoneNumber(phoneNumber);
+                        phoneDisplay.href = 'tel:' + phoneNumber;
+                    }
+                    if (locationSelector) {
+                        locationSelector.value = phoneNumber;
+                    }
+                    
+                    // Close menu
+                    mobileLocationMenu.classList.add('hidden');
+                }
+            });
+        });
+    }
+    
     // Language Selector (Desktop)
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {

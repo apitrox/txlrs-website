@@ -16,6 +16,7 @@ const translations = {
         
         // Header
         header_text_or_call: "短信或致电",
+        header_text_or_call_24_7: "短信或致电 24/7",
         header_location_label: "选择位置",
         
         // Hero Section
@@ -96,6 +97,7 @@ const translations = {
         
         // Header
         header_text_or_call: "Text or Call",
+        header_text_or_call_24_7: "Text or Call 24/7",
         header_location_label: "Select Location",
         
         // Hero Section
@@ -176,6 +178,7 @@ const translations = {
         
         // Header
         header_text_or_call: "Texto ou Appelez",
+        header_text_or_call_24_7: "Texto ou Appelez 24/7",
         header_location_label: "Sélectionner l'emplacement",
         
         // Hero Section
@@ -248,6 +251,7 @@ const translations = {
         name: "Deutsch (German)",
         // Uses machine translation - Google Translate API would be used
         nav_home: "Home",
+        header_text_or_call_24_7: "Text oder Anruf 24/7",
         nav_about: "About",
         nav_blog: "Blog",
         nav_faqs: "FAQs",
@@ -257,6 +261,7 @@ const translations = {
     
     hi: {
         name: "हिन्दी (Hindi)",
+        header_text_or_call_24_7: "टेक्स्ट या कॉल 24/7",
         // Uses machine translation - Google Translate API would be used
         nav_home: "Home",
         nav_about: "About",
@@ -268,6 +273,7 @@ const translations = {
     
     ru: {
         name: "Русский (Russian)",
+        header_text_or_call_24_7: "Текст или Звонок 24/7",
         // Uses machine translation - Google Translate API would be used
         nav_home: "Home",
         nav_about: "About",
@@ -279,6 +285,7 @@ const translations = {
     
     es: {
         name: "Español (Spanish)",
+        header_text_or_call_24_7: "Texto o Llamada 24/7",
         // Navigation
         nav_home: "Inicio",
         nav_about: "Acerca de",
@@ -359,6 +366,7 @@ const translations = {
     
     vi: {
         name: "Tiếng Việt (Vietnamese)",
+        header_text_or_call_24_7: "Nhắn tin hoặc Gọi 24/7",
         // Navigation
         nav_home: "Trang chủ",
         nav_about: "Giới thiệu",
