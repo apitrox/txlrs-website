@@ -33,6 +33,17 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- In this PIN dropdown, make the pin image portion of the icon larger and add a downward pointing arrow to indicate to the user that it is a dropdown (like in other word based dropdowns)
-- Make the display size of the phone number 30% larger when displayed on both desktop and mobile.
+- In this PIN dropdown, put the downward facing arrow below the PIN icon, to make the entire image narrower.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- In the slider images, put the icon to the left of the name rather than above the name. 
+- Make the size of the name 30% larger.
+- Make the background color of the slider images color #294d7a. 
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- Add another dropdown image in the header, to the right of the location dropdown image, this one a language dropdown image. It will have the same appearance as the location 
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
