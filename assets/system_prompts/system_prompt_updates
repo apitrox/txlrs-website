@@ -23,3 +23,9 @@ For the `txlrs-website` project make the following changes:
 - at the very top of the header area, use the image `GET_A_LAWYER_banner_down.png` when the phone number is positioned below the image and use the image `GET_A_LAWYER_banner_right.png` when the phone number is positioned to the right of the image.
 - make the phone number larger and use the same color as the background of the `GET_A_LAWYER_banner_down.png` image
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+For the `txlrs-website` project make the following changes:
+- make the phone number smaller on the mobile phone layout - or allow it to resize rather than wrap. 
+- make the background color of the images `GET_A_LAWYER_banner_down.png` and `GET_A_LAWYER_banner_right.png` to be #3d79cf
+- make the background color of the slider images to be #3d79cf
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
