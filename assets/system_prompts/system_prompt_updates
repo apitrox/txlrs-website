@@ -98,5 +98,5 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- On both the mobile display can you resize the phone number to the size of the display?  If so, have the phone number resize to the width of the display so that the amount of border/padding on the right and left side of the phone number is about the same as the amount of border/padding above and below the phone number.
+- For the mobile display allow the header to scroll, no sticky header. Keep the sticky header for the desktop display.
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
