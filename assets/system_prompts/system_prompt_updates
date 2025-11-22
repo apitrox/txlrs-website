@@ -73,13 +73,17 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- On the mobile display, make the phone number larger and bolder. Make the phone number resize so that it is always as wide as the mobile page display.
-- On the mobile display, increase the size of the phrase "Text or Call 24/7" by about 20%.
+- On the mobile display, make the phone number one size smaller and make it thicker/bolder.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
 
 
 For the `txlrs-website` project make the following changes:
 - On the mobile display, remove some of the white space above and below the phone number (tighten up the use of our limited space).
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
+
+
+For the `txlrs-website` project make the following changes:
+- Reduce the amount of white space immediately above the slider, about half of what it currently is.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
 
 
