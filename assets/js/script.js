@@ -159,6 +159,86 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Desktop Language Menu Handlers
+    const desktopLanguageMenuBtn = document.getElementById('desktopLanguageMenuBtn');
+    const desktopLanguageMenu = document.getElementById('desktopLanguageMenu');
+    
+    if (desktopLanguageMenuBtn && desktopLanguageMenu) {
+        // Toggle menu on button click
+        desktopLanguageMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            desktopLanguageMenu.classList.toggle('hidden');
+            // Close location menu if open
+            const desktopLocationMenu = document.getElementById('desktopLocationMenu');
+            if (desktopLocationMenu) {
+                desktopLocationMenu.classList.add('hidden');
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!desktopLanguageMenuBtn.contains(e.target) && !desktopLanguageMenu.contains(e.target)) {
+                desktopLanguageMenu.classList.add('hidden');
+            }
+        });
+        
+        // Handle language selection
+        const desktopLanguageOptions = document.querySelectorAll('.desktop-language-option');
+        desktopLanguageOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const langCode = this.getAttribute('data-lang');
+                
+                // Change language using the language handler
+                if (typeof LanguageManager !== 'undefined' && LanguageManager.changeLanguage) {
+                    LanguageManager.changeLanguage(langCode);
+                }
+                
+                // Close menu
+                desktopLanguageMenu.classList.add('hidden');
+            });
+        });
+    }
+    
+    // Mobile Language Menu Handlers
+    const mobileLanguageMenuBtn = document.getElementById('mobileLanguageMenuBtn');
+    const mobileLanguageMenu = document.getElementById('mobileLanguageMenu');
+    
+    if (mobileLanguageMenuBtn && mobileLanguageMenu) {
+        // Toggle menu on button click
+        mobileLanguageMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            mobileLanguageMenu.classList.toggle('hidden');
+            // Close location menu if open
+            const mobileLocationMenu = document.getElementById('mobileLocationMenu');
+            if (mobileLocationMenu) {
+                mobileLocationMenu.classList.add('hidden');
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileLanguageMenuBtn.contains(e.target) && !mobileLanguageMenu.contains(e.target)) {
+                mobileLanguageMenu.classList.add('hidden');
+            }
+        });
+        
+        // Handle language selection
+        const mobileLanguageOptions = document.querySelectorAll('.mobile-language-option');
+        mobileLanguageOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const langCode = this.getAttribute('data-lang');
+                
+                // Change language using the language handler
+                if (typeof LanguageManager !== 'undefined' && LanguageManager.changeLanguage) {
+                    LanguageManager.changeLanguage(langCode);
+                }
+                
+                // Close menu
+                mobileLanguageMenu.classList.add('hidden');
+            });
+        });
+    }
+    
     // Language Selector (Desktop)
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {

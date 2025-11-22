@@ -105,6 +105,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <!-- Language button for medium screens -->
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <i class="fas fa-language text-3xl"></i>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div id="desktopLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                                        <div class="py-2">
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="de">Deutsch (German)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="hi">हिन्दी (Hindi)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ru">Русский (Russian)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -141,6 +161,26 @@
                                     <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
                                     <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
                                     <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Language Hamburger Menu (Right) -->
+                        <div class="relative flex-shrink-0">
+                            <button id="mobileLanguageMenuBtn" class="h-20 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                <i class="fas fa-language text-3xl"></i>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div id="mobileLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                                <div class="py-2">
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="de">Deutsch (German)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="hi">हिन्दी (Hindi)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ru">Русский (Russian)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                                    <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
                                 </div>
                             </div>
                         </div>
