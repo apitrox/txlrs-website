@@ -1,0 +1,26 @@
+
+# Header
+For the `txlrs-website` project make the following changes to the header:
+- Move the phone number to the left of the location dropdown.
+- Make the phone number 3 times larger.
+- Remove "Select Location" option from the location dropdown.
+- If a location is not selected in the location dropdown, default to Austin.
+- Label the phone number with "Text or Call".
+- If a user is on their mobile phone and they click a phone number, it should take the user to their dial screen on their phone.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+# Language
+For the `txlrs-website` project make the following changes to language translation:
+- Read the `afca-website` and make the language dropdown and multi-language functionality on the `txlrs-website` contain the same languages and operate in the same manner as `afca-website`.
+- When a user selects a different language from the language dropdown, all content on the page shall change to that language, and this language shall persist from page to page until the user changes it.
+- Use default language translation for all possible languages listed in the language dropdown
+- Implement machine translation for any languages that do not have a default translation
+- When the website is first accessed by a user for the first visit this session, default to English.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+For the `txlrs-website` project make the following changes:
+- at the very top of the header area, use the image `GET_A_LAWYER_banner_down.png` when the phone number is positioned below the image and use the image `GET_A_LAWYER_banner_right.png` when the phone number is positioned to the right of the image.
+- make the phone number the same color of blue as the background of the `GET_A_LAWYER_banner_down.png` image
+- make the label "Text or Call" always read "Text or Call 24/7" and make it larger on both the mobile and desktop version
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
