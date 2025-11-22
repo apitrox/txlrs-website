@@ -31,3 +31,8 @@ For the `txlrs-website` project make the following changes:
 - On the desktop display, to not allow the location dropdown to resize so that the current location is no longer readable. Rather, if it needs to resize smaller so that the name of the location does not display it is to resize to the pin icon that is used on the mobile device display.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
 
+
+For the `txlrs-website` project make the following changes:
+- In this PIN dropdown, make the pin image portion of the icon larger and add a downward pointing arrow to indicate to the user that it is a dropdown (like in other word based dropdowns)
+- Make the display size of the phone number 30% larger when displayed on both desktop and mobile.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull or push.
