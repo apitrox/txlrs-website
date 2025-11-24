@@ -342,41 +342,15 @@
             </nav>
         </div>
         
-        <!-- Mobile Navigation -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
-            <div class="container mx-auto px-4 py-4">
-                <!-- Mobile Location Selector -->
-                <div class="mb-4">
-                    <select id="mobileLocationSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
-                        <option value="325-225-4400">Abilene</option>
-                        <option value="806-375-4400">Amarillo</option>
-                        <option value="512-872-4400">Austin</option>
-                        <option value="409-292-4400">Beaumont</option>
-                        <option value="361-338-4400">Corpus Christi</option>
-                        <option value="214-731-4400">Dallas</option>
-                        <option value="915-233-4400">El Paso</option>
-                        <option value="817-642-8800">Fort Worth</option>
-                        <option value="713-510-7100">Houston</option>
-                        <option value="956-363-4400">Laredo</option>
-                        <option value="903-488-4400">Longview</option>
-                        <option value="806-208-4400">Lubbock</option>
-                        <option value="956-305-3300">McAllen</option>
-                        <option value="432-348-4400">Midland</option>
-                        <option value="325-208-4400">San Angelo</option>
-                        <option value="210-585-4400">San Antonio</option>
-                        <option value="940-245-4400">Wichita Falls</option>
-                    </select>
-                </div>
-                
-                <!-- Mobile Menu Links -->
-                <ul class="space-y-2">
-                    <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_home">Home</a></li>
-                    <li><a href="about.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_about">About</a></li>
-                    <li><a href="blog.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_blog">Blog</a></li>
-                    <li><a href="topics.html" class="block py-2 text-gray-700 hover:text-primary" data-i18n="nav_topics">Topics</a></li>
-                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 text-primary font-bold" data-i18n="nav_for_lawyers">For Lawyers</a></li>
-                </ul>
-            </div>
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 z-50 mx-4">
+            <ul class="py-2">
+                <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_about">About</a></li>
+                <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
+                <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+            </ul>
         </div>
     </header>
     

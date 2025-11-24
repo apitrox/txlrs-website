@@ -170,17 +170,65 @@
     </div>
 
     <!-- Mobile Header -->
-    <div class="md:hidden bg-primary">
-        <div class="px-4 py-4">
-            <!-- Banner Image -->
-            <div class="flex justify-center mb-4">
-                <img src="assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="h-auto w-full max-w-md object-contain">
-            </div>
+    <div class="md:hidden">
+        <!-- 1. GET A LAWYER Banner - Phone Below -->
+        <div style="background-color: #3d79cf;">
+            <img src="assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="w-full h-auto">
+        </div>
+        
+        <!-- Row 1: Phone Number Only -->
+        <div class="my-1 px-2">
+            <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="block w-full font-black text-primary leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
+        </div>
+        
+        <!-- Row 2: Text or Call 24/7, Hamburger Menu, Location Dropdown, Language Dropdown -->
+        <div class="flex items-center justify-between gap-2 mb-2 px-2">
+            <!-- Text or Call 24/7 (Left) -->
+            <span class="text-base font-semibold text-gray-700 whitespace-nowrap" data-i18n="header_text_or_call_24_7">Text or Call 24/7</span>
             
-            <!-- Phone Number -->
-            <div class="text-center">
-                <p class="text-white text-sm mb-2" data-i18n="header_text_or_call">Text or Call</p>
-                <a href="tel:512-872-4400" id="phoneDisplayMobile" class="block w-full font-black text-white leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
+            <!-- Button Container (Right) -->
+            <div class="flex gap-2 flex-shrink-0">
+                <!-- Hamburger Menu -->
+                <button id="mobileMenuBtn" class="h-10 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center justify-center">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                
+                <!-- Location Dropdown Menu -->
+                <div class="relative">
+                    <button id="mobileLocationMenuBtn" class="h-10 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="mobileLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                        <div class="py-2">
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
+                            <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Language Dropdown Menu -->
+                <div class="relative">
+                    <button id="mobileLanguageMenuBtn" class="h-10 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center gap-2">
+                        <span class="text-lg font-bold leading-none">A文</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="mobileLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                        <div class="py-2">
+                            <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                            <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                            <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                            <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                            <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -313,58 +361,13 @@
 
     <!-- Mobile Menu -->
     <div class="md:hidden bg-white border-t border-gray-200">
-        <button id="mobileMenuToggle" class="w-full py-3 px-4 flex items-center justify-between text-gray-700 hover:bg-gray-50">
-            <span class="font-medium" data-i18n="nav_menu">Menu</span>
-            <i class="fas fa-bars"></i>
-        </button>
-        <div id="mobileMenu" class="hidden bg-white border-t border-gray-200">
-            <!-- Location Selector -->
-            <div class="px-4 py-3 border-b border-gray-200">
-                <label class="block text-sm font-medium text-gray-700 mb-2" data-i18n="header_select_location">Select Location</label>
-                <select id="mobileLocationSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary text-base font-medium">
-                    <option value="325-225-4400">Abilene, Texas</option>
-                    <option value="806-375-4400">Amarillo, Texas</option>
-                    <option value="512-872-4400" selected>Austin, Texas</option>
-                    <option value="409-292-4400">Beaumont, Texas</option>
-                    <option value="361-338-4400">Corpus Christi, Texas</option>
-                    <option value="214-731-4400">Dallas, Texas</option>
-                    <option value="915-233-4400">El Paso, Texas</option>
-                    <option value="817-642-8800">Fort Worth, Texas</option>
-                    <option value="713-510-7100">Houston, Texas</option>
-                    <option value="956-363-4400">Laredo, Texas</option>
-                    <option value="903-488-4400">Longview, Texas</option>
-                    <option value="806-208-4400">Lubbock, Texas</option>
-                    <option value="956-305-3300">McAllen, Texas</option>
-                    <option value="432-348-4400">Midland, Texas</option>
-                    <option value="325-208-4400">San Angelo, Texas</option>
-                    <option value="210-585-4400">San Antonio, Texas</option>
-                    <option value="940-245-4400">Wichita Falls, Texas</option>
-                </select>
-            </div>
-            
-            <!-- Language Selector -->
-            <div class="px-4 py-3 border-b border-gray-200">
-                <label class="block text-sm font-medium text-gray-700 mb-2" data-i18n="header_select_language">Select Language</label>
-                <select id="mobileLanguageSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary text-base font-medium">
-                    <option value="zh">Chinese - 中文</option>
-                    <option value="en" selected>English</option>
-                    <option value="fr">French - Français</option>
-                    <option value="es">Spanish - Español</option>
-                    <option value="vi">Vietnamese - Tiếng Việt</option>
-                </select>
-            </div>
-            
-            <!-- Navigation Links -->
+        <div id="mobileMenu" class="hidden absolute left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 z-50 mx-4">
             <ul class="py-2">
-                <li><a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="nav_home">Home</a></li>
-                <li><a href="about.html" class="block py-2 px-4 text-primary font-bold bg-gray-50" data-i18n="nav_about">About</a></li>
-                <li><a href="#child-support" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_child_support">Child Support</a></li>
-                <li><a href="#criminal-defense" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_criminal_defense">Criminal Defense</a></li>
-                <li><a href="#divorce" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_divorce">Divorce</a></li>
-                <li><a href="#family-law" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_family_law">Family Law</a></li>
-                <li><a href="#injury" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_injury">Personal Injury</a></li>
-                <li><a href="#immigration" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_immigration">Immigration</a></li>
-                <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 px-4 text-primary font-bold" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+                <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="block py-3 px-4 text-primary font-bold bg-gray-50" data-i18n="nav_about">About</a></li>
+                <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
+                <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
             </ul>
         </div>
     </div>
