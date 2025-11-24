@@ -151,8 +151,14 @@ For the `txlrs-website` project make the following changes:
 - On the mobile display, enlarge the phone number displayed in the hearder, keep it centered on the page.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
+
 For the `txlrs-website` project make the following changes:
 - On both the mobile and desktop displays, completely remove the section under the header that reads "TEXAS LAWYER REFERRAL SERVICE" and "Do you need an excellent Texas attorney who can win your case? Contact us now!".
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+For the `txlrs-website` project make the following changes:
+- On the Home page, reduce the amount of blue border above and below the cards to be the same as the amount of space used between the cards.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
 
