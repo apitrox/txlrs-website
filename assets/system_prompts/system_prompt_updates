@@ -178,3 +178,19 @@ For the `txlrs-website` project make the following changes:
 - Update the langauge translations to include the About page.
 - Update the sitemap after creating the About page.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+
+For the `txlrs-website` project make the following changes:
+- Copy the header from the Home page to the About page, so both are identical for both large and small displays.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+For the `txlrs-website` project make the following changes:
+- Update the page navigation hamburger menu for both large and small displays so it operates like a typical dropdown menu when clicked.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+For the `txlrs-website` project make the following changes:
+- On the About page, replace the title "Trusted Houston Lawyers and Attorneys" with the Logo image.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.

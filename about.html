@@ -53,34 +53,35 @@
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/translations.js"></script>
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-md md:sticky md:top-0 z-50">
-        <div class="w-full">
-            <!-- Banner and Phone Section -->
-            <div class="flex flex-col md:flex-row items-center justify-between bg-primary px-4 py-2">
-                <!-- Banner Image -->
-                <div class="flex-shrink-0">
-                    <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-20 lg:h-24 block">
+<body class="font-sans">
+<header class="md:sticky md:top-0 z-50 bg-white shadow-md">
+    <!-- Desktop Header Top (Banner + Phone + Location/Language) -->
+    <div class="hidden md:block bg-primary border-b-4 border-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-stretch justify-between">
+                <!-- Left Side Banner -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-20 lg:h-24 object-contain">
                 </div>
                 
-                <!-- Desktop Phone Display -->
-                <div class="hidden md:flex items-center gap-4 flex-grow justify-center">
+                <!-- Center Phone Number -->
+                <div class="flex-grow flex items-center justify-center">
                     <div class="text-center">
                         <p class="text-white text-sm mb-1" data-i18n="header_text_or_call">Text or Call</p>
-                        <a href="tel:512-872-4400" id="desktopPhoneDisplay" class="text-white font-bold text-3xl lg:text-4xl hover:text-gray-200 transition">512-872-4400</a>
+                        <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl lg:text-8xl font-bold text-white hover:text-gray-200 transition">512-872-4400</a>
                     </div>
                 </div>
                 
-                <!-- Location and Language Dropdowns (Desktop) -->
+                <!-- Right Side Dropdowns (on extra-large screens, 1280px+) -->
                 <div class="hidden xl:flex items-center gap-2">
-                    <!-- Location Dropdown (Desktop) -->
+                    <!-- Location Dropdown -->
                     <div class="relative">
-                        <select id="desktopLocationSelect" class="appearance-none bg-white text-primary px-4 py-2 pr-8 rounded-lg border-2 border-white focus:outline-none focus:border-secondary text-sm font-medium cursor-pointer">
-                            <option value="512-872-4400">Austin</option>
+                        <select id="locationSelect" class="appearance-none bg-white text-primary px-4 py-2 pr-8 rounded-lg border-2 border-white focus:outline-none focus:border-secondary text-sm font-medium cursor-pointer">
                             <option value="325-225-4400">Abilene</option>
                             <option value="806-375-4400">Amarillo</option>
+                            <option value="512-872-4400" selected>Austin</option>
                             <option value="409-292-4400">Beaumont</option>
                             <option value="361-338-4400">Corpus Christi</option>
                             <option value="214-731-4400">Dallas</option>
@@ -99,271 +100,278 @@
                         <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-primary pointer-events-none"></i>
                     </div>
                     
-                    <!-- Language Dropdown (Desktop) -->
+                    <!-- Language Dropdown -->
                     <div class="relative">
-                        <button id="desktopLanguageBtn" class="h-12 w-12 bg-white text-primary rounded-lg hover:bg-gray-100 transition flex items-center justify-center">
-                            <i class="fas fa-language text-2xl"></i>
+                        <button id="languageBtn" class="h-12 w-12 bg-white text-primary rounded-lg flex items-center justify-center text-lg font-bold hover:bg-gray-100 transition">
+                            A文
                         </button>
-                        <div id="desktopLanguageMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                        <div id="languageMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
                             <div class="py-2">
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh-CN">简体中文</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh-TW">繁體中文</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="el">Ελληνικά</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="it">Italiano</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ja">日本語</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ko">한국어</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="lo">ພາສາລາວ</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="pl">Polski</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="pt">Português</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="sk">Slovenčina</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="sv">Svenska</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="th">ไทย</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="uk">Українська</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="zh">Chinese - 中文</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="en">English</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="fr">French - Français</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="es">Spanish - Español</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="vi">Vietnamese - Tiếng Việt</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Icon Dropdowns for smaller screens -->
+                <!-- Right Side Icon Dropdowns (on medium to large screens, 768px - 1279px) -->
                 <div class="xl:hidden flex items-center gap-2">
-                    <!-- Location Icon Dropdown -->
+                    <!-- Location Icon Menu -->
                     <div class="relative">
-                        <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                        <button id="locationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
                             <i class="fas fa-map-marker-alt text-3xl"></i>
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
-                        <div id="desktopLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
-                            <div class="py-2">
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-225-4400">Abilene</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-375-4400">Amarillo</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="409-292-4400">Beaumont</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="361-338-4400">Corpus Christi</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="903-488-4400">Longview</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-305-3300">McAllen</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="432-348-4400">Midland</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-208-4400">San Angelo</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
-                                <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="940-245-4400">Wichita Falls</button>
+                        <div id="locationIconMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                            <div class="py-2 max-h-96 overflow-y-auto">
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="325-225-4400">Abilene</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="806-375-4400">Amarillo</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="512-872-4400">Austin</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="409-292-4400">Beaumont</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="361-338-4400">Corpus Christi</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="214-731-4400">Dallas</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="915-233-4400">El Paso</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="817-642-8800">Fort Worth</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="713-510-7100">Houston</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="956-363-4400">Laredo</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="903-488-4400">Longview</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="806-208-4400">Lubbock</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="956-305-3300">McAllen</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="432-348-4400">Midland</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="325-208-4400">San Angelo</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="210-585-4400">San Antonio</button>
+                                <button class="location-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-phone="940-245-4400">Wichita Falls</button>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Language Icon Dropdown -->
+                    <!-- Language Icon Menu -->
                     <div class="relative">
-                        <button id="desktopLanguageIconBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
-                            <i class="fas fa-language text-3xl"></i>
+                        <button id="languageIconBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                            <span class="text-lg font-bold">A文</span>
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
-                        <div id="desktopLanguageIconMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                        <div id="languageIconMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
                             <div class="py-2">
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh-CN">简体中文</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh-TW">繁體中文</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="el">Ελληνικά</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="it">Italiano</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ja">日本語</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="ko">한국어</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="lo">ພາສາລາວ</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="pl">Polski</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="pt">Português</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="sk">Slovenčina</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="sv">Svenska</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="th">ไทย</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="uk">Українська</button>
-                                <button class="language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="zh">Chinese - 中文</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="en">English</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="fr">French - Français</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="es">Spanish - Español</button>
+                                <button class="language-option w-full text-left px-4 py-2 hover:bg-gray-100 transition" data-lang="vi">Vietnamese - Tiếng Việt</button>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Mobile Phone Number Display -->
-            <div class="md:hidden bg-primary px-4 py-4">
-                <div class="text-center">
-                    <p class="text-white text-sm mb-2" data-i18n="header_text_or_call">Text or Call</p>
-                    <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="block w-full font-black text-primary leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
-                    <!-- Mobile Location Dropdown -->
-                    <div class="mt-3">
-                        <select id="mobileLocationSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-white focus:outline-none focus:border-secondary text-base font-medium">
-                            <option value="512-872-4400">Austin, Texas</option>
-                            <option value="325-225-4400">Abilene, Texas</option>
-                            <option value="806-375-4400">Amarillo, Texas</option>
-                            <option value="409-292-4400">Beaumont, Texas</option>
-                            <option value="361-338-4400">Corpus Christi, Texas</option>
-                            <option value="214-731-4400">Dallas, Texas</option>
-                            <option value="915-233-4400">El Paso, Texas</option>
-                            <option value="817-642-8800">Fort Worth, Texas</option>
-                            <option value="713-510-7100">Houston, Texas</option>
-                            <option value="956-363-4400">Laredo, Texas</option>
-                            <option value="903-488-4400">Longview, Texas</option>
-                            <option value="806-208-4400">Lubbock, Texas</option>
-                            <option value="956-305-3300">McAllen, Texas</option>
-                            <option value="432-348-4400">Midland, Texas</option>
-                            <option value="325-208-4400">San Angelo, Texas</option>
-                            <option value="210-585-4400">San Antonio, Texas</option>
-                            <option value="940-245-4400">Wichita Falls, Texas</option>
-                        </select>
-                    </div>
-                    <!-- Mobile Language Dropdown -->
-                    <div class="mt-3">
-                        <select id="mobileLanguageSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-white focus:outline-none focus:border-secondary text-base font-medium">
-                            <option value="en">English</option>
-                            <option value="es">Español</option>
-                            <option value="zh-CN">简体中文</option>
-                            <option value="zh-TW">繁體中文</option>
-                            <option value="fr">Français</option>
-                            <option value="el">Ελληνικά</option>
-                            <option value="it">Italiano</option>
-                            <option value="ja">日本語</option>
-                            <option value="ko">한국어</option>
-                            <option value="lo">ພາສາລາວ</option>
-                            <option value="pl">Polski</option>
-                            <option value="pt">Português</option>
-                            <option value="sk">Slovenčina</option>
-                            <option value="sv">Svenska</option>
-                            <option value="th">ไทย</option>
-                            <option value="uk">Українська</option>
-                            <option value="vi">Tiếng Việt</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Case Type Carousel -->
-            <div class="py-2 md:py-3 border-b border-gray-200" style="background-color: #294d7a;">
-                <div class="case-carousel relative px-4">
-                    <div class="carousel-container">
-                        <!-- Slide 1: Get Money -->
-                        <a href="https://txlrs.app/?id=212001" class="carousel-slide active text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-dollar-sign text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_get_money">Get Money</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_get_money_desc">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Slide 2: Stay Out of Jail -->
-                        <a href="https://txlrs.app/?id=212002" class="carousel-slide text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-gavel text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_stay_out_jail">Stay Out of Jail</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_stay_out_jail_desc">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Slide 3: Divorce & Family Law -->
-                        <a href="https://txlrs.app/?id=212003" class="carousel-slide text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-users text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_divorce_family">Divorce & Family Law</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_divorce_family_desc">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Slide 4: Injury, Accident, Death -->
-                        <a href="https://txlrs.app/?id=212004" class="carousel-slide text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-car-crash text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_injury_accident">Injury, Accident, Death</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_injury_accident_desc">Auto Accident, Work Injury, and more…</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Slide 5: Immigration -->
-                        <a href="https://txlrs.app/?id=212005" class="carousel-slide text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-passport text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_immigration">Immigration</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_immigration_desc">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Slide 6: Other Legal Matter -->
-                        <a href="https://txlrs.app/?id=212006" class="carousel-slide text-center text-white block">
-                            <div class="flex flex-col items-center">
-                                <div class="flex items-center gap-4 mb-2">
-                                    <i class="fas fa-balance-scale text-4xl md:text-5xl"></i>
-                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_other">Other Legal Matter</h3>
-                                </div>
-                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_other_desc">any other legal matter not listed above</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- Navigation Dots -->
-                    <div class="flex justify-center gap-2 mt-4">
-                        <button class="carousel-dot active" data-slide="0"></button>
-                        <button class="carousel-dot" data-slide="1"></button>
-                        <button class="carousel-dot" data-slide="2"></button>
-                        <button class="carousel-dot" data-slide="3"></button>
-                        <button class="carousel-dot" data-slide="4"></button>
-                        <button class="carousel-dot" data-slide="5"></button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Banner -->
-            <div class="w-full text-center py-3 px-4" style="background-color: #294d7a;">
-                <p class="text-white text-sm md:text-base">
-                    Do you need an excellent Texas attorney who can win your case? Contact us now! A <strong>FREE</strong> service for people who need an attroney.
-                </p>
-            </div>
-            
-            <!-- Navigation -->
-            <nav class="hidden md:block py-4">
-                <ul class="flex justify-center items-center gap-8 text-base font-medium">
-                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
-                    <li><a href="about.html" class="text-primary font-bold transition" data-i18n="nav_about">About</a></li>
-                    <li><a href="blog.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
-                    <li><a href="topics.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
-                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-secondary transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
-                </ul>
-            </nav>
-            
-            <!-- Mobile Navigation Toggle -->
-            <div class="md:hidden border-t border-gray-200">
-                <button id="mobileNavToggle" class="w-full py-3 px-4 flex items-center justify-between text-gray-700 hover:bg-gray-50">
-                    <span class="font-medium" data-i18n="nav_menu">Menu</span>
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div id="mobileNav" class="hidden bg-white border-t border-gray-200">
-                    <ul class="py-2">
-                        <li><a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="nav_home">Home</a></li>
-                        <li><a href="about.html" class="block py-2 px-4 text-primary font-bold bg-gray-50" data-i18n="nav_about">About</a></li>
-                        <li><a href="blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="nav_blog">Blog</a></li>
-                        <li><a href="topics.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="nav_topics">Topics</a></li>
-                        <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 px-4 text-primary font-bold" data-i18n="nav_for_lawyers">For Lawyers</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="md:hidden bg-primary">
+        <div class="px-4 py-4">
+            <!-- Banner Image -->
+            <div class="flex justify-center mb-4">
+                <img src="assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="h-auto w-full max-w-md object-contain">
+            </div>
+            
+            <!-- Phone Number -->
+            <div class="text-center">
+                <p class="text-white text-sm mb-2" data-i18n="header_text_or_call">Text or Call</p>
+                <a href="tel:512-872-4400" id="phoneDisplayMobile" class="block w-full font-black text-white leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Type Carousel (Full Width) -->
+    <div class="py-2" style="background-color: #294d7a;">
+        <div class="case-carousel relative px-4">
+            <div class="carousel-container">
+                <!-- Slide 1: Get Money -->
+                <a href="https://txlrs.app/?id=212001" class="carousel-slide active text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-dollar-sign text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_get_money">Get Money</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_get_money_desc">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
+                    </div>
+                </a>
+                
+                <!-- Slide 2: Stay Out of Jail -->
+                <a href="https://txlrs.app/?id=212002" class="carousel-slide text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-gavel text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_stay_out_jail">Stay Out of Jail</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_stay_out_jail_desc">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
+                    </div>
+                </a>
+                
+                <!-- Slide 3: Divorce & Family Law -->
+                <a href="https://txlrs.app/?id=212003" class="carousel-slide text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-users text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_divorce_family">Divorce & Family Law</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_divorce_family_desc">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
+                    </div>
+                </a>
+                
+                <!-- Slide 4: Injury, Accident, Death -->
+                <a href="https://txlrs.app/?id=212004" class="carousel-slide text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-car-crash text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_injury_accident">Injury, Accident, Death</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_injury_accident_desc">Auto Accident, Work Injury, and more…</p>
+                    </div>
+                </a>
+                
+                <!-- Slide 5: Immigration -->
+                <a href="https://txlrs.app/?id=212005" class="carousel-slide text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-passport text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_immigration">Immigration</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_immigration_desc">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
+                    </div>
+                </a>
+                
+                <!-- Slide 6: Other Legal Matter -->
+                <a href="https://txlrs.app/?id=212006" class="carousel-slide text-center text-white block">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fas fa-balance-scale text-4xl md:text-5xl"></i>
+                            <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_other">Other Legal Matter</h3>
+                        </div>
+                        <p class="text-sm md:text-base max-w-2xl" data-i18n="case_other_desc">any other legal matter not listed above</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Navigation Dots -->
+            <div class="flex justify-center gap-2 mt-4">
+                <button class="carousel-dot active" data-slide="0"></button>
+                <button class="carousel-dot" data-slide="1"></button>
+                <button class="carousel-dot" data-slide="2"></button>
+                <button class="carousel-dot" data-slide="3"></button>
+                <button class="carousel-dot" data-slide="4"></button>
+                <button class="carousel-dot" data-slide="5"></button>
+            </div>
+        </div>
+    </div>
     
+    <!-- Banner -->
+    <div class="w-full text-center py-2 px-4" style="background-color: #294d7a;">
+        <p class="text-white text-sm md:text-base">
+            Do you need an excellent Texas attorney who can win your case? Contact us now! A <strong>FREE</strong> service for people who need an attroney.
+        </p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:block bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <nav class="py-3">
+                <ul class="flex justify-center items-center gap-8 text-base font-medium">
+                    <li>
+                        <a href="index.html" class="flex items-center gap-2 text-gray-700 hover:text-primary transition">
+                            <img src="assets/images/TxLRS-Icon.png" alt="TxLRS Icon" class="h-8 w-8">
+                            <span data-i18n="nav_home">Home</span>
+                        </a>
+                    </li>
+                    <li><a href="about.html" class="text-primary font-bold transition" data-i18n="nav_about">About</a></li>
+                    <li>
+                        <div class="relative dropdown-container">
+                            <button class="flex items-center gap-1 text-gray-700 hover:text-primary transition">
+                                <span data-i18n="nav_topics">Topics</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            <div class="dropdown-menu hidden absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                                <div class="py-2">
+                                    <a href="#child-support" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_child_support">Child Support</a>
+                                    <a href="#criminal-defense" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_criminal_defense">Criminal Defense</a>
+                                    <a href="#divorce" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_divorce">Divorce</a>
+                                    <a href="#family-law" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_family_law">Family Law</a>
+                                    <a href="#injury" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_injury">Personal Injury</a>
+                                    <a href="#immigration" class="block px-4 py-2 hover:bg-gray-100 transition" data-i18n="topic_immigration">Immigration</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-secondary transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-white border-t border-gray-200">
+        <button id="mobileMenuToggle" class="w-full py-3 px-4 flex items-center justify-between text-gray-700 hover:bg-gray-50">
+            <span class="font-medium" data-i18n="nav_menu">Menu</span>
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="mobileMenu" class="hidden bg-white border-t border-gray-200">
+            <!-- Location Selector -->
+            <div class="px-4 py-3 border-b border-gray-200">
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-i18n="header_select_location">Select Location</label>
+                <select id="mobileLocationSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary text-base font-medium">
+                    <option value="325-225-4400">Abilene, Texas</option>
+                    <option value="806-375-4400">Amarillo, Texas</option>
+                    <option value="512-872-4400" selected>Austin, Texas</option>
+                    <option value="409-292-4400">Beaumont, Texas</option>
+                    <option value="361-338-4400">Corpus Christi, Texas</option>
+                    <option value="214-731-4400">Dallas, Texas</option>
+                    <option value="915-233-4400">El Paso, Texas</option>
+                    <option value="817-642-8800">Fort Worth, Texas</option>
+                    <option value="713-510-7100">Houston, Texas</option>
+                    <option value="956-363-4400">Laredo, Texas</option>
+                    <option value="903-488-4400">Longview, Texas</option>
+                    <option value="806-208-4400">Lubbock, Texas</option>
+                    <option value="956-305-3300">McAllen, Texas</option>
+                    <option value="432-348-4400">Midland, Texas</option>
+                    <option value="325-208-4400">San Angelo, Texas</option>
+                    <option value="210-585-4400">San Antonio, Texas</option>
+                    <option value="940-245-4400">Wichita Falls, Texas</option>
+                </select>
+            </div>
+            
+            <!-- Language Selector -->
+            <div class="px-4 py-3 border-b border-gray-200">
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-i18n="header_select_language">Select Language</label>
+                <select id="mobileLanguageSelect" class="w-full bg-white text-primary px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary text-base font-medium">
+                    <option value="zh">Chinese - 中文</option>
+                    <option value="en" selected>English</option>
+                    <option value="fr">French - Français</option>
+                    <option value="es">Spanish - Español</option>
+                    <option value="vi">Vietnamese - Tiếng Việt</option>
+                </select>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="py-2">
+                <li><a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="block py-2 px-4 text-primary font-bold bg-gray-50" data-i18n="nav_about">About</a></li>
+                <li><a href="#child-support" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_child_support">Child Support</a></li>
+                <li><a href="#criminal-defense" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_criminal_defense">Criminal Defense</a></li>
+                <li><a href="#divorce" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_divorce">Divorce</a></li>
+                <li><a href="#family-law" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_family_law">Family Law</a></li>
+                <li><a href="#injury" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_injury">Personal Injury</a></li>
+                <li><a href="#immigration" class="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-primary" data-i18n="topic_immigration">Immigration</a></li>
+                <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-2 px-4 text-primary font-bold" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
     <!-- Main Content -->
-    <main class="min-h-screen">
+    <main class="min-h-screen bg-gray-50">
         <div class="container mx-auto px-4 py-12">
             <div class="max-w-4xl mx-auto">
                 <!-- Page Title -->
