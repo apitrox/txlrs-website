@@ -162,4 +162,9 @@ For the `txlrs-website` project make the following changes:
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
 
-Do you need an excellent Texas attorney who can win your case? Contact us now!
+For the `txlrs-website` project make the following changes:
+- On both the mobile (small) and desktop (large) displays, in the header area, immediately under the slider, put a banner with a blue background and static white text that reads "Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attroney.". Make the word "FREE" bold.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attroney.
