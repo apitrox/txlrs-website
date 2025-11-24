@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Do the current stay-at-home orders change my children's visitation schedule? Can my children still travel from house to house for visitation? Understanding custody rights during COVID-19.">
+    <meta name="author" content="Texas Lawyer Referral Service">
+    <meta name="keywords" content="COVID-19 visitation, child custody pandemic, Texas visitation rights, custody during coronavirus">
+    
+    <title>How Does COVID-19 Affect My Child Visitation? | Texas Lawyer Referral</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <!-- MDB UI Kit -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#294d7a',
+                        secondary: '#135280',
+                        accent: '#113a58',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="assets/js/translate.js"></script>
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="hidden md:block bg-white shadow-md">
+        <!-- Top Bar -->
+        <div class="bg-white">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- GET A LAWYER Image -->
+                <div class="flex items-center">
+                    <img src="assets/images/GET-A-LAWYER-BANNER.png" alt="Get A Lawyer" class="h-auto w-full max-w-md object-contain">
+                </div>
+                
+                <!-- Phone and Dropdowns -->
+                <div class="flex items-center space-x-6">
+                    <!-- Phone -->
+                    <a href="tel:713-510-7100" class="text-2xl font-bold text-primary hover:text-secondary transition flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        713-510-7100
+                    </a>
+                    
+                    <!-- Location Selector -->
+                    <div class="relative inline-block">
+                        <select id="location-selector-desktop" class="px-4 py-2 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition cursor-pointer">
+                            <option value="">Location</option>
+                            <option value="houston">Houston</option>
+                            <option value="austin">Austin</option>
+                            <option value="san-antonio">San Antonio</option>
+                            <option value="dallas">Dallas</option>
+                            <option value="fort-worth">Fort Worth</option>
+                            <option value="el-paso">El Paso</option>
+                            <option value="arlington">Arlington</option>
+                            <option value="corpus-christi">Corpus Christi</option>
+                            <option value="plano">Plano</option>
+                            <option value="laredo">Laredo</option>
+                            <option value="lubbock">Lubbock</option>
+                            <option value="garland">Garland</option>
+                            <option value="irving">Irving</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="grand-prairie">Grand Prairie</option>
+                            <option value="mckinney">McKinney</option>
+                            <option value="frisco">Frisco</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2">
+                        <button class="lang-switcher px-3 py-1 rounded-md bg-primary text-white font-semibold" data-lang="en">EN</button>
+                        <button class="lang-switcher px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition" data-lang="es">ES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="md:hidden bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Top Row: GET A LAWYER Image -->
+            <div class="mb-3">
+                <img src="assets/images/GET-A-LAWYER-BANNER.png" alt="Get A Lawyer" class="w-full h-auto object-contain">
+            </div>
+            
+            <!-- Second Row: Hamburger, Location, Language -->
+            <div class="flex justify-between items-center">
+                <!-- Hamburger Menu -->
+                <button class="text-primary text-3xl" type="button" data-mdb-toggle="offcanvas" data-mdb-target="#mobileMenu" aria-controls="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Location Selector -->
+                <div class="relative">
+                    <select id="location-selector-mobile" class="px-3 py-2 rounded-md bg-gray-100 text-gray-700 text-sm cursor-pointer">
+                        <option value="">Location</option>
+                        <option value="houston">Houston</option>
+                        <option value="austin">Austin</option>
+                        <option value="san-antonio">San Antonio</option>
+                        <option value="dallas">Dallas</option>
+                        <option value="fort-worth">Fort Worth</option>
+                        <option value="el-paso">El Paso</option>
+                        <option value="arlington">Arlington</option>
+                        <option value="corpus-christi">Corpus Christi</option>
+                        <option value="plano">Plano</option>
+                        <option value="laredo">Laredo</option>
+                        <option value="lubbock">Lubbock</option>
+                        <option value="garland">Garland</option>
+                        <option value="irving">Irving</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="grand-prairie">Grand Prairie</option>
+                        <option value="mckinney">McKinney</option>
+                        <option value="frisco">Frisco</option>
+                    </select>
+                </div>
+                
+                <!-- Language Selector -->
+                <div class="flex items-center space-x-1">
+                    <button class="lang-switcher px-2 py-1 rounded-md bg-primary text-white text-sm font-semibold" data-lang="en">EN</button>
+                    <button class="lang-switcher px-2 py-1 rounded-md bg-gray-200 text-gray-700 text-sm" data-lang="es">ES</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-primary font-bold text-xl" id="mobileMenuLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary text-lg transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary text-lg transition">About</a></li>
+                    <li><a href="blog.html" class="text-primary font-semibold text-lg">Blog</a></li>
+                    <li>
+                        <button class="w-full text-left text-gray-700 hover:text-primary text-lg transition" type="button" data-mdb-toggle="collapse" data-mdb-target="#topicsCollapse" aria-expanded="false" aria-controls="topicsCollapse">
+                            Topics
+                        </button>
+                        <div class="collapse mt-2" id="topicsCollapse">
+                            <ul class="pl-4 space-y-2">
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Family Law</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Criminal Defense</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Personal Injury</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Immigration</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary text-lg transition">For Lawyers</a></li>
+                </ul>
+                
+                <!-- Locations Section -->
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h6 class="font-bold text-primary mb-3">Locations</h6>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Houston</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Austin</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">San Antonio</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Dallas</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Fort Worth</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">El Paso</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Arlington</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Corpus Christi</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Plano</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Laredo</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Lubbock</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Garland</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Irving</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Amarillo</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Grand Prairie</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">McKinney</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Frisco</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel Banner -->
+    <div id="carouselControls" class="carousel slide hidden md:block" data-mdb-ride="carousel" style="margin-top: 1px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/CAROUSEL-BANNER-FAMILY-LAW.png" class="d-block w-100" alt="Family Law">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-CRIMINAL.png" class="d-block w-100" alt="Criminal Defense">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-PERSONAL-INJURY.png" class="d-block w-100" alt="Personal Injury">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-IMMIGRATION.png" class="d-block w-100" alt="Immigration">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-EMPLOYMENT.png" class="d-block w-100" alt="Employment Law">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-OTHER.png" class="d-block w-100" alt="Other Legal Services">
+            </div>
+        </div>
+        <div class="carousel-indicators" style="bottom: 10px;">
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+    </div>
+
+    <!-- Top Banner -->
+    <div class="bg-primary text-white text-center py-4">
+        <p class="text-lg md:text-xl mb-0">Do you need an excellent Texas attorney, but cannot afford one? We can provide a <span class="font-bold">FREE</span> referral.</p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/TxLRS-logo.png" alt="Texas Lawyer Referral Service" class="h-auto" style="max-height: calc(100% - 6px);">
+                </a>
+                
+                <!-- Navigation Links -->
+                <ul class="flex space-x-8 items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary font-semibold transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary font-semibold transition">About</a></li>
+                    <li><a href="blog.html" class="text-primary font-bold transition">Blog</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary font-semibold transition flex items-center">
+                            Topics
+                        </button>
+                        <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Family Law</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Criminal Defense</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Personal Injury</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Immigration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary font-semibold transition">For Lawyers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <article class="bg-white rounded-lg shadow-md p-8 md:p-12">
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">How Does COVID-19 Affect My Child Visitation?</h1>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm gap-4">
+                        <time datetime="2020-03-28">Published: March 28, 2020</time>
+                        <span class="text-gray-400">|</span>
+                        <span>Category: <a href="#" class="text-primary hover:text-secondary transition">Visitation</a></span>
+                    </div>
+                </header>
+
+                <!-- Article Content -->
+                <div class="prose lg:prose-lg max-w-none">
+                    <div class="text-lg leading-relaxed text-gray-800 space-y-6">
+                        <p>Do the current stay-at-home orders change my children's visitation schedule? Can my children still travel from house to house for visitation? Understanding your custody rights during the COVID-19 pandemic.</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">Visitation During COVID-19</h2>
+                        
+                        <p>The COVID-19 pandemic has created uncertainty for many parents with custody and visitation arrangements. Understanding how the pandemic affects your existing court orders is crucial to protecting both your rights and your relationship with your children.</p>
+
+                        <h3 class="text-2xl font-bold text-primary mt-6 mb-3">Court Orders Still Apply</h3>
+                        
+                        <p>Generally, existing child custody and visitation orders remain in effect during the COVID-19 pandemic. Courts have emphasized that custody arrangements should continue as ordered unless there is a legitimate health and safety concern.</p>
+
+                        <h3 class="text-2xl font-bold text-primary mt-6 mb-3">When Can Visitation Be Modified?</h3>
+                        
+                        <p>Visitation may need to be temporarily modified if:</p>
+                        
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>A parent or child has tested positive for COVID-19</li>
+                            <li>A parent or child has been exposed to someone with COVID-19</li>
+                            <li>A parent or child is experiencing COVID-19 symptoms</li>
+                            <li>There are specific government travel restrictions that prevent visitation</li>
+                            <li>A parent or child is high-risk for severe COVID-19 complications</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-primary mt-6 mb-3">Communication is Key</h3>
+                        
+                        <p>Parents should communicate openly and work together to ensure the health and safety of their children while maintaining meaningful relationships. Consider alternative forms of visitation such as video calls if in-person visits pose health risks.</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">What If the Other Parent Refuses Visitation?</h2>
+                        
+                        <p>If the other parent is denying visitation without a legitimate health-related reason, they may be in violation of the court order. Document all instances of denied visitation and consult with an attorney about your options.</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">Safety Precautions</h2>
+                        
+                        <p>Both parents should take reasonable precautions to protect the children's health, including following CDC guidelines, practicing good hygiene, and minimizing exposure to large groups. These measures can help visitation continue safely during the pandemic.</p>
+
+                        <div class="bg-blue-50 border-l-4 border-primary p-6 mt-8">
+                            <h3 class="text-2xl font-bold text-primary mb-3">Questions About Visitation During COVID-19?</h3>
+                            <p class="mb-4">If you have questions about your custody or visitation rights during the COVID-19 pandemic, the Texas Lawyer Referral Service can connect you with a qualified family law attorney who can help you understand your options.</p>
+                            <a href="tel:713-510-7100" class="inline-block bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-secondary transition">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                Call 713-510-7100
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back to Blog -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <a href="blog.html" class="text-primary hover:text-secondary font-semibold transition">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Back to Blog
+                    </a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div>
+                    <img src="assets/images/TxLRS-logo.png" alt="Texas Lawyer Referral Service" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-sm">Texas Lawyer Referral Service connects Texans with qualified attorneys across the state. We provide free referrals to help you find the right legal representation for your needs.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Home (EN)</a></li>
+                        <li><a href="index.html?lang=es" class="hover:text-white transition">Inicio (ES)</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About (EN)</a></li>
+                        <li><a href="about.html?lang=es" class="hover:text-white transition">Acerca de (ES)</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:713-510-7100" class="hover:text-white transition">713-510-7100</a>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Serving all of Texas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+                <p class="mb-2">State Bar of Texas Lawyer Referral Service Certification #23-0026</p>
+                <p>&copy; <span id="current-year"></span> Texas Lawyer Referral Service. All rights reserved. | 
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </p>
+                <p class="mt-4 text-xs text-gray-400">The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MDB UI Kit -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    
+    <!-- Location Handler -->
+    <script src="assets/js/location-handler.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Language Handler -->
+    <script src="assets/js/language-handler.js"></script>
+    
+    <!-- Current Year Script -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

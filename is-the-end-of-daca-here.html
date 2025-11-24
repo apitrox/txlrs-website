@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Risk to dreamers. Under DACA those young adults have been able to work legally and live without the fear of deportation. Understanding your immigration rights and options for legal assistance.">
+    <meta name="author" content="Texas Lawyer Referral Service">
+    <meta name="keywords" content="DACA, dreamers, immigration law, Texas immigration lawyer, deportation protection">
+    
+    <title>Is the End of DACA Here? | Texas Lawyer Referral</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <!-- MDB UI Kit -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#294d7a',
+                        secondary: '#135280',
+                        accent: '#113a58',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="assets/js/translate.js"></script>
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header class="hidden md:block bg-white shadow-md">
+        <!-- Top Bar -->
+        <div class="bg-white">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- GET A LAWYER Image -->
+                <div class="flex items-center">
+                    <img src="assets/images/GET-A-LAWYER-BANNER.png" alt="Get A Lawyer" class="h-auto w-full max-w-md object-contain">
+                </div>
+                
+                <!-- Phone and Dropdowns -->
+                <div class="flex items-center space-x-6">
+                    <!-- Phone -->
+                    <a href="tel:713-510-7100" class="text-2xl font-bold text-primary hover:text-secondary transition flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        713-510-7100
+                    </a>
+                    
+                    <!-- Location Selector -->
+                    <div class="relative inline-block">
+                        <select id="location-selector-desktop" class="px-4 py-2 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition cursor-pointer">
+                            <option value="">Location</option>
+                            <option value="houston">Houston</option>
+                            <option value="austin">Austin</option>
+                            <option value="san-antonio">San Antonio</option>
+                            <option value="dallas">Dallas</option>
+                            <option value="fort-worth">Fort Worth</option>
+                            <option value="el-paso">El Paso</option>
+                            <option value="arlington">Arlington</option>
+                            <option value="corpus-christi">Corpus Christi</option>
+                            <option value="plano">Plano</option>
+                            <option value="laredo">Laredo</option>
+                            <option value="lubbock">Lubbock</option>
+                            <option value="garland">Garland</option>
+                            <option value="irving">Irving</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="grand-prairie">Grand Prairie</option>
+                            <option value="mckinney">McKinney</option>
+                            <option value="frisco">Frisco</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2">
+                        <button class="lang-switcher px-3 py-1 rounded-md bg-primary text-white font-semibold" data-lang="en">EN</button>
+                        <button class="lang-switcher px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition" data-lang="es">ES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="md:hidden bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Top Row: GET A LAWYER Image -->
+            <div class="mb-3">
+                <img src="assets/images/GET-A-LAWYER-BANNER.png" alt="Get A Lawyer" class="w-full h-auto object-contain">
+            </div>
+            
+            <!-- Second Row: Hamburger, Location, Language -->
+            <div class="flex justify-between items-center">
+                <!-- Hamburger Menu -->
+                <button class="text-primary text-3xl" type="button" data-mdb-toggle="offcanvas" data-mdb-target="#mobileMenu" aria-controls="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Location Selector -->
+                <div class="relative">
+                    <select id="location-selector-mobile" class="px-3 py-2 rounded-md bg-gray-100 text-gray-700 text-sm cursor-pointer">
+                        <option value="">Location</option>
+                        <option value="houston">Houston</option>
+                        <option value="austin">Austin</option>
+                        <option value="san-antonio">San Antonio</option>
+                        <option value="dallas">Dallas</option>
+                        <option value="fort-worth">Fort Worth</option>
+                        <option value="el-paso">El Paso</option>
+                        <option value="arlington">Arlington</option>
+                        <option value="corpus-christi">Corpus Christi</option>
+                        <option value="plano">Plano</option>
+                        <option value="laredo">Laredo</option>
+                        <option value="lubbock">Lubbock</option>
+                        <option value="garland">Garland</option>
+                        <option value="irving">Irving</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="grand-prairie">Grand Prairie</option>
+                        <option value="mckinney">McKinney</option>
+                        <option value="frisco">Frisco</option>
+                    </select>
+                </div>
+                
+                <!-- Language Selector -->
+                <div class="flex items-center space-x-1">
+                    <button class="lang-switcher px-2 py-1 rounded-md bg-primary text-white text-sm font-semibold" data-lang="en">EN</button>
+                    <button class="lang-switcher px-2 py-1 rounded-md bg-gray-200 text-gray-700 text-sm" data-lang="es">ES</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-primary font-bold text-xl" id="mobileMenuLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary text-lg transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary text-lg transition">About</a></li>
+                    <li><a href="blog.html" class="text-primary font-semibold text-lg">Blog</a></li>
+                    <li>
+                        <button class="w-full text-left text-gray-700 hover:text-primary text-lg transition" type="button" data-mdb-toggle="collapse" data-mdb-target="#topicsCollapse" aria-expanded="false" aria-controls="topicsCollapse">
+                            Topics
+                        </button>
+                        <div class="collapse mt-2" id="topicsCollapse">
+                            <ul class="pl-4 space-y-2">
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Family Law</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Criminal Defense</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Personal Injury</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-primary transition">Immigration</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary text-lg transition">For Lawyers</a></li>
+                </ul>
+                
+                <!-- Locations Section -->
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h6 class="font-bold text-primary mb-3">Locations</h6>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Houston</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Austin</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">San Antonio</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Dallas</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Fort Worth</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">El Paso</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Arlington</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Corpus Christi</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Plano</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Laredo</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Lubbock</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Garland</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Irving</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Amarillo</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Grand Prairie</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">McKinney</a>
+                        <a href="#" class="text-gray-600 hover:text-primary text-sm transition">Frisco</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel Banner -->
+    <div id="carouselControls" class="carousel slide hidden md:block" data-mdb-ride="carousel" style="margin-top: 1px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/CAROUSEL-BANNER-FAMILY-LAW.png" class="d-block w-100" alt="Family Law">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-CRIMINAL.png" class="d-block w-100" alt="Criminal Defense">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-PERSONAL-INJURY.png" class="d-block w-100" alt="Personal Injury">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-IMMIGRATION.png" class="d-block w-100" alt="Immigration">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-EMPLOYMENT.png" class="d-block w-100" alt="Employment Law">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CAROUSEL-BANNER-OTHER.png" class="d-block w-100" alt="Other Legal Services">
+            </div>
+        </div>
+        <div class="carousel-indicators" style="bottom: 10px;">
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-mdb-target="#carouselControls" data-mdb-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+    </div>
+
+    <!-- Top Banner -->
+    <div class="bg-primary text-white text-center py-4">
+        <p class="text-lg md:text-xl mb-0">Do you need an excellent Texas attorney, but cannot afford one? We can provide a <span class="font-bold">FREE</span> referral.</p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/TxLRS-logo.png" alt="Texas Lawyer Referral Service" class="h-auto" style="max-height: calc(100% - 6px);">
+                </a>
+                
+                <!-- Navigation Links -->
+                <ul class="flex space-x-8 items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary font-semibold transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary font-semibold transition">About</a></li>
+                    <li><a href="blog.html" class="text-primary font-bold transition">Blog</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary font-semibold transition flex items-center">
+                            Topics
+                        </button>
+                        <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Family Law</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Criminal Defense</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Personal Injury</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition">Immigration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary font-semibold transition">For Lawyers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <article class="bg-white rounded-lg shadow-md p-8 md:p-12">
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Is the End of DACA Here?</h1>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm gap-4">
+                        <time datetime="2017-09-07">Published: September 7, 2017</time>
+                        <span class="text-gray-400">|</span>
+                        <span>Category: <a href="#" class="text-primary hover:text-secondary transition">Immigration</a></span>
+                    </div>
+                </header>
+
+                <!-- Article Content -->
+                <div class="prose lg:prose-lg max-w-none">
+                    <div class="text-lg leading-relaxed text-gray-800 space-y-6">
+                        <p>Risk to dreamers. Under DACA those young adults have been able to work legally and live without the fear of deportation. Understanding your immigration rights and options for legal assistance is crucial during this uncertain time.</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">What is DACA?</h2>
+                        
+                        <p>Deferred Action for Childhood Arrivals (DACA) is an immigration policy that allows certain undocumented immigrants who entered the United States as children to receive a renewable two-year period of deferred action from deportation and eligibility for a work permit.</p>
+
+                        <p>Since its creation in 2012, DACA has provided protection and opportunities for hundreds of thousands of young people, often called "Dreamers."</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">Changes to DACA</h2>
+                        
+                        <p>DACA has faced numerous legal and political challenges since its inception. Changes in administration and court decisions have created uncertainty for DACA recipients and their families. It's important to stay informed about current DACA policies and any changes that may affect your status.</p>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">Your Rights as a DACA Recipient</h2>
+                        
+                        <p>If you are a DACA recipient, you have certain rights:</p>
+                        
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>The right to work legally in the United States</li>
+                            <li>The right to obtain a Social Security number</li>
+                            <li>The right to get a driver's license</li>
+                            <li>Protection from deportation while your DACA status is valid</li>
+                            <li>The right to legal representation</li>
+                        </ul>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">What Should DACA Recipients Do?</h2>
+                        
+                        <p>If you are a DACA recipient, consider taking these steps:</p>
+                        
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Keep your DACA status current by renewing on time</li>
+                            <li>Maintain copies of all immigration documents</li>
+                            <li>Stay informed about policy changes</li>
+                            <li>Consult with an immigration attorney about your options</li>
+                            <li>Know your rights if approached by immigration officials</li>
+                            <li>Explore other potential paths to legal status</li>
+                        </ul>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">Alternative Immigration Options</h2>
+                        
+                        <p>Depending on your individual circumstances, you may have other immigration options available beyond DACA. An experienced immigration attorney can help you explore possibilities such as:</p>
+                        
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Family-based immigration petitions</li>
+                            <li>Employment-based immigration</li>
+                            <li>U visas for crime victims</li>
+                            <li>T visas for trafficking victims</li>
+                            <li>Asylum or refugee status</li>
+                        </ul>
+
+                        <h2 class="text-3xl font-bold text-primary mt-8 mb-4">The Importance of Legal Guidance</h2>
+                        
+                        <p>Immigration law is complex and constantly changing. Working with a qualified immigration attorney can help you understand your rights, explore your options, and navigate the legal system. An attorney can also help you prepare for potential changes to DACA and develop a long-term plan for your immigration status.</p>
+
+                        <div class="bg-blue-50 border-l-4 border-primary p-6 mt-8">
+                            <h3 class="text-2xl font-bold text-primary mb-3">Need Immigration Legal Assistance?</h3>
+                            <p class="mb-4">If you have questions about DACA, your immigration status, or other immigration matters, the Texas Lawyer Referral Service can connect you with a qualified immigration attorney who can help you understand your options and protect your rights.</p>
+                            <a href="tel:713-510-7100" class="inline-block bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-secondary transition">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                Call 713-510-7100
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back to Blog -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <a href="blog.html" class="text-primary hover:text-secondary font-semibold transition">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Back to Blog
+                    </a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div>
+                    <img src="assets/images/TxLRS-logo.png" alt="Texas Lawyer Referral Service" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-sm">Texas Lawyer Referral Service connects Texans with qualified attorneys across the state. We provide free referrals to help you find the right legal representation for your needs.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Home (EN)</a></li>
+                        <li><a href="index.html?lang=es" class="hover:text-white transition">Inicio (ES)</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About (EN)</a></li>
+                        <li><a href="about.html?lang=es" class="hover:text-white transition">Acerca de (ES)</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:713-510-7100" class="hover:text-white transition">713-510-7100</a>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Serving all of Texas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+                <p class="mb-2">State Bar of Texas Lawyer Referral Service Certification #23-0026</p>
+                <p>&copy; <span id="current-year"></span> Texas Lawyer Referral Service. All rights reserved. | 
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </p>
+                <p class="mt-4 text-xs text-gray-400">The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MDB UI Kit -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    
+    <!-- Location Handler -->
+    <script src="assets/js/location-handler.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Language Handler -->
+    <script src="assets/js/language-handler.js"></script>
+    
+    <!-- Current Year Script -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
