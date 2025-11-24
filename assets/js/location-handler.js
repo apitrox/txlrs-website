@@ -1,4 +1,4 @@
-// Texas Lawyer Referral Service - Location Handler with Geolocation
+// Texas Lawyer Referral Service - Location Handler with IP-based Geolocation
 
 // Location data with coordinates
 const LOCATIONS = [
@@ -101,7 +101,7 @@ function formatPhoneNumber(phone) {
     return phone.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
 }
 
-// Initialize location based on geolocation
+// Initialize location based on IP geolocation (no user prompt required)
 function initializeLocation() {
     // Check if location has already been set this session
     const sessionLocation = sessionStorage.getItem('selectedLocation');
@@ -110,16 +110,17 @@ function initializeLocation() {
         return;
     }
     
-    // Try to get user's location
-    if ('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition(
-            // Success callback
-            function(position) {
-                const userLat = position.coords.latitude;
-                const userLng = position.coords.longitude;
-                
-                let selectedLocation;
-                
+    // Use IP-based geolocation (no user permission required)
+    // Using ipapi.co free API - no authentication needed
+    fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+            const userLat = data.latitude;
+            const userLng = data.longitude;
+            
+            let selectedLocation;
+            
+            if (userLat && userLng) {
                 if (isInTexas(userLat, userLng)) {
                     // User is in Texas, find closest location
                     selectedLocation = findClosestLocation(userLat, userLng);
@@ -127,34 +128,24 @@ function initializeLocation() {
                     // User is outside Texas, default to Austin
                     selectedLocation = getDefaultLocation();
                 }
-                
-                // Store in session
-                sessionStorage.setItem('selectedLocation', selectedLocation.phone);
-                
-                // Update displays
-                updateLocationSelectors(selectedLocation.phone);
-            },
-            // Error callback
-            function(error) {
-                console.log('Geolocation error:', error.message);
-                // Default to Austin if geolocation fails
-                const defaultLoc = getDefaultLocation();
-                sessionStorage.setItem('selectedLocation', defaultLoc.phone);
-                updateLocationSelectors(defaultLoc.phone);
-            },
-            // Options
-            {
-                enableHighAccuracy: false,
-                timeout: 5000,
-                maximumAge: 0
+            } else {
+                // No coordinates returned, default to Austin
+                selectedLocation = getDefaultLocation();
             }
-        );
-    } else {
-        // Geolocation not supported, default to Austin
-        const defaultLoc = getDefaultLocation();
-        sessionStorage.setItem('selectedLocation', defaultLoc.phone);
-        updateLocationSelectors(defaultLoc.phone);
-    }
+            
+            // Store in session
+            sessionStorage.setItem('selectedLocation', selectedLocation.phone);
+            
+            // Update displays
+            updateLocationSelectors(selectedLocation.phone);
+        })
+        .catch(error => {
+            console.log('IP geolocation error:', error.message);
+            // Default to Austin if API fails
+            const defaultLoc = getDefaultLocation();
+            sessionStorage.setItem('selectedLocation', defaultLoc.phone);
+            updateLocationSelectors(defaultLoc.phone);
+        });
 }
 
 // Run on page load
