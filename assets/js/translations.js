@@ -105,6 +105,25 @@ const translations = {
         hero_subtitle: "Do you need an excellent Texas attorney who can win your case? Contact us now!",
         hero_description: "Do you need an excellent Texas attorney who can win your case? Contact us now!",
         
+        // About Page
+        about_title: "Trusted Houston Lawyers and Attorneys",
+        about_intro: "The Texas Lawyer Referral Service, or TxLRS, is a FREE service for people needing a lawyer. Whether you have a legal issue or simply a problem.",
+        about_service_summary: "If you are an individual needing Free Consultation Lawyers in Houston, here is a summary of how the service works for you:",
+        about_step1: "You contact the TxLRS by phone or by submitting an inquiry using this form →",
+        about_step2: "Our Services identifies qualified lawyers with expertise matching your needs.",
+        about_step3: "Texas Lawyer Referral Services sends you the names and contact information of qualified lawyers.",
+        about_step4: "You consult with one or more of the lawyers, for free.",
+        about_step5: "If you want to hire a lawyer, you and the lawyer discuss any terms and fees that may apply thereafter. Through the Modest Means Program, reduced fees may be available for those who qualify.",
+        about_availability: "TxLRS is currently available to individuals with a case or legal matter in the Houston Texas area including Harris, Fort Bend, Montgomery, Galveston, and Brazoria counties. We are a public service program operated for the purpose of helping to ensure that Texans have access to a qualified lawyer when needed.",
+        about_legal_matters: "TxLRS helps to assist Texans with legal matters, including family law and matters impacting family dynamics. There are two main types of legal issues: criminal matters and civil matters. In criminal cases, the government prosecutes the case. In civil cases, the person bringing the suit hires an attorney to prosecute. The best way to research your legal issue is to start looking here on our website by identifying the broad category that it falls under.",
+        about_partnerships: "We work with lawyers, the State Bar of Texas, and several legal aid and/or legal assistance organizations in an attempt to bring legal help to Texans in need.",
+        about_cta: "Fill out our Form above! Free Consultation Lawyers!",
+        about_certification: "This service is certified as a lawyer referral service as required by the State of Texas under Chapter 952, Occupations Code.",
+        about_contact_title: "Texas Lawyer Referral Service",
+        about_contact_method: "can be contacted by",
+        about_contact_phone: "phone or text at",
+        about_certified: "Certified by the State Bar of Texas",
+        
         // Case Type Cards
         case_get_money: "Get Money",
         case_get_money_desc: "Lots of Money - any lawsuit for you to be paid money…",

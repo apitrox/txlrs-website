@@ -31,6 +31,7 @@
 - **CSS Framework:** Tailwind CSS (`tailwind.config.js` defines colors, spacing, breakpoints, etc.).
 - **UI Library:** MDBootstrap UI Kit ([MDB Website](https://mdbootstrap.com/) | [GitHub](https://github.com/mdbootstrap/mdb-ui-kit) | [GitHub](https://github.com/mdbootstrap/mdb-angular-ui-kit) | [GitHub](https://github.com/mdbootstrap/mdb-vue-ui-kit))
 - **Design Philosophy:** Mobile-first, responsive, SEO-optimized, and high performance.
+- Create a sitemap file to make it easy for search bots like Google, Bing and OpenAI to search and index the site.
 
 
 ## Functional Requirements
