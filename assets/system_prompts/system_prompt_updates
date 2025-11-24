@@ -140,3 +140,13 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - On the desktop display, update the `GET_A_LAWYER_banner_right` image located in the header to remove the white boarder or padding around the image, allowing the image to expand to fill the space.
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- For the desktop display (larger display), make the header sticky, not scroll.
+- Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- On the mobile display, enlarge the phone number displayed in the hearder, keep it centered on the page.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
