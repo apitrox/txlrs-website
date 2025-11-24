@@ -350,37 +350,38 @@
             </nav>
         </div>
         
-        <!-- Mobile Navigation Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 z-50 mx-4">
-            <ul class="py-2">
-                <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
-                <li><a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_about">About</a></li>
-                <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
-                <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
-                <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
-                <li class="border-t border-gray-200 mt-2 pt-2">
-                    <p class="px-4 py-2 text-sm font-bold text-gray-500" data-i18n="nav_locations">Locations</p>
-                </li>
-                <li><a href="tel:325-225-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Abilene <span class="text-xs text-gray-500">(325) 225-4400</span></a></li>
-                <li><a href="tel:806-375-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Amarillo <span class="text-xs text-gray-500">(806) 375-4400</span></a></li>
-                <li><a href="tel:512-872-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Austin <span class="text-xs text-gray-500">(512) 872-4400</span></a></li>
-                <li><a href="tel:409-292-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Beaumont <span class="text-xs text-gray-500">(409) 292-4400</span></a></li>
-                <li><a href="tel:361-338-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Corpus Christi <span class="text-xs text-gray-500">(361) 338-4400</span></a></li>
-                <li><a href="tel:214-731-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Dallas <span class="text-xs text-gray-500">(214) 731-4400</span></a></li>
-                <li><a href="tel:915-233-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">El Paso <span class="text-xs text-gray-500">(915) 233-4400</span></a></li>
-                <li><a href="tel:817-642-8800" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Fort Worth <span class="text-xs text-gray-500">(817) 642-8800</span></a></li>
-                <li><a href="tel:713-510-7100" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Houston <span class="text-xs text-gray-500">(713) 510-7100</span></a></li>
-                <li><a href="tel:956-363-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Laredo <span class="text-xs text-gray-500">(956) 363-4400</span></a></li>
-                <li><a href="tel:903-488-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Longview <span class="text-xs text-gray-500">(903) 488-4400</span></a></li>
-                <li><a href="tel:806-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Lubbock <span class="text-xs text-gray-500">(806) 208-4400</span></a></li>
-                <li><a href="tel:956-305-3300" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">McAllen <span class="text-xs text-gray-500">(956) 305-3300</span></a></li>
-                <li><a href="tel:432-348-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Midland <span class="text-xs text-gray-500">(432) 348-4400</span></a></li>
-                <li><a href="tel:325-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Angelo <span class="text-xs text-gray-500">(325) 208-4400</span></a></li>
-                <li><a href="tel:210-585-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Antonio <span class="text-xs text-gray-500">(210) 585-4400</span></a></li>
-                <li><a href="tel:940-245-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Wichita Falls <span class="text-xs text-gray-500">(940) 245-4400</span></a></li>
-            </ul>
-        </div>
     </header>
+    
+    <!-- Mobile Navigation Dropdown - Positioned to overlay content -->
+    <div id="mobileMenu" class="hidden md:hidden fixed bg-white rounded-lg shadow-xl border border-gray-200 max-h-96 overflow-y-auto" style="z-index: 9999; right: 0.5rem; top: auto; margin-top: 0.5rem;">
+        <ul class="py-2">
+            <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_about">About</a></li>
+            <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+            <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
+            <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+            <li class="border-t border-gray-200 mt-2 pt-2">
+                <p class="px-4 py-2 text-sm font-bold text-gray-500" data-i18n="nav_locations">Locations</p>
+            </li>
+            <li><a href="tel:325-225-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Abilene <span class="text-xs text-gray-500">(325) 225-4400</span></a></li>
+            <li><a href="tel:806-375-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Amarillo <span class="text-xs text-gray-500">(806) 375-4400</span></a></li>
+            <li><a href="tel:512-872-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Austin <span class="text-xs text-gray-500">(512) 872-4400</span></a></li>
+            <li><a href="tel:409-292-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Beaumont <span class="text-xs text-gray-500">(409) 292-4400</span></a></li>
+            <li><a href="tel:361-338-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Corpus Christi <span class="text-xs text-gray-500">(361) 338-4400</span></a></li>
+            <li><a href="tel:214-731-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Dallas <span class="text-xs text-gray-500">(214) 731-4400</span></a></li>
+            <li><a href="tel:915-233-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">El Paso <span class="text-xs text-gray-500">(915) 233-4400</span></a></li>
+            <li><a href="tel:817-642-8800" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Fort Worth <span class="text-xs text-gray-500">(817) 642-8800</span></a></li>
+            <li><a href="tel:713-510-7100" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Houston <span class="text-xs text-gray-500">(713) 510-7100</span></a></li>
+            <li><a href="tel:956-363-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Laredo <span class="text-xs text-gray-500">(956) 363-4400</span></a></li>
+            <li><a href="tel:903-488-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Longview <span class="text-xs text-gray-500">(903) 488-4400</span></a></li>
+            <li><a href="tel:806-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Lubbock <span class="text-xs text-gray-500">(806) 208-4400</span></a></li>
+            <li><a href="tel:956-305-3300" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">McAllen <span class="text-xs text-gray-500">(956) 305-3300</span></a></li>
+            <li><a href="tel:432-348-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Midland <span class="text-xs text-gray-500">(432) 348-4400</span></a></li>
+            <li><a href="tel:325-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Angelo <span class="text-xs text-gray-500">(325) 208-4400</span></a></li>
+            <li><a href="tel:210-585-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Antonio <span class="text-xs text-gray-500">(210) 585-4400</span></a></li>
+            <li><a href="tel:940-245-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Wichita Falls <span class="text-xs text-gray-500">(940) 245-4400</span></a></li>
+        </ul>
+    </div>
     
     <!-- Case Type Cards Section -->
     <section class="bg-gradient-to-r from-primary to-secondary text-white py-2">

@@ -6,10 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     
-    // Function to toggle mobile menu
+    // Function to toggle mobile menu and position it below the button
     function toggleMobileMenu(button, menu, event) {
         if (event) {
             event.stopPropagation();
+        }
+        
+        // Position the menu right-aligned below the button
+        if (menu.classList.contains('hidden')) {
+            const rect = button.getBoundingClientRect();
+            menu.style.top = (rect.bottom + 8) + 'px';
+            menu.style.right = (window.innerWidth - rect.right) + 'px';
         }
         
         menu.classList.toggle('hidden');

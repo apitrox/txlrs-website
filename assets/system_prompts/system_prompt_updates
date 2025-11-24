@@ -225,11 +225,13 @@ For the `txlrs-website` project make the following changes:
 - Ask me any claifying questions you have before making changes.
 - Update the hamburger menu, for both mobile and desktop, to display like a standard dropdown where when clicked the items are displayed immediately below the hamburger menu.
 
+
 The image I provided is to be defined as the entire header area for desktop display on the `txlrs-website` project. Make the following changes to this header area:
 - Enlarge the GET A LAWYER image to fill the white space above it and to the left of it, and to leave only a 1 pixel white line below it (between it and the carousel). 
 - Enlarge the TxLRS logo below the Carousel so the height is almost the same height as the space it is in, leaving only a 3 pixel border/padding above and below the image.
 - Remove the downward arrow on the Topics page navigation item.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
 
 For the `txlrs-website` project make the following changes:
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
@@ -237,3 +239,39 @@ For the `txlrs-website` project make the following changes:
 - Do not display any images on the blog.html page.
 - Change the blog.html page display from cards to a simple listing of blog posts with each listing separated by a horizontal line. Each listing will simply contain a title and a description.
 - Be sure that every blog post is listed on the blog.html page.
+
+
+For the `txlrs-website` project make the following changes:
+- On the Home page, move the content that is below the cards and above the footer area from the Home page to the About page. Append the content, including the images, to the end of the About page content.
+- Ask me any claifying questions you have before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- Be sure that all 64 blog posts have been created as individual HTML files and be sure that all 64 are listed on the blog.html page in the simple format. Update as needed.
+- the blob.html page and all individual blog posts pages are to use the same header and footer as the Home page for both desktop and mobile displays.
+- Ask me any claifying questions you have before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+- Update the hamburger menu, for both mobile and desktop, to display over the top of the carousel (like the location and langauge dropdowns) and not below the carousel.
+- Ask me any claifying questions you have before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project make the following changes:
+1. Ask me any questions you have for clarification before making changes.
+2. Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+3. Copy all of all of the blog pages from the `txlrs-website-wpengine` project repository website to the `txlrs-website` project repository website.
+4. Copy the content and images of each blog page from `txlrs-website-wpengine` to `txlrs-website`.
+5. Use the same path or pathname for the new page on `txlrs-website` as used on `txlrs-website-wpengine`. Do not change the pathname portion of the URL to the webpage.
+6. You will also copy the blog listing page that gets displayed when the user selects the `Blog` menu item or page navigation. Every blog post page is to be listed on this page listing page.
+7. Create a main blog listing page (blog.html) that shows all blog posts.
+8. Every blog page, and the blog listing page, should use the same header and footer as the home page on the current txlrs-website  (with the hamburger menu, phone number, location dropdowns, etc.).
+9. Copy all images from uploads to the txlrs-website and Update image paths to point to the new location.
+10. Copy ALL posts (old and recent), but only English posts. 
+11. convert to simple HTML files like abbott-signs-sweeping-child-welfare-bill.html.
+12. Preserve the category structure and create category listing pages as well.
+13. Every blog post page is to be its own html file.
+14. Make any updates to the sitmap as may be appropriate after create all the blog pages.
