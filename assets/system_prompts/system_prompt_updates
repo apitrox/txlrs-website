@@ -175,6 +175,7 @@ For the `txlrs-website` project make the following changes:
 - Create the About page by duplicating the content from the About page on the `txlrs-website-wpengine` project repository. Duplicate both images and text content.
 - Do not edit anything in the `txlrs-website-wpengine` project repository, it is for read only.
 - The About page, like every page, is to be a separate HTML file.
+- Copy the header from the Home page to the About page, so both are identical for both large and small displays.
 - Update the langauge translations to include the About page.
 - Update the sitemap after creating the About page.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
@@ -187,7 +188,7 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- Update the page navigation hamburger menu for both large and small displays so it operates like a typical dropdown menu when clicked.
+- Update the page navigation hamburger menu for all pages and for both large and small displays so it operates like a typical dropdown menu when clicked.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
 

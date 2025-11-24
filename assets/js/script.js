@@ -1,22 +1,91 @@
 // Texas Lawyer Referral Service - Main JavaScript
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle - Works like a typical dropdown menu
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     
+    // Function to toggle mobile menu
+    function toggleMobileMenu(button, menu, event) {
+        if (event) {
+            event.stopPropagation();
+        }
+        
+        menu.classList.toggle('hidden');
+        
+        // Toggle icon
+        const icon = button.querySelector('i.fa-bars, i.fa-times');
+        if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        }
+    }
+    
+    // Handle both mobileMenuBtn (index.html) and mobileMenuToggle (about.html)
     if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            
-            // Toggle icon
-            const icon = this.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
+        mobileMenuBtn.addEventListener('click', function(e) {
+            toggleMobileMenu(this, mobileMenu, e);
+        });
+    }
+    
+    if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', function(e) {
+            toggleMobileMenu(this, mobileMenu, e);
+        });
+    }
+    
+    // Close mobile menu when clicking outside
+    if (mobileMenu) {
+        document.addEventListener('click', function(e) {
+            const menuBtn = mobileMenuBtn || mobileMenuToggle;
+            if (menuBtn && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Reset icon to bars
+                    const icon = menuBtn.querySelector('i.fa-times');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
             }
         });
     }
+    
+    // Desktop Topics Dropdown - Click to toggle
+    const dropdownContainers = document.querySelectorAll('.dropdown-container');
+    dropdownContainers.forEach(container => {
+        const button = container.querySelector('button');
+        const menu = container.querySelector('.dropdown-menu');
+        
+        if (button && menu) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown-menu').forEach(otherMenu => {
+                    if (otherMenu !== menu) {
+                        otherMenu.classList.add('hidden');
+                    }
+                });
+                
+                // Toggle this dropdown
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown-container')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.add('hidden');
+            });
+        }
+    });
     
     // Location Selector (Desktop)
     const locationSelector = document.getElementById('locationSelector');

@@ -319,18 +319,23 @@
                     <li><a href="index.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
                     <li><a href="about.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_about">About</a></li>
                     <li><a href="blog.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
-                    <li class="relative group">
-                        <a href="topics.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_topics">Topics</a>
-                        <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50">
-                            <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_bankruptcy">Bankruptcy Lawyers</a></li>
-                            <li><a href="topics.html#business" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_business">Business Lawyers</a></li>
-                            <li><a href="topics.html#criminal" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_criminal">Criminal Defense</a></li>
-                            <li><a href="topics.html#divorce" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_divorce">Divorce Lawyers</a></li>
-                            <li><a href="topics.html#family" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_family">Family Law</a></li>
-                            <li><a href="topics.html#immigration" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_immigration">Immigration Lawyers</a></li>
-                            <li><a href="topics.html#injury" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_injury">Personal Injury</a></li>
-                            <li><a href="topics.html" class="block px-4 py-2 text-sm font-bold hover:bg-gray-100" data-i18n="topic_view_all">View All Topics →</a></li>
-                        </ul>
+                    <li>
+                        <div class="relative dropdown-container">
+                            <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                                <span data-i18n="nav_topics">Topics</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            <ul class="hidden absolute left-0 bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50 border border-gray-200 dropdown-menu">
+                                <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_bankruptcy">Bankruptcy Lawyers</a></li>
+                                <li><a href="topics.html#business" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_business">Business Lawyers</a></li>
+                                <li><a href="topics.html#criminal" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_criminal">Criminal Defense</a></li>
+                                <li><a href="topics.html#divorce" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_divorce">Divorce Lawyers</a></li>
+                                <li><a href="topics.html#family" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_family">Family Law</a></li>
+                                <li><a href="topics.html#immigration" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_immigration">Immigration Lawyers</a></li>
+                                <li><a href="topics.html#injury" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_injury">Personal Injury</a></li>
+                                <li><a href="topics.html" class="block px-4 py-2 text-sm font-bold hover:bg-gray-100" data-i18n="topic_view_all">View All Topics →</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
                 </ul>
