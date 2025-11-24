@@ -134,5 +134,9 @@ For the `txlrs-website` project make the following changes:
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
 
 For the `txlrs-website` project make the following changes:
-- The location dropdown containing the names of the locations now lists all 17 locations as it should.  However, the location dropdown using the Icon dropdown (small displays) also needs to list all 17 locations and operate the same as the name location dropdown. Update the Icon location dropdown to operate the same as the Name location dropdown. Both location dropdowns should always operate the same.
+- Update the mobile display location dropdown  to list all 17 locations and operate the same as the desktop location dropdown - Both should always operate the same.
+- Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
+
+For the `txlrs-website` project make the following changes:
+- On the desktop display, update the `GET_A_LAWYER_banner_right` image located in the header to remove the white boarder or padding around the image, allowing the image to expand to fill the space.
 - Pull from GitHub before making any code changes, and do not prompt me for permission to Pull. Commit and Push to GitHub after finishing code changes.
