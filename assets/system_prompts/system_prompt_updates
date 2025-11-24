@@ -158,7 +158,7 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- On the Home page, reduce the amount of blue border above and below the cards to be the same as the amount of space used between the cards.
+- On the Home page, reduce the amount of blue border above and below the cards to be one-third of what it currently is, on both the mobile (small) and desktop (large) displays.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
 
