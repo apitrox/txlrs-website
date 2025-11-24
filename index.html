@@ -81,19 +81,28 @@
                             
                             <!-- Location Selector with Responsive Fallback -->
                             <div class="relative flex items-center gap-2">
-                                <!-- Full dropdown for larger screens -->
+                                <!-- Location dropdown for larger screens -->
                                 <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
-                                    <option value="512-872-4400" selected>Austin</option>
+                                    <option value="325-225-4400">Abilene</option>
+                                    <option value="806-375-4400">Amarillo</option>
+                                    <option value="512-872-4400">Austin</option>
+                                    <option value="409-292-4400">Beaumont</option>
+                                    <option value="361-338-4400">Corpus Christi</option>
                                     <option value="214-731-4400">Dallas</option>
                                     <option value="915-233-4400">El Paso</option>
                                     <option value="817-642-8800">Fort Worth</option>
                                     <option value="713-510-7100">Houston</option>
-                                    <option value="806-208-4400">Lubbock</option>
                                     <option value="956-363-4400">Laredo</option>
+                                    <option value="903-488-4400">Longview</option>
+                                    <option value="806-208-4400">Lubbock</option>
+                                    <option value="956-305-3300">McAllen</option>
+                                    <option value="432-348-4400">Midland</option>
+                                    <option value="325-208-4400">San Angelo</option>
                                     <option value="210-585-4400">San Antonio</option>
+                                    <option value="940-245-4400">Wichita Falls</option>
                                 </select>
                                 
-                                <!-- Icon button for medium screens -->
+                                <!-- Location button for medium screens -->
                                 <div class="xl:hidden relative">
                                     <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
                                         <i class="fas fa-map-marker-alt text-3xl"></i>
@@ -318,14 +327,23 @@
                 <!-- Mobile Location Selector -->
                 <div class="mb-4">
                     <select id="mobileLocationSelector" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
-                        <option value="512-872-4400" selected>Austin</option>
+                        <option value="325-225-4400">Abilene</option>
+                        <option value="806-375-4400">Amarillo</option>
+                        <option value="512-872-4400">Austin</option>
+                        <option value="409-292-4400">Beaumont</option>
+                        <option value="361-338-4400">Corpus Christi</option>
                         <option value="214-731-4400">Dallas</option>
                         <option value="915-233-4400">El Paso</option>
                         <option value="817-642-8800">Fort Worth</option>
                         <option value="713-510-7100">Houston</option>
-                        <option value="806-208-4400">Lubbock</option>
                         <option value="956-363-4400">Laredo</option>
+                        <option value="903-488-4400">Longview</option>
+                        <option value="806-208-4400">Lubbock</option>
+                        <option value="956-305-3300">McAllen</option>
+                        <option value="432-348-4400">Midland</option>
+                        <option value="325-208-4400">San Angelo</option>
                         <option value="210-585-4400">San Antonio</option>
+                        <option value="940-245-4400">Wichita Falls</option>
                     </select>
                 </div>
                 
@@ -604,6 +622,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
     
     <!-- Custom JavaScript -->
+    <script src="assets/js/location-handler.js"></script>
     <script src="assets/js/script.js"></script>
     
     <!-- Language Handler -->
