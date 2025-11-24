@@ -163,11 +163,11 @@ For the `txlrs-website` project make the following changes:
 
 
 For the `txlrs-website` project make the following changes:
-- On both the mobile (small) and desktop (large) displays, in the header area, immediately under the slider, put a banner with a blue background and static white text that reads "Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attroney.". Make the word "FREE" bold.
+- On both the mobile (small) and desktop (large) displays, in the header area, immediately under the slider, put a banner with a blue background and static white text that reads "Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attorney.". Make the word "FREE" bold.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
 
 
-Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attroney.
+Do you need an excellent Texas attorney who can win your case? Contact us now! A FREE service for people who need an attorney.
 
 
 
@@ -212,4 +212,10 @@ For the `txlrs-website` project make the following changes:
 12. Preserve the category structure and create category listing pages as well.
 13. Every blog post page is to be its own html file.
 14. Make any updates to the sitmap as may be appropriate after create all the blog pages.
+
+
+For the `txlrs-website` project make the following changes:
+1. Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+2. Ask me any claifying questions you have before making changes.
+3. The page navigation hamburger menu in the header area for mobile display does not list all 17 locations. Update it to list all 17 locations - the same 17 locations listed in the locations dropdown on the desktop display.
 
