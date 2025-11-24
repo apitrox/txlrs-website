@@ -286,13 +286,14 @@ For the `txlrs-website` project make the following changes:
 13. Every blog post page is to be its own html file.
 14. Make any updates to the sitmap as may be appropriate after create all the blog pages.
 
+3. Create a Topics page `topics.html` on the `txlrs-website` project. Each topic page we create will be added and listed on this Topics page. The Topics page is to be structured much like the blog page - a simple listing of topics each with a header and a description and separated by a horizontal line. Use the same header area and footer area on the topics.html page as is used on the Home page.
 
 For the `txlrs-website` project make the following changes:
 1. Ask me any questions you have for clarification before making changes.
 2. Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
-3. Create a Topics page `topics.html` on the `txlrs-website` project. Each topic page we create will be added and listed on this Topics page. The Topics page is to be structured much like the blog page - a simple listing of topics each with a header and a description and separated by a horizontal line. Use the same header area and footer area on the topics.html page as is used on the Home page.
-4. Copy 5 topics from the `txlrs-website-wpengine` project repository website to the `txlrs-website` project repository website that do not already exist on the `txlrs-website` project repository website.
-5. Create a separate HTML file for each topic page.
-6. Preserve the pathname for each topic - use the same pathname on `txlrs-website` as was used on `txlrs-website-wpengine`.
-7. Copy all content and images, but do not display any images on the Topics page.
-8. Put an entry on the Topics page (topics.html) to list each of the topics pages create on `txlrs-website` and cliking the listing will take the user to the individual topic page.
+3. Copy 5 topics from the `txlrs-website-wpengine` project repository website to the `txlrs-website` project repository website - choose any 5 topics that do not already exist on the `txlrs-website` project repository website.
+4. Create a separate HTML file for each topic page.
+5. Preserve the pathname for each topic - use the same pathname on `txlrs-website` as was used on `txlrs-website-wpengine`.
+6. Copy all content and images, but do not display any images on the Topics page.
+7. Use the same header and footer on all individual topic pages as is used on the Home page.
+8. Put an entry on the Topics page (topics.html) to list each of the topics pages create on `txlrs-website`. No images displayed on the topics.html page. Cliking the listing on the topics.html page will take the user to the individual topic page.

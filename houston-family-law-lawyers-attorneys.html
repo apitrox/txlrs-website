@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trusted Houston Family Law Lawyers and Attorneys. Get referrals to experienced Texas family law attorneys for divorce, custody, child support, and more.">
+    <meta name="author" content="Texas Lawyer Referral Service">
+    
+    <title>Houston Family Law Lawyers | Texas Lawyer Referral Service</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <!-- MDB UI Kit -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#294d7a',
+                        secondary: '#135280',
+                        accent: '#113a58',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="assets/js/translations.js"></script>
+</head>
+<body class="font-sans">
+    
+    <!-- Header (same as index.html) -->
+    <header class="md:sticky md:top-0 z-50 bg-white shadow-md">
+        <div class="w-full">
+            <!-- Top Bar -->
+            <div class="md:border-b border-gray-200">
+                <!-- Desktop Header -->
+                <div class="hidden md:block">
+                    <!-- GET A LAWYER Banner with Phone to Right -->
+                    <div class="flex items-center justify-between gap-2 lg:gap-6">
+                        <div class="flex-shrink-0">
+                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-auto w-full max-w-md block">
+                        </div>
+                        
+                        <div class="flex items-center gap-2 lg:gap-6">
+                            <!-- Phone Number Display -->
+                            <div class="flex flex-col">
+                                <span class="text-sm lg:text-lg font-semibold text-gray-700 mb-1">Text or Call 24/7</span>
+                                <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl lg:text-8xl font-bold text-primary hover:text-secondary transition whitespace-nowrap">512-872-4400</a>
+                            </div>
+                            
+                            <!-- Location Selector -->
+                            <div class="relative flex items-center gap-2">
+                                <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
+                                    <option value="512-872-4400">Austin</option>
+                                    <option value="713-510-7100">Houston</option>
+                                    <option value="214-731-4400">Dallas</option>
+                                    <option value="210-585-4400">San Antonio</option>
+                                </select>
+                                
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <i class="fas fa-map-marker-alt text-3xl"></i>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <span class="text-2xl font-bold leading-none">A文</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Header -->
+                <div class="md:hidden">
+                    <!-- Top Row: Logo and Controls -->
+                    <div class="flex items-center justify-between px-4 py-3">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="h-16">
+                            </a>
+                        </div>
+                        
+                        <!-- Control Buttons -->
+                        <div class="flex items-center gap-2">
+                            <!-- Location Button -->
+                            <button id="locationMenuBtn" class="h-14 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            
+                            <!-- Language Button -->
+                            <button id="languageMenuBtn" class="h-14 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                <span class="text-lg font-bold leading-none">A文</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            
+                            <!-- Hamburger Menu -->
+                            <button id="menuBtn" class="h-14 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center justify-center">
+                                <i class="fas fa-bars text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone Number Row -->
+                    <div class="bg-gray-100 px-4 py-4 border-t border-gray-300">
+                        <div class="text-center">
+                            <p class="text-xs font-semibold text-gray-700 mb-1">Text or Call 24/7</p>
+                            <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="text-3xl font-bold text-primary hover:text-secondary transition">512-872-4400</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:block border-b border-gray-200">
+                <div class="mx-auto px-4">
+                    <div class="flex items-center justify-center gap-2 lg:gap-8 h-16">
+                        <a href="index.html" class="text-gray-700 hover:text-primary transition font-medium">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-primary transition font-medium">About</a>
+                        <a href="blog.html" class="text-gray-700 hover:text-primary transition font-medium">Blog</a>
+                        <a href="topics.html" class="text-gray-700 hover:text-primary transition font-medium">Topics</a>
+                        <a href="https://txlrs-lawyers.org/" target="_blank" class="text-primary hover:text-secondary transition font-bold">For Lawyers</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="mobileMenu" class="hidden md:hidden fixed bg-white rounded-lg shadow-xl border border-gray-200 max-h-96 overflow-y-auto" style="z-index: 9999; right: 0.5rem; top: auto; margin-top: 0.5rem;">
+        <ul class="py-2">
+            <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Home</a></li>
+            <li><a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">About</a></li>
+            <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Blog</a></li>
+            <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Topics</a></li>
+            <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition">For Lawyers</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <article class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                    <div class="prose max-w-none">
+                        <h1 class="text-4xl font-bold text-primary mb-6">Trusted Houston Family Law Lawyers and Attorneys</h1>
+                        
+                        <img src="assets/images/houston-family-law-lawyer.jpg" alt="Houston Family Law Lawyers" class="float-left mr-6 mb-4 w-64 rounded-lg shadow-md">
+                        
+                        <p class="mb-4">Texas Lawyer Referral Service, TxLRS, can connect you to some of the best family law lawyers in Houston, Texas.</p>
+                        
+                        <p class="mb-4">Family law lawyers focus on legal matters between individuals in the context of the family. Lawyers in this field typically work in smaller firms and specialize in a variety of areas ranging from child welfare, through adoption, to divorce. Marriage, child abuse, legitimacy, civil unions, domestic partnerships are among the leading practice areas of a family lawyers' practice.</p>
+                        
+                        <p class="mb-4">Houston Family law lawyers handle a variety of issues including divorce, custody, child support, prenuptial agreements, guardianship, adoptions, and estate planning. In additional to traditional legal skills, family law often requires attorneys to be very comfortable with negotiation and counseling. The majority of private practice family law lawyers work in small law firms. Although, some large law firms will have methods dealing with matrimonial law or wealth management for high net worth individuals.</p>
+                        
+                        <p class="mb-4">In the public sector, family law sometimes requires state involvement – for example, child welfare or juvenile delinquency. Family law attorneys in the general area usually work in legal services or for a public defender.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">Houston Family Law Attorneys Explain Family Law</h2>
+                        
+                        <p class="mb-4">Family law deals with statutes and case precedents that govern the legal responsibilities of people who share are related by blood or marriage. Due to the emotions running high in family law cases, people are strongly advised to retain legal counsel. Contact one of our Houston family law attorneys today for a consultation.</p>
+                        
+                        <p class="mb-4">The vast majority of family law proceedings come about as a result of the termination of a marriage or romantic relationship. Family law attorneys help their clients file for separation or divorce, alimony, and child custody, visitation, and support. Spouses married may seek an annulment, and exclusive rights can exist between same-sex couples. The division of property at the end of marriage is also a standard issue in family law cases.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">Houston Family Law Lawyers Discuss Prenups & Assets</h2>
+                        
+                        <p class="mb-4">Concerning property division at the time of divorce, every state has a set of laws in place to determine the rights of the parties. However, couples who do not agree with the default rules in their state can "opt-out" by hiring a lawyer to draft a prenuptial agreement. Absent fraud or coercion, courts will enforce these premarital contracts upon divorce, and distribute property and financial support as they see fit.</p>
+                        
+                        <p class="mb-4">Texas Family law also involves the protecting the rights of those physically and emotionally abused in a family setting. The potential for domestic violence is not limited to relationships between current or former spouses and their children. Judges will not hesitate to assert their power to protect an elderly family member, a relationship partner, or even a roommate. When reports of abuse are made, the court will typically issue a restraining order to prevent further contact.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">Hire Experienced Houston Family Law Lawyers for Your Case</h2>
+                        
+                        <p class="mb-8">In a contested family law case, most people understand that hiring an experienced Houston family law attorney will provide many advantages. Your attorney can help determine which assets or income the other party is trying to hide. Furthermore, they can present arguments on your behalf regarding child support and visitation. Also, they can take the case to trial if both parties cannot come to a settlement. Retaining an attorney is just as crucial in uncontested cases. Without it, an individual is at risk and can unknowingly waive valuable their legal rights.</p>
+                        
+                        <!-- Contact Information Card -->
+                        <div class="bg-gray-50 border-t-4 border-primary rounded-lg p-6 mt-8">
+                            <div class="flex items-center gap-6">
+                                <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="w-32 h-auto">
+                                <div>
+                                    <p class="text-lg font-bold mb-2">Texas Lawyer Referral Service | <a href="https://txlrs.org" class="text-primary hover:underline">TxLRS.org</a></p>
+                                    <p class="mb-2">can be contacted by phone or text at</p>
+                                    <p class="text-2xl font-bold text-primary"><a href="tel:713-510-7100" class="hover:text-secondary transition">713-510-7100</a></p>
+                                    <p class="text-sm mt-2"><a href="https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm" target="_blank" class="hover:text-primary transition">Certified by the State Bar of Texas</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gradient-to-b from-accent to-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition">Blog</a></li>
+                        <li><a href="topics.html" class="hover:text-primary transition">Topics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="inicio.html" class="hover:text-primary transition">Inicio</a></li>
+                        <li><a href="acerca-de.html" class="hover:text-primary transition">Acerca de</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Text or Call</h4>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                        <div>
+                            <p>Austin, Texas</p>
+                            <p>Dallas, Texas</p>
+                            <p>Houston, Texas</p>
+                            <p>San Antonio, Texas</p>
+                        </div>
+                        <div>
+                            <p><a href="tel:512-872-4400" class="hover:text-primary">512-872-4400</a></p>
+                            <p><a href="tel:214-731-4400" class="hover:text-primary">214-731-4400</a></p>
+                            <p><a href="tel:713-510-7100" class="hover:text-primary">713-510-7100</a></p>
+                            <p><a href="tel:210-585-4400" class="hover:text-primary">210-585-4400</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p class="mb-4">This service is certified as a lawyer referral service as required by the State of Texas under Chapter 952, Occupations Code.</p>
+                
+                <p class="mb-4">Copyright © 2014 - <span id="currentYear"></span> Texas Lawyer Referral Service. All rights reserved.</p>
+                
+                <p class="mb-4">
+                    <a href="privacy-policy.html" class="hover:text-primary transition">Privacy Policy</a> | 
+                    <a href="terms-of-service.html" class="hover:text-primary transition">Terms of Service</a>
+                </p>
+                
+                <p class="text-gray-400">This site is for general informational purposes only. The information on this site is not legal advice and should not be used in place of legal advice. Consult a lawyer for legal advice.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- MDB UI Kit JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/location-handler.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Language Handler -->
+    <script src="assets/js/language-handler.js"></script>
+</body>
+</html>
