@@ -63,13 +63,13 @@
     <header class="md:sticky md:top-0 z-50 bg-white shadow-md">
         <div class="w-full">
             <!-- Top Bar -->
-            <div class="md:py-3 md:border-b border-gray-200">
+            <div class="md:border-b border-gray-200">
                 <!-- Desktop Header -->
-                <div class="hidden md:block md:px-4">
+                <div class="hidden md:block">
                     <!-- GET A LAWYER Banner with Phone to Right -->
                     <div class="flex items-center justify-between gap-2 lg:gap-6">
                         <div class="flex-shrink-0">
-                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-20 lg:h-24 block">
+                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-auto w-full max-w-md block">
                         </div>
                         
                         <div class="flex items-center gap-2 lg:gap-6">
@@ -227,7 +227,7 @@
             </div>
             
             <!-- Case Type Carousel -->
-            <div class="py-2 md:py-3 border-b border-gray-200" style="background-color: #294d7a;">
+            <div class="py-2 md:py-3 border-b border-gray-200" style="background-color: #294d7a; margin-top: 1px;">
                 <div class="case-carousel relative px-4">
                     <div class="carousel-container">
                         <!-- Slide 1: Get Money -->
@@ -321,8 +321,8 @@
                 <ul class="flex justify-center items-center gap-8 text-base font-medium">
                     <!-- Logo on left -->
                     <li class="mr-auto">
-                        <a href="index.html" class="flex items-center">
-                            <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="h-12">
+                        <a href="index.html" class="flex items-center py-0.5">
+                            <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="h-auto" style="max-height: calc(100% - 6px);">
                         </a>
                     </li>
                     <li><a href="index.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
@@ -332,7 +332,6 @@
                         <div class="relative dropdown-container">
                             <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
                                 <span data-i18n="nav_topics">Topics</span>
-                                <i class="fas fa-chevron-down text-xs"></i>
                             </button>
                             <ul class="hidden absolute left-0 bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50 border border-gray-200 dropdown-menu">
                                 <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_bankruptcy">Bankruptcy Lawyers</a></li>

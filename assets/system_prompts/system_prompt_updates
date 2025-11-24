@@ -219,3 +219,21 @@ For the `txlrs-website` project make the following changes:
 - Ask me any claifying questions you have before making changes.
 - The page navigation hamburger menu in the header area for mobile display does not list all 17 locations. Update it to list all 17 locations - the same 17 locations listed in the locations dropdown on the desktop display.
 
+
+For the `txlrs-website` project make the following changes:
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+- Ask me any claifying questions you have before making changes.
+- Update the hamburger menu, for both mobile and desktop, to display like a standard dropdown where when clicked the items are displayed immediately below the hamburger menu.
+
+The image I provided is to be defined as the entire header area for desktop display on the `txlrs-website` project. Make the following changes to this header area:
+- Enlarge the GET A LAWYER image to fill the white space above it and to the left of it, and to leave only a 1 pixel white line below it (between it and the carousel). 
+- Enlarge the TxLRS logo below the Carousel so the height is almost the same height as the space it is in, leaving only a 3 pixel border/padding above and below the image.
+- Remove the downward arrow on the Topics page navigation item.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+For the `txlrs-website` project make the following changes:
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+- Ask me any claifying questions you have before making changes.
+- Do not display any images on the blog.html page.
+- Change the blog.html page display from cards to a simple listing of blog posts with each listing separated by a horizontal line. Each listing will simply contain a title and a description.
+- Be sure that every blog post is listed on the blog.html page.
