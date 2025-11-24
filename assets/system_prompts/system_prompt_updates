@@ -195,3 +195,21 @@ For the `txlrs-website` project make the following changes:
 For the `txlrs-website` project make the following changes:
 - On the About page, replace the title "Trusted Houston Lawyers and Attorneys" with the Logo image.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+
+
+For the `txlrs-website` project make the following changes:
+1. Ask me any questions you have for clarification before making changes.
+2. Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes. Do not prompt me for permission to pull.
+3. Copy all of all of the blog pages from the `txlrs-website-wpengine` project repository website to the `txlrs-website` project repository website.
+4. Copy the content and images of each blog page from `txlrs-website-wpengine` to `txlrs-website`.
+5. Use the same path or pathname for the new page on `txlrs-website` as used on `txlrs-website-wpengine`. Do not change the pathname portion of the URL to the webpage.
+6. You will also copy the blog listing page that gets displayed when the user selects the `Blog` menu item or page navigation. Every blog post page is to be listed on this page listing page.
+7. Create a main blog listing page (blog.html) that shows all blog posts.
+8. Every blog page, and the blog listing page, should use the same header and footer as the home page on the current txlrs-website  (with the hamburger menu, phone number, location dropdowns, etc.).
+9. Copy all images from uploads to the txlrs-website and Update image paths to point to the new location.
+10. Copy ALL posts (old and recent), but only English posts. 
+11. convert to simple HTML files like abbott-signs-sweeping-child-welfare-bill.html.
+12. Preserve the category structure and create category listing pages as well.
+13. Every blog post page is to be its own html file.
+14. Make any updates to the sitmap as may be appropriate after create all the blog pages.
+
