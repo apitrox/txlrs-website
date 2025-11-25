@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Houston probate lawyers help settle estates and handle probate court matters. Free consultation available.">
+    <meta name="author" content="Texas Lawyer Referral Service">
+    
+    <title>Houston Probate Lawyers | Texas Lawyer Referral Service</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <!-- MDB UI Kit -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#294d7a',
+                        secondary: '#135280',
+                        accent: '#113a58',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="assets/js/translations.js"></script>
+</head>
+<body class="font-sans">
+    
+    <!-- Header (same as index.html) -->
+    <header class="md:sticky md:top-0 z-50 bg-white shadow-md">
+        <div class="w-full">
+            <!-- Top Bar -->
+            <div class="md:border-b border-gray-200">
+                <!-- Desktop Header -->
+                <div class="hidden md:block">
+                    <!-- GET A LAWYER Banner with Phone to Right -->
+                    <div class="flex items-center justify-between gap-2 lg:gap-6">
+                        <div class="flex-shrink-0">
+                            <img src="assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-auto w-full max-w-md block">
+                        </div>
+                        
+                        <div class="flex items-center gap-2 lg:gap-6">
+                            <!-- Phone Number Display -->
+                            <div class="flex flex-col">
+                                <span class="text-sm lg:text-lg font-semibold text-gray-700 mb-1">Text or Call 24/7</span>
+                                <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl lg:text-8xl font-bold text-primary hover:text-secondary transition whitespace-nowrap">512-872-4400</a>
+                            </div>
+                            
+                            <!-- Location Selector -->
+                            <div class="relative flex items-center gap-2">
+                                <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
+                                    <option value="512-872-4400">Austin</option>
+                                    <option value="713-510-7100">Houston</option>
+                                    <option value="214-731-4400">Dallas</option>
+                                    <option value="210-585-4400">San Antonio</option>
+                                </select>
+                                
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <i class="fas fa-map-marker-alt text-3xl"></i>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <span class="text-2xl font-bold leading-none">A文</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Header -->
+                <div class="md:hidden">
+                    <div style="background-color: #3d79cf;">
+                        <img src="assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="w-full h-auto">
+                    </div>
+                    
+                    <div class="my-1 px-2">
+                        <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="block w-full font-black text-primary leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
+                    </div>
+                    
+                    <div class="flex items-center justify-between gap-2 mb-2 px-2">
+                        <span class="text-base font-semibold text-gray-700 whitespace-nowrap">Text or Call 24/7</span>
+                        
+                        <div class="flex gap-2 flex-shrink-0">
+                            <button id="mobileMenuBtn" class="h-10 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center justify-center">
+                                <i class="fas fa-bars text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:block py-4">
+                <ul class="flex justify-center items-center gap-8 text-base font-medium">
+                    <li class="mr-auto">
+                        <a href="index.html" class="flex items-center py-0.5">
+                            <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="h-auto" style="max-height: calc(100% - 6px);">
+                        </a>
+                    </li>
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-primary transition">About</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-primary transition">Blog</a></li>
+                    <li><a href="topics.html" class="text-gray-700 hover:text-primary transition">Topics</a></li>
+                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">For Lawyers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden fixed bg-white rounded-lg shadow-xl border border-gray-200 max-h-96 overflow-y-auto" style="z-index: 9999; right: 0.5rem; top: auto; margin-top: 0.5rem;">
+        <ul class="py-2">
+            <li><a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Home</a></li>
+            <li><a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">About</a></li>
+            <li><a href="blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Blog</a></li>
+            <li><a href="topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Topics</a></li>
+            <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition">For Lawyers</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <article class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                    <div class="prose max-w-none">
+                        <h1 class="text-4xl font-bold text-primary mb-6">Houston Probate Lawyers and Attorneys</h1>
+                        
+                        <img src="assets/images/houston-probate-lawyer.jpg" alt="Houston Probate Lawyers & Attorneys" class="float-left mr-6 mb-4 w-64 rounded-lg shadow-md">
+                        
+                        <p class="mb-4">Do you need to settle an estate via court supervision? Did the court appoint you as the executor of the will? As the executor of the estate, you have the legal right to manage the assets of the will. However, this also comes with significant responsibilities and potential liabilities. Houston probate lawyers can guide you through the complex probate process and ensure all legal requirements are met.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">Understanding the Probate Process in Texas</h2>
+                        
+                        <p class="mb-4">Probate is the legal process of administering the estate of a deceased person. This includes validating the will, identifying and inventorying the deceased's property, appraising the property, paying debts and taxes, and distributing the remaining property according to the will or state law. In Texas, the probate process can vary depending on the complexity of the estate and whether there is a valid will.</p>
+                        
+                        <p class="mb-4">Not all estates require probate court supervision. Some assets can pass directly to beneficiaries through joint ownership, beneficiary designations, or transfer-on-death arrangements. Houston probate attorneys can help determine whether probate is necessary for a particular estate and what type of probate proceeding is most appropriate.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">How Houston Probate Lawyers Can Assist</h2>
+                        
+                        <p class="mb-4">Houston probate lawyers provide essential services throughout the probate process. They can help file the initial application for probate, prepare and file required inventories and accountings, assist with the sale of estate property, resolve disputes among beneficiaries, and ensure proper distribution of assets. They also help executors understand and fulfill their fiduciary duties while protecting them from potential liability.</p>
+                        
+                        <p class="mb-4">Probate attorneys can also assist with contested wills, disputes over estate assets, claims against the estate, and issues involving the validity of estate planning documents. They work to ensure that the deceased's wishes are honored while complying with Texas probate law.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mb-4 mt-8">Consult Houston Probate Lawyers Today</h2>
+                        
+                        <p class="mb-8">If you need assistance with probate matters, whether you are an executor, administrator, beneficiary, or heir, Houston probate lawyers can help. Fill out our form on this page or call us for referrals. Take advantage of our Free Consultation by contacting us today.</p>
+                        
+                        <!-- Contact Information Card -->
+                        <div class="bg-gray-50 border-t-4 border-primary rounded-lg p-6 mt-8">
+                            <div class="flex items-center gap-6">
+                                <img src="assets/images/logo.png" alt="Texas Lawyer Referral Service" class="w-32 h-auto">
+                                <div>
+                                    <p class="text-lg font-bold mb-2">Texas Lawyer Referral Service | <a href="https://txlrs.org" class="text-primary hover:underline">TxLRS.org</a></p>
+                                    <p class="mb-2">can be contacted by phone or text at</p>
+                                    <p class="text-2xl font-bold text-primary mb-2"><a href="tel:713-510-7100" class="hover:underline">713-510-7100</a></p>
+                                    <p class="text-sm"><a href="https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm" target="_blank" class="text-primary hover:underline">Certified by the State Bar of Texas</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition">Blog</a></li>
+                        <li><a href="topics.html" class="hover:text-primary transition">Topics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="mb-2">Texas Lawyer Referral Service</p>
+                    <p class="mb-2">Text or Call: <a href="tel:713-510-7100" class="hover:text-primary transition">713-510-7100</a></p>
+                    <p><a href="https://txlrs.org" class="hover:text-primary transition">www.txlrs.org</a></p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2024 Texas Lawyer Referral Service. All rights reserved.</p>
+                <p class="mt-2"><a href="https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm" target="_blank" class="hover:text-primary transition">Certified by the State Bar of Texas</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</body>
+</html>
