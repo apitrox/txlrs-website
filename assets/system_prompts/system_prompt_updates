@@ -296,7 +296,7 @@ For the `txlrs-website` project make the following changes:
 3. Copy 5 topics from the `txlrs-website-wpengine` project repository website to the `txlrs-website` project repository website - choose any 5 topics that do not already exist on the `txlrs-website` project repository website.
 4. Create a separate HTML file for each topic page.
 5. Preserve the pathname for each topic - use the same pathname on `txlrs-website` as was used on `txlrs-website-wpengine`.
-6. Copy all content and images from the individual topic page.
+6. Copy all content and images for the individual topic page.
 7. Use the same header and footer on all individual topic pages as is used on the Home page.
 8. Update the language translation to include all the individual topic pages and topics.html.
 9. Update the sitemap to include all the individual topic pages and topics.html.
