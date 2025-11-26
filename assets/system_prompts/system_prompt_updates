@@ -368,3 +368,9 @@ For the `txlrs-website` project make the following changes:
 - Example: 301 redirect of `../blog-post/abbott-signs-sweeping-child-welfare-bill.html` to `../abbott-signs-sweeping-child-welfare-bill.html`.
 - Ask me any questions you have for clarification or other purposes before making changes.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project website make the following changes to help with Google reindexing:
+- Add structured data (Schema.org markup) to all pages
+- Improve meta descriptions and titles if needed
+- Ensure mobile-friendliness and page speed optimization
