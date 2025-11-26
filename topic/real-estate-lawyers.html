@@ -46,7 +46,68 @@
     
     <!-- Translation System -->
     <script src="../assets/js/translations.js"></script>
-</head>
+
+    
+    <!-- Structured Data - Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "name": "Texas Lawyer Referral Service - Real Estate Lawyers",
+          "url": "https://txlrs.org/topic/real-estate-lawyers.html",
+          "description": "Connect with qualified real estate lawyers attorneys through Texas Lawyer Referral Service. State Bar certified referrals.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Texas Lawyer Referral Service",
+            "telephone": "+17135107100"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Texas"
+          }
+        },
+        {
+          "@type": "Attorney",
+          "name": "Real Estate Lawyers Attorneys Network",
+          "description": "Network of experienced real estate lawyers attorneys serving Texas",
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Texas Lawyer Referral Service"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://txlrs.org/topic/real-estate-lawyers.html",
+          "url": "https://txlrs.org/topic/real-estate-lawyers.html",
+          "name": "Real Estate Lawyers - Texas Lawyer Referral Service",
+          "isPartOf": {
+            "@id": "https://txlrs.org/#website"
+          },
+          "about": {
+            "@type": "Thing",
+            "name": "real estate lawyers"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://txlrs.org/assets/images/TxLRS-Logo-Color.png"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://txlrs.org/topic/real-estate-lawyers.html">
+    <meta property="og:site_name" content="Texas Lawyer Referral Service">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com"></head>
 <body class="font-sans">
     
     <!-- Header -->
