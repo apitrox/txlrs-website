@@ -350,4 +350,60 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- Blog Post Pages -->
+    <url>
+        <loc>https://txlrs.org/blog-post/abbott-signs-sweeping-child-welfare-bill.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/adoption-understanding-the-lifelog-commitment-get-legal-help.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/astroworld-injuries-protect-your-rights.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/can-cant-afford-attorney.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/how-does-covid-19-affect-my-child-visitation.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/how-equifax-breach-protect.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/hurricane-harvey-can-terminate-lease-pay-rent.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/is-the-end-of-daca-here.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://txlrs.org/blog-post/risk-violate-child-custody-order.html</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
