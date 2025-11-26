@@ -301,3 +301,58 @@ For the `txlrs-website` project make the following changes:
 8. Update the language translation to include all the individual topic pages and topics.html.
 9. Update the sitemap to include all the individual topic pages and topics.html.
 10. Put an entry on the Topics page (topics.html) to list each of the topics pages create on `txlrs-website`. No images displayed on the topics.html page. Cliking the listing on the topics.html page will take the user to the individual topic page.
+
+
+For the `txlrs-website` project make the following changes:
+- Create a topic page for `houston-wrongful-death-lawyers`. Write the text content and create a representative image.
+- Use the words "wrongful death" as much as possible - these are the key search words or anchor words for this page.
+- This `houston-wrongful-death-lawyers` is not for the purpose of readability by a human, its primary purpose is for readability by search bots, particularly Google search bots.
+- Our primary goal for this page is to rank high in Google searches when someone searches for an attorney/lawyer for a wrongful death situation, or any type of accident death situation.
+- Create other aspects of this page that can help with Google ranking, such as a slug, use of keywords, use of headings, etc.
+- Add the page to the list of topic pages on the topics.html page.
+- Update the site map appropriately.
+- Create a separate html file for this page.
+- Ask me any questions you have for clarification before making changes.
+- Use the same header and footer on as is used on the Home page.
+- Update the language translation to include this individual topic page and topics.html.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+1. Create entirely new, original content focused on wrongful death legal services. The content should not focus on Houston, but rather either reference Texas or be generic with regard to geography.
+2. Any reference to "our attorneys" needs to be phrased as "our network of attorneys", we do not want people to get the wrong impression that they work for us or that we direct them.
+3. Yes to all SEO Strategy items for maximizing Google ranking.  With regard to FAQs, that shuold be part of this topic page, not another page.  The FAQs section on the page can contain just questions, not responses.  If someone reads the page content our purpose is not to educate them and we do not want to answer all their questions - we want to get them to call us.
+4. I would like you to create a new image, one that is almost like a photo but not a photo.  Create an image that represents the topic. Use appropriately related alt-text for the image. If you can compress the image for performance.
+5. Yes
+6. Do not update language translation at this time, we will do that later.
+Also, the page should ideally have a unique <title> and <meta description>, plus proper headings (H1, H2). Google mentions the “title link” and snippet are important.  Google emphasises content should be unique, helpful, up-to-date, well-written.  Include a call to action: call or text us now! The page should have a meningful slug.
+
+- Use the words "wrongful death" as much as possible - these are the key search words or anchor words for this page.
+- This `houston-wrongful-death-lawyers` is not for the purpose of readability by a human, its primary purpose is for readability by search bots, particularly Google search bots.
+- Our primary goal for this page is to rank high in Google searches when someone searches for an attorney/lawyer for a wrongful death situation, or any type of accident death situation.
+- Create other aspects of this page that can help with Google ranking, such as a slug, use of keywords, use of headings, etc.
+- Add the page to the list of topic pages on the topics.html page.
+- Update the site map appropriately.
+- Create a separate html file for this page.
+- Ask me any questions you have for clarification before making changes.
+- Use the same header and footer on as is used on the Home page.
+
+
+For the `txlrs-website` project make the following changes:
+- Move all of the .html files that are blog posts into the `blog_posts_pages` folder, making all necessary updates to the code to facilitate this change so the pages still display properly. 
+- Do not change the name of any .html files.
+- Do not change the pathname or canonical url of the page.
+- Ask me any questions you have for clarification or other purposes before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+1. The `blog-posts-pages` folder already exists and it has hyphens rather than underscores between words.
+2. Keep the URLs pointing to the root (e.g., https://txlrs.org/abbott-signs-sweeping-child-welfare-bill.html) even though the file is physically in a subfolder (note the new domain is `txlrs.org`)
+3. Move all blog post files, but do not move topics files.  Move a total of 9 files - the 9 blog posts listed on the blog.html page.
+4. Yes, correct approach is to do all the necessary updates.
+5. add/update canonical link tags in the blog post HTML files to maintain SEO and indicate the preferred URL
+
+To fix this, I need to create redirect files in the root directory that will redirect visitors from the root URLs to the actual files in the blog-post folder. This way, both URLs will work, and the canonical tags will correctly point to the root URLs as the preferred version.
+
+
+For the `txlrs-website` project make the following changes:
+- For each of the blog posts in the `blog-post` folder, canonical url link from the old path that did not contain `/blog-post` to the new name that does now contain `/blog-post` in the path. 
+- Example: 301 redirect of `../blog-post/abbott-signs-sweeping-child-welfare-bill.html` to `../abbott-signs-sweeping-child-welfare-bill.html`.
+- Ask me any questions you have for clarification or other purposes before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
