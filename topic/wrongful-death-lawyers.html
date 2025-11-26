@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experienced wrongful death lawyers in Texas help families seek justice when negligence causes fatal accidents. Free consultation for wrongful death claims. Call or text 24/7.">
+    <meta name="author" content="Texas Lawyer Referral Service">
+    <meta name="keywords" content="wrongful death lawyer, wrongful death attorney, wrongful death claim, fatal accident lawyer, death negligence attorney, wrongful death lawsuit, accident death lawyer, wrongful death compensation, family wrongful death attorney">
+    <link rel="canonical" href="https://txlrs.org/topic/wrongful-death-lawyers.html">
+    
+    <title>Wrongful Death Lawyers - Expert Legal Help for Fatal Accident Claims</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <!-- Hero Title Font -->
+    <style>
+        .hero-title-font {
+            font-family: 'Cinzel', 'Marcellus SC', 'Times New Roman', serif;
+        }
+    </style>
+    
+    <!-- MDB UI Kit -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#294d7a',
+                        secondary: '#135280',
+                        accent: '#113a58',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Translation System -->
+    <script src="../assets/js/translations.js"></script>
+</head>
+<body class="font-sans">
+    
+    <!-- Header -->
+    <header class="md:sticky md:top-0 z-50 bg-white shadow-md">
+        <div class="w-full">
+            <!-- Top Bar -->
+            <div class="md:border-b border-gray-200">
+                <!-- Desktop Header -->
+                <div class="hidden md:block">
+                    <!-- GET A LAWYER Banner with Phone to Right -->
+                    <div class="flex items-center justify-between gap-2 lg:gap-6">
+                        <div class="flex-shrink-0">
+                            <img src="../assets/images/GET_A_LAWYER_banner_right.png" alt="Get a Lawyer" class="h-auto w-full max-w-md block">
+                        </div>
+                        
+                        <div class="flex items-center gap-2 lg:gap-6">
+                            <!-- Phone Number Display -->
+                            <div class="flex flex-col">
+                                <span class="text-sm lg:text-lg font-semibold text-gray-700 mb-1" data-i18n="header_text_or_call_24_7">Text or Call 24/7</span>
+                                <a href="tel:512-872-4400" id="phoneDisplay" class="text-5xl lg:text-8xl font-bold text-primary hover:text-secondary transition whitespace-nowrap">512-872-4400</a>
+                            </div>
+                            
+                            <!-- Location Selector with Responsive Fallback -->
+                            <div class="relative flex items-center gap-2">
+                                <!-- Location dropdown for larger screens -->
+                                <select id="locationSelector" class="hidden xl:block form-select px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary min-w-[140px]">
+                                    <option value="325-225-4400">Abilene</option>
+                                    <option value="806-375-4400">Amarillo</option>
+                                    <option value="512-872-4400">Austin</option>
+                                    <option value="409-292-4400">Beaumont</option>
+                                    <option value="361-338-4400">Corpus Christi</option>
+                                    <option value="214-731-4400">Dallas</option>
+                                    <option value="915-233-4400">El Paso</option>
+                                    <option value="817-642-8800">Fort Worth</option>
+                                    <option value="713-510-7100">Houston</option>
+                                    <option value="956-363-4400">Laredo</option>
+                                    <option value="903-488-4400">Longview</option>
+                                    <option value="806-208-4400">Lubbock</option>
+                                    <option value="956-305-3300">McAllen</option>
+                                    <option value="432-348-4400">Midland</option>
+                                    <option value="325-208-4400">San Angelo</option>
+                                    <option value="210-585-4400">San Antonio</option>
+                                    <option value="940-245-4400">Wichita Falls</option>
+                                </select>
+                                
+                                <!-- Location button for medium screens -->
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLocationMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <i class="fas fa-map-marker-alt text-3xl"></i>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div id="desktopLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                                        <div class="py-2">
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-225-4400">Abilene</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-375-4400">Amarillo</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="409-292-4400">Beaumont</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="361-338-4400">Corpus Christi</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="903-488-4400">Longview</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-305-3300">McAllen</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="432-348-4400">Midland</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-208-4400">San Angelo</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                                            <button class="desktop-location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="940-245-4400">Wichita Falls</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Language button for medium screens -->
+                                <div class="xl:hidden relative">
+                                    <button id="desktopLanguageMenuBtn" class="h-20 lg:h-24 w-12 bg-primary text-white rounded-lg hover:bg-secondary transition flex flex-col items-center justify-center gap-1">
+                                        <span class="text-2xl font-bold leading-none">A文</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div id="desktopLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                                        <div class="py-2">
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                                            <button class="desktop-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Header -->
+                <div class="md:hidden">
+                    <!-- 1. GET A LAWYER Banner - Phone Below -->
+                    <div style="background-color: #3d79cf;">
+                        <img src="../assets/images/GET_A_LAWYER_banner_down.png" alt="Get a Lawyer" class="w-full h-auto">
+                    </div>
+                    
+                    <!-- Row 1: Phone Number Only -->
+                    <div class="my-1 px-2">
+                        <a href="tel:512-872-4400" id="mobilePhoneDisplay" class="block w-full font-black text-primary leading-tight text-center" style="word-break: break-all; font-weight: 900; font-size: clamp(2.5rem, 12vw, 8rem);">512-872-4400</a>
+                    </div>
+                    
+                    <!-- Row 2: Text or Call 24/7, Hamburger Menu, Location Dropdown, Language Dropdown -->
+                    <div class="flex items-center justify-between gap-2 mb-2 px-2">
+                        <!-- Text or Call 24/7 (Left) -->
+                        <span class="text-base font-semibold text-gray-700 whitespace-nowrap" data-i18n="header_text_or_call_24_7">Text or Call 24/7</span>
+                        
+                        <!-- Button Container (Right) -->
+                        <div class="flex gap-2 flex-shrink-0">
+                            <!-- Hamburger Menu -->
+                            <button id="mobileMenuBtn" class="h-10 w-10 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center justify-center">
+                                <i class="fas fa-bars text-xl"></i>
+                            </button>
+                            
+                            <!-- Location Dropdown Menu -->
+                            <div class="relative">
+                                <button id="mobileLocationMenuBtn" class="h-10 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                    <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div id="mobileLocationMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                                    <div class="py-2">
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-225-4400">Abilene</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-375-4400">Amarillo</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="512-872-4400">Austin</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="409-292-4400">Beaumont</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="361-338-4400">Corpus Christi</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="214-731-4400">Dallas</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="915-233-4400">El Paso</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="817-642-8800">Fort Worth</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="713-510-7100">Houston</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-363-4400">Laredo</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="903-488-4400">Longview</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="806-208-4400">Lubbock</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="956-305-3300">McAllen</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="432-348-4400">Midland</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="325-208-4400">San Angelo</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="210-585-4400">San Antonio</button>
+                                        <button class="location-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-phone="940-245-4400">Wichita Falls</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Language Dropdown Menu -->
+                            <div class="relative">
+                                <button id="mobileLanguageMenuBtn" class="h-10 px-3 bg-primary text-white rounded-lg hover:bg-secondary transition flex items-center gap-2">
+                                    <span class="text-lg font-bold leading-none">A文</span>
+                                    <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div id="mobileLanguageMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 z-50 max-h-96 overflow-y-auto">
+                                    <div class="py-2">
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="zh">中文 (Chinese)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="en">English (English)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="fr">Français (French)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="es">Español (Spanish)</button>
+                                        <button class="mobile-language-option block w-full text-left px-4 py-2 hover:bg-gray-100" data-lang="vi">Tiếng Việt (Vietnamese)</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Type Carousel -->
+            <div class="py-2 md:py-3 border-b border-gray-200" style="background-color: #294d7a; margin-top: 1px;">
+                <div class="case-carousel relative px-4">
+                    <div class="carousel-container">
+                        <!-- Slide 1: Get Money -->
+                        <a href="https://txlrs.app/?id=212001" class="carousel-slide active text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-dollar-sign text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_get_money">Get Money</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_get_money_desc">and Lots of It - for you or someone else (any matter involving a lawsuit for money)</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Slide 2: Stay Out of Jail -->
+                        <a href="https://txlrs.app/?id=212002" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-gavel text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_stay_out_jail">Stay Out of Jail</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_stay_out_jail_desc">any Criminal Defense matter for you or someone else (drug & alcohol, theft, vandalism, murder, and more…)</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Slide 3: Divorce & Family Law -->
+                        <a href="https://txlrs.app/?id=212003" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-users text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_divorce_family">Divorce & Family Law</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_divorce_family_desc">any Family Law matter for you or someone else (child support, custody, access & visitation, adoption)</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Slide 4: Injury, Accident, Death -->
+                        <a href="https://txlrs.app/?id=212004" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-car-crash text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_injury_accident">Injury, Accident, Death</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_injury_accident_desc">Auto Accident, Work Injury, and more…</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Slide 5: Immigration -->
+                        <a href="https://txlrs.app/?id=212005" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-passport text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_immigration">Immigration</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_immigration_desc">any Immigration matter for you or someone else (citizenship, green card, work visa or permit, more…)</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Slide 6: Other Legal Matter -->
+                        <a href="https://txlrs.app/?id=212006" class="carousel-slide text-center text-white block">
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <i class="fas fa-balance-scale text-4xl md:text-5xl"></i>
+                                    <h3 class="text-3xl md:text-4xl font-bold" data-i18n="case_other">Other Legal Matter</h3>
+                                </div>
+                                <p class="text-sm md:text-base max-w-2xl" data-i18n="case_other_desc">any other legal matter not listed above</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="flex justify-center gap-2 mt-4">
+                        <button class="carousel-dot active" data-slide="0"></button>
+                        <button class="carousel-dot" data-slide="1"></button>
+                        <button class="carousel-dot" data-slide="2"></button>
+                        <button class="carousel-dot" data-slide="3"></button>
+                        <button class="carousel-dot" data-slide="4"></button>
+                        <button class="carousel-dot" data-slide="5"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <div class="w-full text-center py-3 px-4" style="background-color: #294d7a;">
+                <p class="text-white text-sm md:text-base">
+                    Do you need an excellent Texas attorney who can win your case? Contact us now! A <strong>FREE</strong> service for people who need an attorney.
+                </p>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:block py-4">
+                <ul class="flex justify-center items-center gap-8 text-base font-medium">
+                    <!-- Logo on left -->
+                    <li class="mr-auto">
+                        <a href="../index.html" class="flex items-center py-0.5">
+                            <img src="../assets/images/logo.png" alt="Texas Lawyer Referral Service" class="h-auto" style="max-height: calc(100% - 6px);">
+                        </a>
+                    </li>
+                    <li><a href="../index.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                    <li><a href="../about.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_about">About</a></li>
+                    <li><a href="../blog.html" class="text-gray-700 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                    <li>
+                        <div class="relative dropdown-container">
+                            <a href="../topics.html" class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                                <span data-i18n="nav_topics">Topics</span>
+                            </a>
+                            <ul class="hidden absolute left-0 bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50 border border-gray-200 dropdown-menu">
+                                <li><a href="topics.html#bankruptcy" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_bankruptcy">Bankruptcy Lawyers</a></li>
+                                <li><a href="topics.html#business" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_business">Business Lawyers</a></li>
+                                <li><a href="topics.html#criminal" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_criminal">Criminal Defense</a></li>
+                                <li><a href="topics.html#divorce" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_divorce">Divorce Lawyers</a></li>
+                                <li><a href="topics.html#family" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_family">Family Law</a></li>
+                                <li><a href="topics.html#immigration" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_immigration">Immigration Lawyers</a></li>
+                                <li><a href="topics.html#injury" class="block px-4 py-2 text-sm hover:bg-gray-100" data-i18n="topic_injury">Personal Injury</a></li>
+                                <li><a href="../topics.html" class="block px-4 py-2 text-sm font-bold hover:bg-gray-100" data-i18n="topic_view_all">View All Topics →</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="https://txlrs-lawyers.org/" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <!-- Mobile Navigation Dropdown - Positioned to overlay content -->
+    <div id="mobileMenu" class="hidden md:hidden fixed bg-white rounded-lg shadow-xl border border-gray-200 max-h-96 overflow-y-auto" style="z-index: 9999; right: 0.5rem; top: auto; margin-top: 0.5rem;">
+        <ul class="py-2">
+            <li><a href="../index.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+            <li><a href="../about.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_about">About</a></li>
+            <li><a href="../blog.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+            <li><a href="../topics.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
+            <li><a href="https://txlrs-lawyers.org/" target="_blank" class="block py-3 px-4 text-primary font-bold hover:bg-gray-100 transition" data-i18n="nav_for_lawyers">For Lawyers</a></li>
+            <li class="border-t border-gray-200 mt-2 pt-2">
+                <p class="px-4 py-2 text-sm font-bold text-gray-500" data-i18n="nav_locations">Locations</p>
+            </li>
+            <li><a href="tel:325-225-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Abilene <span class="text-xs text-gray-500">(325) 225-4400</span></a></li>
+            <li><a href="tel:806-375-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Amarillo <span class="text-xs text-gray-500">(806) 375-4400</span></a></li>
+            <li><a href="tel:512-872-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Austin <span class="text-xs text-gray-500">(512) 872-4400</span></a></li>
+            <li><a href="tel:409-292-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Beaumont <span class="text-xs text-gray-500">(409) 292-4400</span></a></li>
+            <li><a href="tel:361-338-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Corpus Christi <span class="text-xs text-gray-500">(361) 338-4400</span></a></li>
+            <li><a href="tel:214-731-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Dallas <span class="text-xs text-gray-500">(214) 731-4400</span></a></li>
+            <li><a href="tel:915-233-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">El Paso <span class="text-xs text-gray-500">(915) 233-4400</span></a></li>
+            <li><a href="tel:817-642-8800" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Fort Worth <span class="text-xs text-gray-500">(817) 642-8800</span></a></li>
+            <li><a href="tel:713-510-7100" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Houston <span class="text-xs text-gray-500">(713) 510-7100</span></a></li>
+            <li><a href="tel:956-363-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Laredo <span class="text-xs text-gray-500">(956) 363-4400</span></a></li>
+            <li><a href="tel:903-488-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Longview <span class="text-xs text-gray-500">(903) 488-4400</span></a></li>
+            <li><a href="tel:806-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Lubbock <span class="text-xs text-gray-500">(806) 208-4400</span></a></li>
+            <li><a href="tel:956-305-3300" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">McAllen <span class="text-xs text-gray-500">(956) 305-3300</span></a></li>
+            <li><a href="tel:432-348-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Midland <span class="text-xs text-gray-500">(432) 348-4400</span></a></li>
+            <li><a href="tel:325-208-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Angelo <span class="text-xs text-gray-500">(325) 208-4400</span></a></li>
+            <li><a href="tel:210-585-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">San Antonio <span class="text-xs text-gray-500">(210) 585-4400</span></a></li>
+            <li><a href="tel:940-245-4400" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 hover:text-primary transition">Wichita Falls <span class="text-xs text-gray-500">(940) 245-4400</span></a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <article class="bg-white rounded-lg shadow-lg p-8">
+                    <h1 class="text-4xl font-bold text-primary mb-6">Wrongful Death Lawyers - Expert Legal Help for Fatal Accident Claims</h1>
+                    
+                    <div class="prose max-w-none">
+                        <img src="../assets/images/houston-wrongful-death-lawyer.jpg" alt="Wrongful death attorney providing compassionate legal representation for families" class="float-left mr-6 mb-4 rounded-lg shadow-md" style="max-width: 300px;">
+                        
+                        <p class="text-lg mb-4">When a loved one dies due to someone else's negligence or wrongful act, the pain is immeasurable. A wrongful death claim allows surviving family members to seek justice and financial compensation for their devastating loss. Wrongful death lawyers specialize in representing families during this difficult time, fighting to hold negligent parties accountable for fatal accidents and wrongful death cases.</p>
+                        
+                        <p class="mb-4">Wrongful death occurs when a person's death is caused by the negligence, recklessness, or intentional misconduct of another party. Whether the wrongful death resulted from a car accident, medical malpractice, workplace accident, defective product, or other preventable tragedy, experienced wrongful death attorneys can help your family pursue the compensation and closure you deserve.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">What is a Wrongful Death Claim?</h2>
+                        
+                        <p class="mb-4">A wrongful death lawsuit is a civil action brought by surviving family members when their loved one's death was caused by another party's wrongful actions or negligence. Wrongful death claims seek to recover damages for the survivors' losses, including funeral expenses, lost income, loss of companionship, and emotional suffering. Unlike criminal cases, wrongful death lawsuits are civil matters that focus on financial compensation rather than criminal punishment.</p>
+                        
+                        <p class="mb-4">Wrongful death cases can arise from many situations, including fatal car accidents, truck accidents, motorcycle accidents, pedestrian accidents, workplace deaths, medical malpractice, nursing home abuse, defective products, premises liability incidents, and violent crimes. An experienced wrongful death lawyer will investigate the circumstances surrounding your loved one's death and determine who may be held liable.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Who Can File a Wrongful Death Lawsuit?</h2>
+                        
+                        <p class="mb-4">State laws vary regarding who has the legal right to file a wrongful death claim. Generally, immediate family members such as spouses, children, and parents of unmarried children can bring wrongful death lawsuits. In some cases, other dependents or the deceased person's estate may also be entitled to file a wrongful death claim. A wrongful death attorney can explain the specific wrongful death laws in your state and help determine who has standing to pursue the case.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Types of Wrongful Death Cases</h2>
+                        
+                        <p class="mb-4">Wrongful death lawyers handle a wide range of fatal accident cases and wrongful death claims, including:</p>
+                        
+                        <ul class="list-disc pl-6 mb-4">
+                            <li><strong>Fatal Car Accidents:</strong> Wrongful death from auto accidents caused by distracted driving, drunk driving, speeding, or other negligence</li>
+                            <li><strong>Truck Accident Deaths:</strong> Wrongful death involving commercial trucks, often due to driver fatigue, improper maintenance, or company negligence</li>
+                            <li><strong>Medical Malpractice Deaths:</strong> Wrongful death resulting from surgical errors, misdiagnosis, medication errors, or substandard medical care</li>
+                            <li><strong>Workplace Fatalities:</strong> Wrongful death on construction sites, industrial accidents, or other dangerous work environments</li>
+                            <li><strong>Defective Product Deaths:</strong> Wrongful death caused by dangerous or defective products, including vehicles, medications, or consumer goods</li>
+                            <li><strong>Premises Liability Deaths:</strong> Wrongful death from slip and falls, inadequate security, or other dangerous property conditions</li>
+                            <li><strong>Nursing Home Wrongful Death:</strong> Death from neglect, abuse, or substandard care in nursing facilities</li>
+                            <li><strong>Pedestrian and Bicycle Accidents:</strong> Wrongful death of pedestrians or cyclists struck by negligent drivers</li>
+                            <li><strong>Drowning and Water Accidents:</strong> Wrongful death in swimming pools, boating accidents, or other water-related incidents</li>
+                            <li><strong>Violent Crime Deaths:</strong> Wrongful death from assault, homicide, or inadequate security leading to fatal attacks</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Damages in Wrongful Death Cases</h2>
+                        
+                        <p class="mb-4">Wrongful death settlements and verdicts can provide compensation for numerous losses suffered by surviving family members. Economic damages in wrongful death claims may include funeral and burial expenses, medical bills from the deceased's final illness or injury, loss of the deceased's expected income and benefits, loss of inheritance, and the value of household services the deceased would have provided.</p>
+                        
+                        <p class="mb-4">Non-economic damages in wrongful death lawsuits address the intangible losses families endure. These wrongful death damages include loss of companionship and consortium, loss of parental guidance for children, mental anguish and emotional distress, and loss of love, comfort, and society. In cases involving particularly egregious conduct, punitive damages may also be awarded in wrongful death cases to punish the wrongdoer and deter similar conduct.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">How a Wrongful Death Attorney Can Help</h2>
+                        
+                        <p class="mb-4">Experienced wrongful death lawyers provide crucial assistance to grieving families navigating the complex legal process. A wrongful death attorney will conduct a thorough investigation into the circumstances of the death, gather evidence to prove negligence or wrongdoing, consult with expert witnesses including medical professionals and accident reconstructionists, calculate the full value of your wrongful death claim, and handle all negotiations with insurance companies and opposing counsel.</p>
+                        
+                        <p class="mb-4">Your wrongful death lawyer will file your wrongful death lawsuit within the applicable statute of limitations, represent your family's interests in court if a trial becomes necessary, and work tirelessly to maximize your wrongful death settlement or verdict. Throughout the process, a compassionate wrongful death attorney provides guidance and support while fighting for justice on behalf of your loved one.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Time Limits for Wrongful Death Claims</h2>
+                        
+                        <p class="mb-4">Every state has a statute of limitations that sets a deadline for filing wrongful death lawsuits. These time limits for wrongful death claims typically range from one to three years from the date of death, though the specific deadline varies by state and circumstances. Missing the wrongful death statute of limitations can permanently bar your family from seeking compensation, so it's critical to consult a wrongful death attorney as soon as possible after your loved one's death.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Proving Negligence in Wrongful Death Cases</h2>
+                        
+                        <p class="mb-4">To succeed in a wrongful death lawsuit, your wrongful death lawyer must prove that the defendant owed a duty of care to the deceased, the defendant breached that duty through negligent or wrongful conduct, the breach directly caused your loved one's death, and the death resulted in damages to surviving family members. Wrongful death attorneys use various types of evidence to establish these elements, including accident reports, witness testimony, expert opinions, medical records, employment records, and financial documents.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Wrongful Death vs. Criminal Cases</h2>
+                        
+                        <p class="mb-4">It's important to understand that wrongful death lawsuits are separate from any criminal prosecution. A wrongful death case is a civil matter pursued by the victim's family to recover financial compensation, while criminal cases are brought by the government to punish wrongdoers. The same incident can result in both a criminal trial and a wrongful death claim. Even if there is no criminal conviction, or if criminal charges are never filed, families may still pursue wrongful death litigation and recover damages in civil court.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Choosing the Right Wrongful Death Lawyer</h2>
+                        
+                        <p class="mb-4">Selecting an experienced wrongful death attorney is one of the most important decisions you'll make following your loved one's death. Look for a wrongful death lawyer with a proven track record handling fatal accident cases and wrongful death claims similar to yours. The right wrongful death attorney should have substantial trial experience, as insurance companies often settle for higher amounts when they know your lawyer is prepared to go to court.</p>
+                        
+                        <p class="mb-4">Most wrongful death lawyers work on a contingency fee basis, meaning they don't get paid unless you receive compensation through a wrongful death settlement or verdict. This arrangement allows families to pursue wrongful death claims without upfront legal fees. During your initial consultation, ask potential wrongful death attorneys about their experience, case results, approach to wrongful death litigation, and fee structure.</p>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Frequently Asked Questions About Wrongful Death Claims</h2>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                            <ul class="space-y-3">
+                                <li class="font-semibold">• What is the difference between wrongful death and murder?</li>
+                                <li class="font-semibold">• How long do I have to file a wrongful death lawsuit?</li>
+                                <li class="font-semibold">• How much is my wrongful death case worth?</li>
+                                <li class="font-semibold">• Who receives the money from a wrongful death settlement?</li>
+                                <li class="font-semibold">• Can I file a wrongful death claim if my loved one was partially at fault?</li>
+                                <li class="font-semibold">• How long does a wrongful death lawsuit take?</li>
+                                <li class="font-semibold">• Do wrongful death cases go to trial?</li>
+                                <li class="font-semibold">• What evidence is needed for a wrongful death case?</li>
+                                <li class="font-semibold">• Can I sue for wrongful death if there was a criminal case?</li>
+                                <li class="font-semibold">• What if the person responsible has no insurance or assets?</li>
+                                <li class="font-semibold">• Are wrongful death settlements taxable?</li>
+                                <li class="font-semibold">• What is the wrongful death statute of limitations in Texas?</li>
+                            </ul>
+                        </div>
+                        
+                        <h2 class="text-2xl font-bold text-primary mt-8 mb-4">Get Help from an Experienced Wrongful Death Lawyer Today</h2>
+                        
+                        <p class="mb-4">Losing a loved one to a preventable death is one of life's most traumatic experiences. While no amount of money can replace your loved one, a successful wrongful death claim can provide financial security for your family and hold negligent parties accountable. If you have lost a family member due to someone else's negligence or wrongful act, contact an experienced wrongful death attorney as soon as possible to protect your rights.</p>
+                        
+                        <p class="mb-4"><strong class="text-xl text-primary">Call or text us now for a FREE consultation!</strong> Our wrongful death lawyers are available 24/7 to discuss your wrongful death case and help you understand your legal options. Time is critical in wrongful death claims - don't wait to seek the justice and compensation your family deserves.</p>
+                        
+                        <div class="bg-gray-100 p-6 rounded-lg mt-8">
+                            <div class="flex items-start gap-4">
+                                <img src="../assets/images/logo.png" alt="Texas Lawyer Referral Service" class="w-24 h-auto">
+                                <div>
+                                    <p class="font-bold text-lg mb-2">Texas Lawyer Referral Service | <a href="../index.html" class="text-primary hover:underline">TxLRS.org</a></p>
+                                    <p class="mb-2">can be contacted by phone or text at</p>
+                                    <p class="text-2xl font-bold text-primary mb-2"><a href="tel:713-510-7100" class="hover:underline">713-510-7100</a></p>
+                                    <p class="text-sm"><a href="https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm" target="_blank" class="text-primary hover:underline">Certified by the State Bar of Texas</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- English Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-primary transition" data-i18n="nav_home">Home</a></li>
+                        <li><a href="../about.html" class="hover:text-primary transition" data-i18n="nav_about">About</a></li>
+                        <li><a href="../blog.html" class="hover:text-primary transition" data-i18n="nav_blog">Blog</a></li>
+                        <li><a href="../topics.html" class="hover:text-primary transition" data-i18n="nav_topics">Topics</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Spanish Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_spanish_links">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="inicio.html" class="hover:text-primary transition">Inicio</a></li>
+                        <li><a href="acerca-de.html" class="hover:text-primary transition">Acerca de</a></li>
+                        <li><a href="../blog.html" class="hover:text-primary transition">Blog</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="hover:text-primary transition">Preguntas Frecuentes</a></li>
+                        <li><a href="temas.html" class="hover:text-primary transition">Temas</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Texas Locations -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4" data-i18n="footer_texas_locations">Text or Call</h4>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                        <div>
+                            <p>Austin, Texas</p>
+                            <p>Dallas, Texas</p>
+                            <p>El Paso, Texas</p>
+                            <p>Fort Worth, Texas</p>
+                        </div>
+                        <div>
+                            <p><a href="tel:512-872-4400" class="hover:text-primary">512-872-4400</a></p>
+                            <p><a href="tel:214-731-4400" class="hover:text-primary">214-731-4400</a></p>
+                            <p><a href="tel:915-233-4400" class="hover:text-primary">915-233-4400</a></p>
+                            <p><a href="tel:817-642-8800" class="hover:text-primary">817-642-8800</a></p>
+                        </div>
+                        <div>
+                            <p>Houston, Texas</p>
+                            <p>Laredo, Texas</p>
+                            <p>Lubbock, Texas</p>
+                            <p>San Antonio, Texas</p>
+                        </div>
+                        <div>
+                            <p><a href="tel:713-510-7100" class="hover:text-primary">713-510-7100</a></p>
+                            <p><a href="tel:956-363-4400" class="hover:text-primary">956-363-4400</a></p>
+                            <p><a href="tel:806-208-4400" class="hover:text-primary">806-208-4400</a></p>
+                            <p><a href="tel:210-585-4400" class="hover:text-primary">210-585-4400</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p class="mb-4" data-i18n="footer_certification">This service is certified as a lawyer referral service as required by the State of Texas under Chapter 952, Occupations Code.</p>
+                
+                <p class="mb-4"><span data-i18n="footer_copyright">Copyright ©</span> 2014 - <span id="currentYear"></span> <span data-i18n="footer_all_rights">Texas Lawyer Referral Service. All rights reserved.</span></p>
+                
+                <p class="mb-4">
+                    <a href="../privacy-policy.html" class="hover:text-primary transition" data-i18n="footer_privacy">Privacy Policy</a> | 
+                    <a href="../terms-of-service.html" class="hover:text-primary transition" data-i18n="footer_terms">Terms of Service</a>
+                </p>
+                
+                <p class="text-gray-400" data-i18n="footer_disclaimer">This site is for general informational purposes only. The information on this site is not legal advice and should not be used in place of legal advice. Consult a lawyer for legal advice.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- MDB UI Kit JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/location-handler.js"></script>
+    <script src="../assets/js/script.js"></script>
+    
+    <!-- Language Handler -->
+    <script src="../assets/js/language-handler.js"></script>
+</body>
+</html>

@@ -337,11 +337,18 @@ Also, the page should ideally have a unique <title> and <meta description>, plus
 
 
 For the `txlrs-website` project make the following changes:
-- Move all of the .html files that are blog posts into the `blog_posts_pages` folder, making all necessary updates to the code to facilitate this change so the pages still display properly. 
-- Do not change the name of any .html files.
-- Do not change the pathname or canonical url of the page.
+- Move all of the .html files that are topic pages into the `topic` folder, making all necessary updates to the code to facilitate this change so the pages still display properly. 
+- This change involves .html files that start with `houston-`.
+- As part of this change the string `houston-` will be removed from the beginning of each html file by renaming the file.
+- Use a permanent HTTP 301 redirect to consolidate the old URL into the new canonical URL, avoiding duplicate-URL issues and preserving SEO value.
+- Be sure to preserve SEO value.
+- Create redirect files in the root directory that will redirect visitors from the old URLs to the new URL files in the `topic` folder.
+- Be sure to preserve SEO value.
+- Update the sitemap file to have the new URLs.
 - Ask me any questions you have for clarification or other purposes before making changes.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
 1. The `blog-posts-pages` folder already exists and it has hyphens rather than underscores between words.
 2. Keep the URLs pointing to the root (e.g., https://txlrs.org/abbott-signs-sweeping-child-welfare-bill.html) even though the file is physically in a subfolder (note the new domain is `txlrs.org`)
 3. Move all blog post files, but do not move topics files.  Move a total of 9 files - the 9 blog posts listed on the blog.html page.
@@ -349,6 +356,11 @@ For the `txlrs-website` project make the following changes:
 5. add/update canonical link tags in the blog post HTML files to maintain SEO and indicate the preferred URL
 
 To fix this, I need to create redirect files in the root directory that will redirect visitors from the root URLs to the actual files in the blog-post folder. This way, both URLs will work, and the canonical tags will correctly point to the root URLs as the preferred version.
+
+- Use a permanent HTTP 301 redirect to consolidate the old URL into the new canonical URL, avoiding duplicate-URL issues and preserving SEO value.
+- Create redirect files in the root directory that will redirect visitors from the old URLs to the new URL files in the `topic` folder.
+- Be sure to preserve SEO value.
+- Update the sitemap file to have the new URLs.
 
 
 For the `txlrs-website` project make the following changes:
