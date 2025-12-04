@@ -389,9 +389,15 @@ For the `txlrs-website` project website make the following changes:
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
 
 
-For the `txlrs-website` project website make the following changes:
-- Refer to the internal date of each individual blog post as the "Published date".
-- Do not show the Published date on any of the individual blog posts - remove it if necessary.
-- Do not show a Category on any of the individual blog posts - remove it if necessary.
-- Ask me any questions you have for clarification or other purposes before making changes.
-- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+For the `txlrs-website` project website make the following changes:  
+- Update the blog post of Abbott Signs Sweeping Child Welfare:  
+  - Change the image used on the blog post to use `../images/abbott-signs-sweeping-child-welfare-bill.png` and delete the old image used from the repository. Delete which ever image is currently being used by this blog post.  
+  - Update/rewrite the content and format of the page using all our SEO and content guidelines for this project website. Keep the same topic/subject matter but improve the writing for SEO. Focus on making it more action-oriented to drive calls.  
+  - Create a Spanish version of the page using the same guidelines and design specifications that we used for the `habeas-corpus-immigration-bond-attorney.html` and `habeas-corpus-immigration-bond-attorney-es.html` page, incorporating the language toggle and other features on the `abbott-signs-sweeping-child-welfare-bill.html` page and the new `abbott-signs-sweeping-child-welfare-bill-es.html` page.  
+  - Update the blog post listings pages `blog.html` and `blog-es.html` to recognize that this blog post it now has a Spanish version.  
+  - Update the pages `abbott-signs-sweeping-child-welfare-bill.html` page and the new `abbott-signs-sweeping-child-welfare-bill-es.html` to use all the latest and greatest SEO features including canonical URLs, slugs and AMP compatibility.  Use full AMP implementation with a separate AMP page for both English and Spanish page versions.  
+  - Keep the original date as the Published Date, but update the schema to indicate that the page has been update today.  
+  - Update the `sitemap.xml` file information to reflect any changes.  
+  - For any page that has been created or modified, update the `lastmod` date in the `sitemap.xml` file to today's date.  
+- Ask me any questions you have for clarification or other purposes before making changes.  
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.  
