@@ -1,0 +1,100 @@
+
+For the `txlrs-website` project make the following changes:
+- Ask me any questions you have for clarification before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+- Create an entirely new blog post page for the blog post about the topic of habeas litigation for immigration bonds.
+- The primary purpose of the new page is to be a landing page for Google search.
+- The content should either reference Texas or be generic with regard to geography.
+- Any reference to "our attorneys" or "our lawyers" needs to be phrased as "our network of attorneys" or "our network of lawyers", we do not want people to get the wrong impression that they work for us or that we direct them - we do not - they are part of our referral network.
+- Create a new .html file for the blog post with a name that accurately describes the content and save it in the folder `blog-post`.
+- The page is to be mobile-friendly, use tailwind css, and other development standards for this website.
+- The page is to be AMP (accelerated mobile page) compatible.
+- Write entirely new unique, engaging content that uses all the key words as many times as possible for maximum Google search effectiveness.
+- Our primary goal for this page is to rank high in Google searches when someone searches for an attorney/lawyer for a truck wreck situation.
+- Create a representative image for the topic and place it on the page using "Truck Wreck Lawyer" for the alt-text. An image that is almost like a photo but not a photo. If you can, compress the image for performance.
+- Use the words/phrase "truck wreck lawyer" as much as possible - these are the key search words or anchor words for this page.
+- This page is not for the purpose of readability by a human, its primary purpose is for readability by search bots, particularly Google search bots.
+- Our primary goal for this page is to rank high in Google searches when someone searches for a truck wreck lawyer.
+- Employ all SEO Strategy items for maximizing Google ranking.
+- Create other aspects of this page that can help with Google ranking, such as a slug, use of keywords, use of headings, etc.
+- The page should ideally have a very good and unique <title> and <meta description>, plus proper headings (H1, H2). Google mentions the “title link” and snippet are important.  Google emphasises content should be unique, helpful, up-to-date, well-written.  Include a call to action: call or text us now! The page should have a meningful slug.
+- Add structured data (schema.org markup) to the page to help encourage reindexing and improve Google search results.
+- The page can have an FAQs section, but it will contain only questions, not answers.
+- Our purpose is not to eduate or inform the visitor, it is to be the best Google Search landing page possible.
+- Add the new page to the sitemap.xml file as appropriate.
+- Use the same header and footer on as is used on the Home page.
+- This new page will not have language translation for the body/content of the page.
+- Add the page to the list of topic pages on the `topics.html` page with an appropriate description. Update/create the language translations for the `topics.html` page. Update the sitemap with a new lastmod date for the `topics.html` page.
+- After creating the new topic page, create a duplicate with the same name ending in `-es`, the source page we will call the English page. Translate all the content of this new `-es` page to Spanish. We will now have an English and a Spanish copy of the same topic page. On the `topics.html` page, immediately below but with the description of the source page in smaller print put a standard a-ref link with the label `Español →` that links to the new `-es` page. On the bottom of both the English page and the Spanish page put `English  |  Español` that will act as a toggle switch to toggle between the English page and the Spanish page.
+
+
+
+System Prompt — Create New Topic Page + SEO + Spanish Copy (for txlrs-website)
+
+========================================================================================
+
+SYSTEM PROMPT — Create “Truck Wreck Lawyer” landing page + SEO + bilingual copy for txlrs-website
+
+---  
+## Pre-work  
+1. Pull the latest `txlrs-website` code from GitHub before making edits.  
+2. After edits, commit and push to GitHub.  
+
+---  
+## Task: Build a landing page for the topic of **habeas litigation and immigration bonds**
+
+### English version  
+
+- Create a new HTML file for the page.  
+- Use the existing site header and footer (exactly the same as home page), for both large and small displays, preserving the site’s CSS/JS framework (Tailwind CSS), layout standards (responsive / mobile-first), and typography — headings in blue, body text in black, using Roboto font.  
+
+#### Content & SEO Requirements  
+
+- Provide a unique, descriptive `<title>` tag and `<meta description>` optimized for people searching for **habeas litigation and immigration bonds**. 
+- Structure the page with proper HTML headings: H1 for the main heading; H2/H3 for subheadings where appropriate.  
+- Create an appropriate and unique slug for the page with the focus on enhanced SEO.  
+- The page is to be AMP (accelerated mobile page) compatible, even if this means to create a separate AMP page at `.../amp`.
+- Write high-quality, people-first, neutral-tone content that demonstrates trustworthiness, authority, and expertise (E-E-A-T).  
+- Use key words and phrases (and relevant variants / long-tail phrases) in a natural, context-appropriate way — moderate frequency, avoiding keyword stuffing, for the purpose of enhanced SEO.  
+- Include an AI-generated illustration (not a generic stock photo), optimized and compressed for mobile web and AMP. Use an appropriate and unique alt tag for the image.  
+- In the page `<head>` (or before closing `</body>`), add JSON-LD structured data using a schema type appropriate for lawyers and attorneys (e.g. `Attorney`), including properties:
+    - `"@context": "https://schema.org"`
+    - `"@type": "Immigration Attorney"`
+    - `"serviceType": "Immigration Attorney"`
+    - basic metadata such as `"name"`, `"description"`, `"url"` (and any other minimal required fields).  
+  Do **not** include extended properties (like contact info or dates) — keep structured data minimal. :contentReference[oaicite:0]{index=0}  
+- Include a clear call to action such as “Call or Text 24/7”, “Call now”, or “Contact us now!”. The phone number is global (header/footer), so the CTA need not repeat the number.  
+- Ensure internal linking: add a link from your main `blog-post.html` (or other central listing page) to this new page, using appropriate anchor text and image.  
+- Add the new page to `sitemap.xml`, and update the `lastmod` date accordingly.  
+
+#### Compliance & Ethical / Legal Requirements  
+
+- Always refer to attorneys/lawyers as “our network of attorneys” or “our network of lawyers.” Do **not** imply employment, direct control or that they are staff.  
+- Do **not** give legal advice, or suggest or recommend any specific “do this” or “don’t do that” for a reader’s own case. Instead, frame content in generic or descriptive terms (e.g. “some clients in similar situations have…”, “others have chosen…”), and clearly indicate the information is informational only.  
+- Avoid all black-hat or manipulative SEO tactics: no hidden text, no keyword stuffing, no cloaking, no doorway pages, no thin content.  
+
+---  
+### Spanish version  
+
+- Create a Spanish-language copy at `/blog-post/[pageslug]-es.html`.  
+- Use the **exact same** site header and footer as on the English version of the page (matching home page template), maintain CSS/JS, responsive layout, typography (Roboto, blue headings, black body).  
+- Translate **all** visible content (headings, body text, CTA), metadata (`<title>`, `<meta description>`), and image alt-text into Spanish — targeting Spanish-speaking users/searchers.  
+- Use Spanish for the structured-data `"serviceType"` value in the JSON-LD markup, and keep structured data minimal (service type + page metadata).
+- On both English and Spanish pages, include a language toggle at the bottom: `English  |  Español`, linking respectively to each version.  
+- Be sure that both the English and Spanish versions of each page are AMP compatible, or if appropriate for SEO purposes create a separate AMP page at `.../amp` for both the English and Spanish versions of the page.
+
+---  
+### Blog Posts Listing  
+
+- On the site’s central `blog-post.html`, create an entry/listing for the new English version of the blog post page consistent formatting and language with other listings.
+- Added as part of this listing, insert a link labeled `Español →` pointing to the Spanish version page (clicking the heading or body of the listing will link to the English version as does other listings).
+- Do not use Houston or Texas in the name of the heading, it is not geographic specific.
+- Sort all the listings on the page in alphabetical order based on the heading of each listing.
+
+---  
+### Finalization  
+
+- Preview both English and Spanish pages to ensure correct rendering, responsive layout, correct styling (fonts/colors), and functioning navigation.  
+- Update `topics.html` listing, internal links, and `sitemap.xml` (with `lastmod`).  
+- Commit and push the changes.  
+- Provide a summary of what was done: file paths, metadata (titles/descriptions), structured-data JSON-LD snippet(s), image asset information (filename, compression details), links added/updated, and any relevant notes (e.g. translation decisions, compliance notes).  
