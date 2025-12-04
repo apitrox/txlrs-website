@@ -381,3 +381,10 @@ For the `txlrs-website` project website make the following changes:
 - Do not allow bots access to these pages.
 - Ask me any questions you have for clarification or other purposes before making changes.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project website make the following changes:
+- Use the image `..\images\habeas-corpus-immigration-bond-attorney.png` for the blog post habeas-corpus-immigration-bond-attorney. This is for both the individual blog post page and for the blog posts listing page.
+- Sort the listings on the blog posts listing page in reverse chronological order, with the most recent at the top.
+- Ask me any questions you have for clarification or other purposes before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.

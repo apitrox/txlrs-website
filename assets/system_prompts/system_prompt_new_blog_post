@@ -5,11 +5,18 @@
 ---  
 ## Task: Build a landing page for the topic of **habeas litigation and immigration bonds**
 
+---  
+### Sources
+
+- Sources of information that may be used for this blog post can be found at: ______________
+
+---  
 ### English version  
 
 - Create a new HTML file for the page.  
 - Use the existing site header and footer (exactly the same as home page), for both large and small displays, preserving the site’s CSS/JS framework (Tailwind CSS), layout standards (responsive / mobile-first), and typography — headings in blue, body text in black, using Roboto font.  
 
+---  
 #### Content & SEO Requirements  
 
 - Provide a unique, descriptive `<title>` tag and `<meta description>` optimized for people searching for **habeas litigation and immigration bonds**. 
@@ -18,7 +25,7 @@
 - The page is to be AMP (accelerated mobile page) compatible, even if this means to create a separate AMP page at `.../amp`.
 - Write high-quality, people-first, neutral-tone content that demonstrates trustworthiness, authority, and expertise (E-E-A-T).  
 - Use key words and phrases (and relevant variants / long-tail phrases) in a natural, context-appropriate way — moderate frequency, avoiding keyword stuffing, for the purpose of enhanced SEO.  
-- Include an AI-generated illustration (not a generic stock photo), optimized and compressed for mobile web and AMP. Use an appropriate and unique alt tag for the image.  
+- The "date posted" date for this blog post shall be today. This date is for internal purposes only and is not displayed to the user.
 - In the page `<head>` (or before closing `</body>`), add JSON-LD structured data using a schema type appropriate for lawyers and attorneys (e.g. `Attorney`), including properties:
     - `"@context": "https://schema.org"`
     - `"@type": "Immigration Attorney"`
@@ -29,6 +36,7 @@
 - Ensure internal linking: add a link from your main `blog-post.html` (or other central listing page) to this new page, using appropriate anchor text and image.  
 - Add the new page to `sitemap.xml`, and update the `lastmod` date accordingly.  
 
+---  
 #### Compliance & Ethical / Legal Requirements  
 
 - Always refer to attorneys/lawyers as “our network of attorneys” or “our network of lawyers.” Do **not** imply employment, direct control or that they are staff.  
@@ -52,6 +60,14 @@
 - Added as part of this listing, insert a link labeled `Español →` pointing to the Spanish version page (clicking the heading or body of the listing will link to the English version as does other listings).
 - Do not use Houston or Texas in the name of the heading, it is not geographic specific.
 - Sort all the listings on the page in alphabetical order based on the heading of each listing.
+
+---  
+### Blog Post Image  
+
+- Use the image `../images/new-blog-post-image.jpg`, as an image for the blog post.
+- This image is for both the English and Spanish versions of the blog post, but is not used on the blog post listing page.
+- The image is to be AMP compatible, optimized and compressed for mobile web and AMP. Use an appropriate and unique alt tag for the image.  
+- Rename the image file from `new-blog-post-image.jpg` to a name that is the same name as the file name for the page, with jpg exension.
 
 ---  
 ### Finalization  
