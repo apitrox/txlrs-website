@@ -4,6 +4,6 @@ Disallow: /assets/
 Disallow: /*.css$
 Disallow: /*.js$
 Disallow: /privacy-policy.html
-Disallow: /terms-of-service.html
+Disallow: /terms-of-use.html
 
 Sitemap: https://www.txlrs.org/sitemap.xml

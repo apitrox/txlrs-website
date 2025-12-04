@@ -377,6 +377,7 @@ For the `txlrs-website` project website make the following changes to help with 
 
 
 For the `txlrs-website` project website make the following changes:
-- Add structured data (Schema.org markup) to all pages
-- Improve meta descriptions and titles if needed
-- Ensure mobile-friendliness and page speed optimization
+- Add content for the Privacy Policy page and the Terms of Use page by copying those pages from the `txcap-website` project website, and updating references to Courtroom Assistance Program to be Texas Lawyer Referral Service.
+- Do not allow bots access to these pages.
+- Ask me any questions you have for clarification or other purposes before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
