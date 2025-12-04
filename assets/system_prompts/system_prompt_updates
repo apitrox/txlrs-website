@@ -384,7 +384,14 @@ For the `txlrs-website` project website make the following changes:
 
 
 For the `txlrs-website` project website make the following changes:
-- Use the image `..\images\habeas-corpus-immigration-bond-attorney.png` for the blog post habeas-corpus-immigration-bond-attorney. This is for both the individual blog post page and for the blog posts listing page.
-- Sort the listings on the blog posts listing page in reverse chronological order, with the most recent at the top.
+- On the blog posts listing page, include a language toggle like: `English  |  Español`, linking respectively to each version and allowing the user to easily switch back and forth between the English version that the Spanish version of the blog listing page. This language toggle is to be located near the top of the page below the heading and above the top most listing, and again at the bottom of the page after the last listing.
+- Ask me any questions you have for clarification or other purposes before making changes.
+- Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.
+
+
+For the `txlrs-website` project website make the following changes:
+- Refer to the internal date of each individual blog post as the "Published date".
+- Do not show the Published date on any of the individual blog posts - remove it if necessary.
+- Do not show a Category on any of the individual blog posts - remove it if necessary.
 - Ask me any questions you have for clarification or other purposes before making changes.
 - Pull from GitHub before making any code changes. Commit and Push to GitHub after finishing code changes.

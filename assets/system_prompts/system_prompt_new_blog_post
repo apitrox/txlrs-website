@@ -20,12 +20,14 @@
 #### Content & SEO Requirements  
 
 - Provide a unique, descriptive `<title>` tag and `<meta description>` optimized for people searching for **habeas litigation and immigration bonds**. 
+- The content is to remain neutral on any subject matter, not taking one side or another. We want to pursuade people to contact us because this is serious and we can help, not to take a side in the matter.
 - Structure the page with proper HTML headings: H1 for the main heading; H2/H3 for subheadings where appropriate.  
 - Create an appropriate and unique slug for the page with the focus on enhanced SEO.  
 - The page is to be AMP (accelerated mobile page) compatible, even if this means to create a separate AMP page at `.../amp`.
 - Write high-quality, people-first, neutral-tone content that demonstrates trustworthiness, authority, and expertise (E-E-A-T).  
 - Use key words and phrases (and relevant variants / long-tail phrases) in a natural, context-appropriate way — moderate frequency, avoiding keyword stuffing, for the purpose of enhanced SEO.  
-- The "date posted" date for this blog post shall be today. This date is for internal purposes only and is not displayed to the user.
+- Include a card or section below the content on the individual blog post page titled "Related Topics.  See `https://txlrs.org/blog-post/habeas-corpus-immigration-bond-attorney.html` for an example. Always list at least 1 item that is most related. List from 1 to 10 related items.  
+- The `published-date` for this blog post shall be today. This date is for internal purposes only and is not displayed to the user.
 - In the page `<head>` (or before closing `</body>`), add JSON-LD structured data using a schema type appropriate for lawyers and attorneys (e.g. `Attorney`), including properties:
     - `"@context": "https://schema.org"`
     - `"@type": "Immigration Attorney"`
@@ -50,16 +52,8 @@
 - Use the **exact same** site header and footer as on the English version of the page (matching home page template), maintain CSS/JS, responsive layout, typography (Roboto, blue headings, black body).  
 - Translate **all** visible content (headings, body text, CTA), metadata (`<title>`, `<meta description>`), and image alt-text into Spanish — targeting Spanish-speaking users/searchers.  
 - Use Spanish for the structured-data `"serviceType"` value in the JSON-LD markup, and keep structured data minimal (service type + page metadata).
-- On both English and Spanish pages, include a language toggle at the bottom: `English  |  Español`, linking respectively to each version.  
+- On both English and Spanish pages, include a language toggle below the content that is like: `English  |  Español`, linking respectively to each version and allowing the user to easily switch back and forth between the English version that the Spanis version.  Do not include a label for the toggle.  
 - Be sure that both the English and Spanish versions of each page are AMP compatible, or if appropriate for SEO purposes create a separate AMP page at `.../amp` for both the English and Spanish versions of the page.
-
----  
-### Blog Posts Listing  
-
-- On the site’s central `blog-post.html`, create an entry/listing for the new English version of the blog post page consistent formatting and language with other listings.
-- Added as part of this listing, insert a link labeled `Español →` pointing to the Spanish version page (clicking the heading or body of the listing will link to the English version as does other listings).
-- Do not use Houston or Texas in the name of the heading, it is not geographic specific.
-- Sort all the listings on the page in alphabetical order based on the heading of each listing.
 
 ---  
 ### Blog Post Image  
@@ -68,6 +62,13 @@
 - This image is for both the English and Spanish versions of the blog post, but is not used on the blog post listing page.
 - The image is to be AMP compatible, optimized and compressed for mobile web and AMP. Use an appropriate and unique alt tag for the image.  
 - Rename the image file from `new-blog-post-image.jpg` to a name that is the same name as the file name for the page, with jpg exension.
+
+---  
+### Blog Posts Listing  
+
+- On the site’s central `blog-post.html`, create an entry/listing for the new English version of the blog post page consistent formatting and language with other listings.
+- Do not use Houston or Texas in the name of the heading, it is not geographic specific.
+- Sort all the listings on the page in reverse chronological order with the latest to the top based on the internally recorded posted date.
 
 ---  
 ### Finalization  
